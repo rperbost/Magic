@@ -1,15 +1,15 @@
 package binder;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Vector;
 
 public class CardBinder implements Binder{
-	Map< Character , Vector<Card> > cards;
+	Map< Character , ArrayList<Card> > cards;
 	
 	public CardBinder(){
-		cards = new HashMap < Character, Vector<Card> >();
+		cards = new HashMap < Character, ArrayList<Card> >();
 	}
 	
 	public void addCard(Card card){
@@ -19,11 +19,11 @@ public class CardBinder implements Binder{
 		
 		Character c = new Character(card.getName().charAt(0));
 		
-		Vector<Card> binderPart = null;
+		ArrayList<Card> binderPart = null;
 	
 		if(!this.contains(card)){
 			if(!this.cards.containsKey(c)){
-				this.cards.put(c, new Vector<Card>());
+				this.cards.put(c, new ArrayList<Card>());
 			}
 			binderPart = this.cards.get(c);
 			binderPart.add(card.clone());
@@ -31,7 +31,7 @@ public class CardBinder implements Binder{
 	}
 	private Card getCard(Card card){
 		try{
-			Vector<Card> binderPart = this.cards.get(card.getName().charAt(0));
+			ArrayList<Card> binderPart = this.cards.get(card.getName().charAt(0));
 			for(int i = 0;i < binderPart.size();i++){
 				if(binderPart.get(i).equals(card)){
 					return binderPart.get(i);
