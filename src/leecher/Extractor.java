@@ -18,7 +18,7 @@ import binder.Card;
 
 public class Extractor {
 	
-	public static void execute() throws IOException{
+	public void execute() throws IOException{
 		long debutTraitement = System.currentTimeMillis();
 		Vector<String> editions = MagicVilleLeecher.getEditions();
 		//Binder binder = new CardBinder();
@@ -135,8 +135,5 @@ public class Extractor {
 		    } catch (Exception e) {
 		      System.err.println("boucle1 "+e);
 		    }
-	}
-	public static void main(String[] args) throws IOException {
-		execute();
 	}
 }
