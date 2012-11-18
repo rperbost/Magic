@@ -59,4 +59,20 @@ public class CardBinder implements Binder{
 		
 		return size;
 	}
+	
+	public Card get(int i){
+		Iterator<Character> it = cards.keySet().iterator();
+				
+		while(it.hasNext()){
+			Character c = it.next();
+			int size = cards.get(c).size();
+			if(i >= size){
+				i-=size;
+			}else{
+				return cards.get(c).get(i);
+			}
+		}
+
+		return null;	
+	}
 }

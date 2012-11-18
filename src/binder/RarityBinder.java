@@ -8,15 +8,15 @@ import binder.Card.Rarity;
 
 public class RarityBinder implements Binder{
 
-	Map<Card.Rarity,CardBinder> binder;
+	Map<Rarity,CardBinder> binder;
 	
 	public RarityBinder(){
-		this.binder = new HashMap<Card.Rarity,CardBinder>();
+		this.binder = new HashMap<Rarity,CardBinder>();
 	}
 	
 	public void addCard(Card card) {
 		
-		Card.Rarity rarity = card.getRarity();
+		Rarity rarity = card.getRarity();
 		if(!binder.containsKey(rarity)){
 			binder.put(rarity, new CardBinder());
 		}
@@ -26,7 +26,7 @@ public class RarityBinder implements Binder{
 
 	@Override
 	public boolean contains(Card card) {
-		Card.Rarity rarity = card.getRarity();
+		Rarity rarity = card.getRarity();
 		if(!binder.containsKey(rarity))return false;
 		return binder.get(rarity).contains(card);
 	}
@@ -35,7 +35,7 @@ public class RarityBinder implements Binder{
 
 	@Override
 	public int size() {
-		Iterator<Card.Rarity> it = binder.keySet().iterator();
+		Iterator<Rarity> it = binder.keySet().iterator();
 		
 		int size = 0;
 		
@@ -46,4 +46,19 @@ public class RarityBinder implements Binder{
 		return size;
 	}
 	
+	public Card get(int i){
+		Iterator<Rarity> it = binder.keySet().iterator();
+				
+		while(it.hasNext()){
+			Rarity r = it.next();
+			int size = binder.get(r).size();
+			if(i >= size){
+				i-=size;
+			}else{
+				return binder.get(r).get(i);
+			}
+		}
+
+		return null;	
+	}
 }

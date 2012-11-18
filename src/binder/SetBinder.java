@@ -44,4 +44,20 @@ public class SetBinder implements Binder{
 		return size;
 	}
 	
+	public Card get(int i){
+		Iterator<String> it = binder.keySet().iterator();
+				
+		while(it.hasNext()){
+			String s = it.next();
+			int size = binder.get(s).size();
+			if(i >= size){
+				i-=size;
+			}else{
+				return binder.get(s).get(i);
+			}
+		}
+
+		return null;	
+	}
+	
 }

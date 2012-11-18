@@ -21,9 +21,6 @@ public class Extractor {
 	public void execute() throws IOException{
 		long debutTraitement = System.currentTimeMillis();
 		Vector<String> editions = MagicVilleLeecher.getEditions();
-		//Binder binder = new CardBinder();
-		//FileWriter fw = new FileWriter("classeurMagic.csv", true);
-		//BufferedWriter output = new BufferedWriter(fw);
 		
 		File setsDir = new File("sets");
 		 if (!setsDir.exists())setsDir.mkdir();
@@ -40,7 +37,6 @@ public class Extractor {
 			FileWriter fw = new FileWriter("sets/"+editions.get(e)+".csv", true);
 			BufferedWriter output = new BufferedWriter(fw);
 			for(int c = 0; c < cardSet.size(); c++){
-				//binder.addCard(cardSet.get(c));
 				output.write(cardSet.get(c).getCsv()+"\n");
 			}
 			output.flush();
@@ -54,8 +50,6 @@ public class Extractor {
 		}
 		
 		System.out.println("fin");
-		
-		//binder.printCsv("classeurMagic.csv");
 		
 	}
 	
@@ -100,7 +94,7 @@ public class Extractor {
 		      BufferedReader br = new BufferedReader(new InputStreamReader(in));
 		      String ligne;
 		      while ((ligne = br.readLine()) != null) {
-		    	System.out.println("Extraction d'Image : "+ligne);
+		    	
 		        String tableau[] = ligne.split("\t");
 		        String set = tableau[1];
 		        String index = tableau[2];
@@ -116,6 +110,7 @@ public class Extractor {
 				 
 		        File f = new File("pics/big/"+set+"/"+index+".jpg");
 		        if(!f.exists()) {
+		        	System.out.println("Extraction d'Image (big) : "+ligne);
 		        	f.createNewFile();
 		        	Extractor.GetFile(
 		        			"http://www.magic-ville.com/pics/big/"+set+"/"+index+".jpg",
@@ -124,6 +119,7 @@ public class Extractor {
 		        }
 		        File f2 = new File("pics/lil/"+set+"/"+index+".jpg");
 		        if(!f2.exists()) {
+		        	System.out.println("Extraction d'Image (lil) : "+ligne);
 		        	f2.createNewFile();
 		        	Extractor.GetFile(
 		        			"http://www.magic-ville.com/pics/lil/"+set+"/"+index+".jpg",

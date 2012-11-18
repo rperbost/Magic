@@ -28,17 +28,48 @@ public class BinderTest {
 		return true;
 	}
 	@Test
-	public void testCardBinder(){
-		assertTrue(testAdd(new CardBinder()));
+	public void testCardBinderAdd(){
+		testAdd(new CardBinder());
 	}
 	
 	@Test
-	public void testRarityBinder(){
+	public void testRarityBinderAdd(){
 		testAdd(new RarityBinder());
 	}
 	@Test
-	public void testSetBinder(){
+	public void testSetBinderAdd(){
 		testAdd(new SetBinder());
 	}
+	
+	public void testGet(Binder binder){
+		Card c1 = new Card("c1","refzdzd","creature",Card.Rarity.rare);
+		Card c2 = new Card("a_c2","refvvvv","creature",Card.Rarity.common);
+		Card c3 = new Card("c1","refplop","creature",Card.Rarity.uncommon);
+		binder.addCard(c1);
+		binder.addCard(c2);
+		binder.addCard(c3);
+		
+		System.out.println(binder.getClass().getName());
+		for(int i = 0;i <3; i++){
+			assertFalse(binder.get(i) == null);
+			System.out.println("\t"+binder.get(i));
+			
+		}
+	}
+	
+	@Test
+	public void testCardBinderGet() {
+		testGet(new CardBinder());
+	}
+	@Test
+	public void testRarityBinderGet(){
+		testGet(new RarityBinder());
+	}
+	@Test
+	public void testSetBinderGet(){
+		testGet(new SetBinder());
+	}
+	
+	
 	
 }
