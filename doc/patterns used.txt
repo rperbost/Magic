@@ -1,0 +1,3 @@
+server : singleton
+interface : command
+... à suivre
