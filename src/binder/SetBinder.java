@@ -1,5 +1,6 @@
 package binder;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -29,8 +30,14 @@ public class SetBinder implements Binder{
 		return binder.get(set).contains(card);
 	}
 
+	//forwarders
+	public int size(String set){
+		return binder.get(set).size();
+	}
+	public Card get(String set,int i){
+		return binder.get(set).get(i);
+	}
 	
-
 	@Override
 	public int size() {
 		Iterator<String> it = binder.keySet().iterator();
@@ -60,4 +67,8 @@ public class SetBinder implements Binder{
 		return null;	
 	}
 	
+	public ArrayList<String> getSets(){
+		return new ArrayList<String>(binder.keySet());
+		
+	}
 }

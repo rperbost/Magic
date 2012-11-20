@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class SingletonBinder extends SetBinder{
 	static SingletonBinder theInstance = null;
@@ -17,7 +18,14 @@ public class SingletonBinder extends SetBinder{
 		return theInstance;
 	}
 	
-	private SingletonBinder(){}
+	private SingletonBinder(){
+		File f = new File("sets/");
+		ArrayList<File> files = new ArrayList<File>(Arrays.asList(f.listFiles()));
+		
+		for(int i = 0;i < files.size(); i++){
+			this.addFile(files.get(i));
+		}
+	}
 
 	public void addFile(File file) {
 		

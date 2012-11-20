@@ -56,10 +56,11 @@ public class Card {
 	private static Rarity parseRarity(String rarityString) {
 		Rarity r = Rarity.unknow;
 		
-		if(rarityString.equals("uncommon"))r = Rarity.uncommon;
-		if(rarityString.equals("common"))r = Rarity.common;
-		if(rarityString.equals("timeshifted"))r = Rarity.timeshifted;
-		if(rarityString.equals("mythic"))r = Rarity.mythic;
+		if(rarityString.equals("rare"))r = Rarity.rare;
+		else if(rarityString.equals("uncommon"))r = Rarity.uncommon;
+		else if(rarityString.equals("common"))r = Rarity.common;
+		else if(rarityString.equals("timeshifted"))r = Rarity.timeshifted;
+		else if(rarityString.equals("mythic"))r = Rarity.mythic;
 		
 		return r;
 	}

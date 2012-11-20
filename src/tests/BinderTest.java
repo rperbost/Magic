@@ -33,10 +33,6 @@ public class BinderTest {
 	}
 	
 	@Test
-	public void testRarityBinderAdd(){
-		testAdd(new RarityBinder());
-	}
-	@Test
 	public void testSetBinderAdd(){
 		testAdd(new SetBinder());
 	}
@@ -61,10 +57,7 @@ public class BinderTest {
 	public void testCardBinderGet() {
 		testGet(new CardBinder());
 	}
-	@Test
-	public void testRarityBinderGet(){
-		testGet(new RarityBinder());
-	}
+	
 	@Test
 	public void testSetBinderGet(){
 		testGet(new SetBinder());

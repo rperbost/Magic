@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import binder.BoosterFactory;
 import binder.SingletonBinder;
 
 import leecher.Extractor;
@@ -14,6 +15,7 @@ public class CoreApply {
 	static CoreApply theInstance = null;
 	
 	private SingletonBinder megaBinder;
+	private BoosterFactory boosterFactory;
 	
 	public static CoreApply getInstance(){
 		if(theInstance == null)theInstance = new CoreApply();
@@ -32,21 +34,8 @@ public class CoreApply {
 			e.printStackTrace();
 		}
 		
-		initMegaBinder();
-		
-		
-		
-	}
-	private void initMegaBinder() {
 		this.megaBinder = SingletonBinder.getInstance();
+		this.boosterFactory = BoosterFactory.getInstance();
 		
-		File f = new File("sets/");
-		ArrayList<File> files = new ArrayList<File>(Arrays.asList(f.listFiles()));
-		
-		for(int i = 0;i < files.size(); i++){
-			megaBinder.addFile(files.get(i));
-		}
-	}
-	
-	
+	}	
 }
