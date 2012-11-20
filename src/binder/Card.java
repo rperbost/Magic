@@ -1,5 +1,8 @@
 package binder;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Card {
 	public enum Rarity {
 	    common, uncommon, rare, timeshifted, mythic, unknow 
@@ -39,6 +42,27 @@ public class Card {
 	}
 
 	
+	public static Card parseCsv(String ligneCsv) {
+		ArrayList<String> cardAttributes = new ArrayList<String>(Arrays.asList(ligneCsv.split("\t")));
+		return new Card(
+				cardAttributes.get(0),
+				cardAttributes.get(1),
+				cardAttributes.get(2),
+				cardAttributes.get(3),
+				Card.parseRarity(cardAttributes.get(4))
+		);
+		
+	}
+	private static Rarity parseRarity(String rarityString) {
+		Rarity r = Rarity.unknow;
+		
+		if(rarityString.equals("uncommon"))r = Rarity.uncommon;
+		if(rarityString.equals("common"))r = Rarity.common;
+		if(rarityString.equals("timeshifted"))r = Rarity.timeshifted;
+		if(rarityString.equals("mythic"))r = Rarity.mythic;
+		
+		return r;
+	}
 	public String toString() {
 		return this.set+this.index+"|"+this.name;
 	}
