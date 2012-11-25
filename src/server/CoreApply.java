@@ -1,9 +1,6 @@
 package server;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 import binder.BoosterFactory;
 import binder.SingletonBinder;
@@ -14,7 +11,9 @@ public class CoreApply {
 
 	static CoreApply theInstance = null;
 	
+	@SuppressWarnings("unused")
 	private SingletonBinder megaBinder;
+	@SuppressWarnings("unused")
 	private BoosterFactory boosterFactory;
 	
 	public static CoreApply getInstance(){

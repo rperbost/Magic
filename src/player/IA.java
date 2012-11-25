@@ -1,13 +1,12 @@
 package player;
 
-import binder.Card;
+import binder.Booster;
 
 public class IA extends Player{
 	@Override
-	public Card getSelectedCard() {
-		for(int i = 0;i < currentBooster.size();i++){
-			if(currentBooster.get(i) != null)return currentBooster.get(i);
-		}
-		return null;
+	public void setBooster(Booster booster) {
+		super.setBooster(booster);
+		super.setRandomCard();
+		callback.notifyReady(this);
 	}
 }
