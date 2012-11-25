@@ -20,7 +20,7 @@ public class BoosterFactory {
 		masterBinder = SingletonBinder.getInstance();
 	}
 	
-	public ArrayList<Card> getBooster(String set){
+	public Booster getBooster(String set){
 		ArrayList<Card> booster = new ArrayList<Card>(15);
 		ArrayList<Rarity> rarities = new ArrayList<Rarity>();
 		
@@ -73,6 +73,6 @@ public class BoosterFactory {
 			if(nbTry>=1000)return null;
 		}
 		
-		return booster;
+		return new Booster(booster);
 	}
 }

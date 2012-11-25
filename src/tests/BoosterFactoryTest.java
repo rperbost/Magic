@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-import server.CoreApply;
+import binder.Booster;
 import binder.BoosterFactory;
 import binder.Card;
 import binder.SingletonBinder;
@@ -27,7 +27,7 @@ public class BoosterFactoryTest {
 	
 	@Test
 	public void testBoosterAreWellFormed(){
-		ArrayList<Card> aBooster = boosterFactory.getBooster("13m");
+		Booster aBooster = boosterFactory.getBooster("13m");
 		for(int i=0;i< 50;i++){
 			assertTrue(aBooster.get(0).getRarity() == Card.Rarity.rare||aBooster.get(0).getRarity() == Card.Rarity.mythic);
 			for(int k=1;k< 4;k++){
