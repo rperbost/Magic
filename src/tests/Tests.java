@@ -5,6 +5,9 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({CardTest.class,BinderTest.class})
-public class Tests{
-}
+@SuiteClasses({
+	CardTest.class,
+	BinderTest.class,
+	BoosterFactoryTest.class
+})
+public class Tests{}
