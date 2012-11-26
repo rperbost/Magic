@@ -1,0 +1,23 @@
+1 Présentation du document
+     1.1 Cadre du document
+     1.2 But du document
+     1.3 Présentation
+
+2. Présentation Magic : The Gathering
+ 2.1 Présentation du jeu
+ 2.2 Présentation du mécanisme de draft et enjeux
+ 2.3 Les logiciels de draft éxistants et leurs contraintes
+
+3. Cahier des charges
+ 3.1 Le but du projet
+ 3.2 Organisation du projet
+ 3.2.1 Les intervenants et leurs rôles
+ 3.3 Les contraintes du projet
+
+4. Le développement du projet
+ 4.1 Les solutions choisie
+ 4.2 .............
+
+5. Évolutions à envisager
+
+Conclusion
