@@ -15,8 +15,8 @@ public class RefreshingThread extends Thread{
 		while(alive){
 			try {
 				componentThatNeedRepaint.repaint();
-				System.out.println(componentThatNeedRepaint.getName());
-				Thread.sleep(1000);
+				//System.out.println(componentThatNeedRepaint.getName());
+				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

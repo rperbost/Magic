@@ -53,4 +53,12 @@ public abstract class Player {
 		if(callback != null)return callback.getTimer();
 		return 0;
 	}
+
+	public Card getCard(int cardId) {
+		return currentBooster.get(cardId);
+	}
+
+	public Booster getBooster() {
+		return currentBooster;
+	}
 }

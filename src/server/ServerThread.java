@@ -59,8 +59,8 @@ public class ServerThread extends Thread{
 				this.timer = TIMERS[nbCarte];
 				while(this.timer>0 && !areTheyAllReady()){
 					try {
-						Thread.sleep(1000);
-						this.timer-=1000;
+						Thread.sleep(100);
+						this.timer-=100;
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
@@ -70,6 +70,7 @@ public class ServerThread extends Thread{
 					boosters.get(nbJoueurs).get(nbBooster).remove(selectedCard);
 					picks.get(nbJoueurs).add(selectedCard);
 				}
+				this.rotate(nbBooster);
 			}
 		}
 	}
@@ -82,6 +83,13 @@ public class ServerThread extends Thread{
 		return true;
 	}
 
+	private void rotate(int nbBooster){
+		Booster firstBooster = this.boosters.get(0).get(nbBooster);
+		for(int i = 0;i < 7; i++){
+			this.boosters.get(i).set(nbBooster,this.boosters.get(i+1).get(nbBooster));
+		}
+		this.boosters.get(7).set(nbBooster,firstBooster);
+	}
 
 	public int getTimer() {
 		return this.timer;

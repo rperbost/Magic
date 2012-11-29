@@ -23,6 +23,7 @@ public class DraftScreen extends Screen{
 		
 		this.panel("RIGHT").setBounds(200, 50, 600, 750);
 		this.panel("RIGHT").setBackground(new Color(0,255,0));
+		this.panel("RIGHT").setLayout(null);
 		
 		this.player = null;
 	}
@@ -34,9 +35,18 @@ public class DraftScreen extends Screen{
 	
 	public void repaint(){
 		if(player != null){
-			System.out.println(player.getTimer());
+			//System.out.println(player.getTimer());
+			this.refreshRight();
 		}
 		super.repaint();
+	}
+
+	private void refreshRight() {
+		if(this.player.getBooster() == null)return;
+		this.panel("RIGHT").removeAll();
+		for(int i = 0;i < this.player.getBooster().size() ;i++){
+			this.panel("RIGHT").add(new ClickableCard(this.player,i));
+		}
 	}
 	
 }

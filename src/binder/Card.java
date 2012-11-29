@@ -78,6 +78,16 @@ public class Card {
 		return new Card(this.name,this.set,this.index,this.type,this.rarity);
 	}
 
+	public String getLilImageLink(){
+		return getImageLink("lil");
+	}
+	public String getBigImageLink(){
+		return getImageLink("big");
+	}
+	private String getImageLink(String size){
+		return "pics/"+size+"/"+this.set+"/"+this.index+".jpg";
+	}
+
 
 
 	public static Rarity GetRarity(String pageContent) {
