@@ -48,4 +48,9 @@ public abstract class Player {
 		}
 		callback.notifyReady(this);
 	}
+	
+	public int getTimer(){
+		if(callback != null)return callback.getTimer();
+		return 0;
+	}
 }

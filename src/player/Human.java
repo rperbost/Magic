@@ -1,16 +1,9 @@
 package player;
 
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-import javax.swing.Action;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
@@ -18,9 +11,11 @@ import javax.swing.JLabel;
 
 
 public class Human extends Player{
-	JFrame cardsFrame;
+	//JFrame cardsFrame;
 	public Human(){
+		
 		//trys
+		/*
 		cardsFrame = new JFrame();
 		cardsFrame.setSize(800,600);
 		cardsFrame.setVisible(true);
@@ -63,7 +58,7 @@ public class Human extends Player{
 			
 		});
 		
-		
+		*/
 		
 	}
 

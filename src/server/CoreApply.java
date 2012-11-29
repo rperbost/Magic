@@ -1,5 +1,7 @@
 package server;
 
+import ihm.MainFrame;
+
 import java.io.IOException;
 
 import binder.BoosterFactory;
@@ -12,9 +14,11 @@ public class CoreApply {
 	static CoreApply theInstance = null;
 	
 	@SuppressWarnings("unused")
-	private SingletonBinder megaBinder;
+	public SingletonBinder megaBinder;
 	@SuppressWarnings("unused")
-	private BoosterFactory boosterFactory;
+	public BoosterFactory boosterFactory;
+	@SuppressWarnings("unused")
+	public MainFrame mainFrame;
 	
 	public static CoreApply getInstance(){
 		if(theInstance == null)theInstance = new CoreApply();
@@ -23,6 +27,7 @@ public class CoreApply {
 	private CoreApply(){
 		this.initServer();
 	}
+	
 	private void initServer() {
 		
 		Extractor diggingInformations = new Extractor();
@@ -35,6 +40,6 @@ public class CoreApply {
 		
 		this.megaBinder = SingletonBinder.getInstance();
 		this.boosterFactory = BoosterFactory.getInstance();
-		
+		this.mainFrame = MainFrame.getInstance();
 	}	
 }

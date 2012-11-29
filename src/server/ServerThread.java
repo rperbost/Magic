@@ -16,6 +16,8 @@ public class ServerThread extends Thread{
 	
 	private boolean[] readyFlags;
 	
+	int timer;
+	
 	//timers : 1 1 55 55 50 45 45 40 4O 35 30 25 20 10 10
 	public static final int[] TIMERS = {
 			60000,60000,55000,55000,50000,
@@ -54,11 +56,11 @@ public class ServerThread extends Thread{
 					this.readyFlags[nbPlayers] = false;
 					players.get(nbPlayers).setBooster(boosters.get(nbPlayers).get(nbBooster));
 				}
-				int timer = TIMERS[nbCarte];
-				while(timer>0 && !areTheyAllReady()){
+				this.timer = TIMERS[nbCarte];
+				while(this.timer>0 && !areTheyAllReady()){
 					try {
 						Thread.sleep(1000);
-						timer-=1000;
+						this.timer-=1000;
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
@@ -78,5 +80,10 @@ public class ServerThread extends Thread{
 			if(this.readyFlags[i] == false)return false;
 		}
 		return true;
+	}
+
+
+	public int getTimer() {
+		return this.timer;
 	}
 }
