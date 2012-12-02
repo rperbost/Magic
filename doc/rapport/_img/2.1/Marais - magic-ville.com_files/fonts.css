@@ -1,0 +1,77 @@
+
+
+/* CSS definitions for fonts */
+
+BODY { margin: 0; background-color:#ffffcc;font: 12px Verdana;}
+TABLE, TD { font: 12px Verdana; }
+
+
+
+a.menu {  padding:2px;background-color:#ffffff; }
+
+a.menu:link { color:#006699; text-decoration:none; }
+a.menu:hover {  background-color:#cccccc; text-decoration:none; }
+
+
+A { color: #006699;  text-decoration: none;} 
+A:hover { color: #ddaa00; text-decoration: none; }
+A.und { color: #000000; text-decoration: none; } 
+A:hover.und { color: #000000; text-decoration: underline; }
+A.und2 { color: #666666; text-decoration: none; } 
+A:hover.und2 { color: #ddaa00; text-decoration: none; }
+A.white { color: #ffffff; text-decoration: none; } 
+A:hover.white { color: #ffffff; text-decoration: underline; }
+
+
+.search 			{ color: #999999; cursor:hand; }
+
+.S16 			{ font: 16px Verdana ; }
+.S14 			{ font: 14px Verdana ; }
+.S12			{ font: 12px Verdana ; }
+.S11			{ font: 11px Verdana ; }
+.S10 			{ font: 10px Verdana ; }
+
+.G10 			{ font: 10px Verdana ; color: #666666; }
+.G11			{ font: 11px Verdana ; color: #666666; }
+.G12 			{ font: 12px Verdana ; color: #666666; }
+.G14 			{ font: 14px Verdana ; color: #666666; }
+
+.O10 			{ font: 10px Verdana ; color: #ddaa00; }
+.O11 			{ font: 11px Verdana ; color: #ddaa00; }
+.O12 			{ font: 12px Verdana ; color: #ddaa00; }
+.O14 			{ font: 14px Verdana ; color: #ddaa00; }
+.O16 			{ font: 16px Verdana ; color: #ddaa00; }
+
+.V10 			{ font: 10px Verdana ; color: #009900; }
+.V11			{ font: 11px Verdana ; color: #009900; }
+.V12 			{ font: 12px Verdana ; color: #009900; }
+.V14 			{ font: 14px Verdana ; color: #009900; }
+
+.B10 			{ font: 10px Verdana ; color: #003399; }
+.B11			{ font: 11px Verdana ; color: #003399; }
+.B12 			{ font: 12px Verdana ; color: #003399; }
+.B14 			{ font: 14px Verdana ; color: #003399; }
+.B16 			{ font: 16px Verdana ; color: #003399; }
+
+.R10 			{ font: 10px Verdana ; color: #ff3333; }
+.R11			{ font: 11px Verdana ; color: #ff3333; }
+.R12 			{ font: 12px Verdana ; color: #ff3333; }
+.R14 			{ font: 14px Verdana ; color: #ff3333; }
+.R16 			{ font: 16px Verdana ; color: #ff3333; }
+
+.W10 			{ font: 10px Verdana ; color: #ffffff; }
+.W11			{ font: 11px Verdana ; color: #ffffff; }
+.W12 			{ font: 12px Verdana ; color: #ffffff; }
+.W14 			{ font: 14px Verdana ; color: #ffffff; }
+.W16 			{ font: 16px Verdana ; color: #ffffff; }
+
+.BG10 			{ font: 10px Bank Gothic ; color: #000000; }
+.BG12 			{ font: 12px Bank Gothic ; color: #000000; }
+.BG14 			{ font: 14px Bank Gothic ; color: #000000; }
+.BG15 			{ font: 15px Bank Gothic ; color: #000000; }
+.BG16 			{ font: 16px Bank Gothic ; color: #000000; }
+
+.titre			{ font: 14px Verdana ; color: #ffffff; }
+.results			{ background:transparent; }
+.resultsover	{ background:#dddddd; cursor:hand;}
+

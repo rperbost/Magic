@@ -1,0 +1,148 @@
+﻿2.1.1 - Présentation générale
+
+Magic : l'Assemblée (Magic: The Gathering en anglais) est un jeu de cartes à jouer et à collectionner créé par Richard 
+Garfielden 1993 et distribué par Wotc.
+
+Ce jeu se distingue des jeux de cartes traditionnels par le fait qu'il existe plus de 12 000 cartes différentes avec lesquelles chaque joueur doit construire son jeu, en suivant un certain nombre de règles. Chaque ensemble de règle permet de définir un format (Le nombre de cartes composant le paquet de jeu. Le nombre fois la même carte. Les cartes autorisées 
+ou interdites. Etc.).
+
+Dans ce jeu vous incarnez un magicien qui invoque des créatures et des sorts afin de venir à bout de son adversaire.
+
+Bien qu'il existe un marché d'échange et d'achat de carte à l'unité entre particuliers. Les cartes sont distribuées à l'origine par Wotc sous forme de paquets de 15 cartes aléatoires appelés « Booster ».
+
+2.1.2 - Survol des règles
+
+a - le mana c'est la vie : jouer un sort.
+
+L'action se situe dans un monde où tout produit et/ou nécessite du « mana ». Un mana est une énergie qui va permettre au joueur d'invoquer des sorts et des créatures qui lui permettront de terrasser ses adversaires.
+
+Il existe cinq couleurs de mana différentes : Blanc, Bleu, Noir, Rouge et Vert.
+
+Chaque couleur de mana représente un style de jeu et une ambiance particulière. Par exemple le mana blanc représente l'honneur, la rigueur et la pureté alors que le mana rouge se basera sur le chaos, l'agressivité.
+
+
+[Le dos d'une carte Magic : on y aperçoit les 5 bulles des couleurs représentant chaque couleur de mana.]
+
+Pour lancer un sort ou invoquer une créature, le joueur doit générer du mana. Pour générer ce dernier le joueur doit utiliser des « Terrain ». Il existe cinq type de terrain de base : un pour chacune des couleurs.
+[Île, Forêt, Plaine, Montagne et Marais]
+
+Pendant chacun de ses tour, le joueur peut prendre un et un seul terrain de sa main et le poser dans son aire de jeu. Chaque terrain que ce joueur a posé depuis le début de la partie peut servir à payer un mana et un seul pour joueur des sorts. Si le joueur a assez de mana pour joueur plusieurs sorts il peut en jouer plusieurs.
+
+Par exemple voici une carte de créature :
+
+
+Pour invoquer cette créature et la poser sur le champs de bataille le joueur devra utiliser 6 terrains : 2 Montagnes (Rouge) et 4 terrains génériques (n'importe quelle combinaison des 5 terrains du jeu).
+
+B – Faire combattre deux créatures
+
+Les deux chiffres en bas à droite des créatures représentent leurs forces ainsi que leurs endurances.
+
+
+
+
+La créature blanche a une force de 2 et une endurance de 3 alors que la créature rouge a une force de 2 et une endurance de 1. Si les deux sont amenées à se battre chacune infligera simultanément autant de dégât que sa force à l'endurance de la créature adverse. Dans ce cas là, la créature blanche tuera la rouge (1-2 = 0) mais la créature rouge ne tuera pas la blanche (3-2= 1)
+
+A chaque fin de tour l'endurance des créatures est remise à neuf.
+
+Si une créature tape un joueur, ce dernier perd autant de points de vie que la force de la créature.
+
+C – Engager une carte
+
+Quand un joueur a besoin d'un mana, il doit le tirer de ses terrains. Comme il ne peut s'en servir qu'une seule fois par tour, il symbolise cette utilisation en engageant son terrain. Derrière ce terme se cache une action simple, incliner la carte verticale pour la passer en position horizontale.
+
+      
+Si un joueur veut symbolise l'attaque d'une créature il doit également l'engager, l'état « engagé » est important car une créature engagée ne pourra pas défendre lors de l'attaque de l'adversaire.
+
+D – Comment se défendre ?
+
+Quand l'adversaire a fini de désigner ses attaquants, le joueur défenseur peut désigner quelles créatures qu'il contrôle va bloquer les créatures adverses. Il n'est pas obligé de bloquer les créatures adverses et peut désigner plusieurs bloqueur pour contrer une seule créature.
+
+E – Comment finir une partie ?
+
+Il existe 3 conditions de défaite :
+	- Si un joueur ne peut plus piocher de carte car sa bibliothèque (son paquet de cartes) est vide : il perd la partie.
+	- Si un joueur n'a plus de points de vie : il perd la partie (un joueur commence la partie avec 20 points de vie) .
+	- Si un joueur a 10 marqueurs poison : il perd la partie (certaines créatures infligent leur dégâts sous forme de marqueurs poison
+
+F – Déroulement d'un tour
+
+Voici l'algorithme de déroulement d'une partie.
+
+//init
+Joueur j1,j2;
+
+Joueur joueurActif = toss(j1,j2) ;//tirage au sort
+
+Joueur joueurDefenseur = null ;
+
+if(joueurActif == j1)joueurDefenseur = j2 ;
+	else joueurDefenseur = j1 ;
+
+j1.setDeck(new Deck().setSize(60)) ;
+j2.setDeck(new Deck().setSize(60)) ;
+
+j1.setPDV(20) ;//points de vie
+j2.setPDV(20) ;
+
+j1.draw(7)//7cartes en main de départ
+j2.draw(7)
+
+int nbTour = 0 ;
+
+while(true){
+
+	//phase d'entretien
+	foreach(joueurActif.getCartesEnjeu() as carte){
+		carte.dégager() ; //redresser la carte
+	}
+
+	//phase de pioche
+	if(nbTour!= 0){
+		try{
+			joueurActif.draw() ;//pioche une car dans son deck
+		}catch(NoMoreCardException e){
+			joueurActif.lose() ;
+		}
+		
+	}
+
+	//première phase principale
+	while(joueurActif.veutJouerSortEtPeutLesPayer(){
+		joueurActif.jouerUnSort() ;
+	}
+
+	//phase de combat
+	joueurActif.designeLesCreaturesAttaquantes() ;
+
+	joueurDefenseur.designeLesCreaturesDefenseuses() ;
+
+	foreach(Combats as combat)[
+		joueurActif.retirerPdv(combat) ;
+		joueurDefenseur.retirerPdv(combat) ;
+		if(joueurDefenseur.getPDV() < 0 
+			or joueurDefenseur.getPoison() > 10){
+				 joueurDefenseur.lose() ;
+			}
+	}
+
+	//seconde phase principale
+	while(joueurActif.veutJouerSortEtPeutLesPayer(){
+		joueurActif.jouerUnSort() ;
+	}
+
+	
+	//changement de joueur actif ;
+	if( joueurActif = j1 ){
+		joueurActif = j2 ;
+		joueurDefenseur = j1 ;
+	}else{
+		joueurActif = j1 ;
+		joueurDefenseur = j2 ;
+	}
+}
+
+G – Pour aller plus loin
+
+Ce qui fait la richesse de ce jeu de carte est le fait qu'il existe des sort et des enchantements en plus que les créatures. De plus chaque carte Magic peut avoir des effets supplémentaires qui altèrent les règles du jeu.
+
+L'aspect stratégique prend vite le pas et le joueur va chercher à optimiser son jeu afin de réduire la part de chance.
