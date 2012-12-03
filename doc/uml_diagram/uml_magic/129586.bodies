@@ -1,0 +1,13 @@
+class Screen
+!!!133682.java!!!	Screen()
+		this.panels = new HashMap<String,JPanel>();
+		this.setVisible(true);
+		this.setSize(800, 600);
+		this.setLayout(null);
+!!!133810.java!!!	addPanel(in name : String, inout panel : JPanel) : Screen
+		this.panels.put(name,panel);
+		panel.setVisible(true);
+		this.add(panel);
+		return this;
+!!!133938.java!!!	panel(in name : String) : JPanel
+		return this.panels.get(name);

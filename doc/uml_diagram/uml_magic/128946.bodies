@@ -1,0 +1,46 @@
+class SetBinder
+!!!132146.java!!!	SetBinder()
+		this.binder = new HashMap<String,CardBinder>();
+!!!132274.java!!!	addCard(inout card : Card) : void
+		
+		String set = card.getSet();
+		if(!binder.containsKey(set)){
+			binder.put(set, new CardBinder());
+		}
+		binder.get(set).addCard(card);
+
+!!!132402.java!!!	contains(inout card : Card) : boolean
+		String set = card.getSet();
+		if(!binder.containsKey(set))return false;
+		return binder.get(set).contains(card);
+!!!132530.java!!!	size(in set : String) : int
+		return binder.get(set).size();
+!!!132658.java!!!	get(in set : String, in i : int) : Card
+		return binder.get(set).get(i);
+!!!132786.java!!!	size() : int
+		Iterator<String> it = binder.keySet().iterator();
+		
+		int size = 0;
+		
+		while(it.hasNext()){
+			size += binder.get(it.next()).size();
+		}
+		
+		return size;
+!!!132914.java!!!	get(in i : int) : Card
+		Iterator<String> it = binder.keySet().iterator();
+				
+		while(it.hasNext()){
+			String s = it.next();
+			int size = binder.get(s).size();
+			if(i >= size){
+				i-=size;
+			}else{
+				return binder.get(s).get(i);
+			}
+		}
+
+		return null;	
+!!!133042.java!!!	getSets() : ArrayList<String>
+		return new ArrayList<String>(binder.keySet());
+		

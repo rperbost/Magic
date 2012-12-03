@@ -1,0 +1,40 @@
+class BinderTest
+!!!139826.java!!!	testAdd(inout binder : Binder) : boolean
+		assertTrue(binder.size()==0);
+		
+		Card c1 = new Card("c1","ref1","creature",Card.Rarity.common);
+		Card c2 = new Card("a_c2","ref1","creature",Card.Rarity.common);
+		Card c3 = new Card("c1","ref2","creature",Card.Rarity.common);
+		
+		binder.addCard(c1);
+		assertTrue(binder.size()==1);
+		binder.addCard(c2);
+		assertTrue(binder.size()==2);
+		binder.addCard(c1);
+		assertTrue(binder.size()==2);
+		binder.addCard(c3);
+		assertTrue(binder.size()==3);
+		
+		return true;
+!!!139954.java!!!	testCardBinderAdd() : void
+		testAdd(new CardBinder());
+!!!140082.java!!!	testSetBinderAdd() : void
+		testAdd(new SetBinder());
+!!!140210.java!!!	testGet(inout binder : Binder) : void
+		Card c1 = new Card("c1","refzdzd","creature",Card.Rarity.rare);
+		Card c2 = new Card("a_c2","refvvvv","creature",Card.Rarity.common);
+		Card c3 = new Card("c1","refplop","creature",Card.Rarity.uncommon);
+		binder.addCard(c1);
+		binder.addCard(c2);
+		binder.addCard(c3);
+		
+		System.out.println(binder.getClass().getName());
+		for(int i = 0;i <3; i++){
+			assertFalse(binder.get(i) == null);
+			System.out.println("\t"+binder.get(i));
+			
+		}
+!!!140338.java!!!	testCardBinderGet() : void
+		testGet(new CardBinder());
+!!!140466.java!!!	testSetBinderGet() : void
+		testGet(new SetBinder());

@@ -1,0 +1,9 @@
+class Booster
+!!!128562.java!!!	Booster(inout booster : ArrayList<Card>)
+		this.booster = booster;
+!!!128690.java!!!	remove(inout selectedCard : Card) : void
+		booster.remove(selectedCard);		
+!!!128818.java!!!	size() : int
+		return booster.size();
+!!!128946.java!!!	get(in i : int) : Card
+		return booster.get(i);

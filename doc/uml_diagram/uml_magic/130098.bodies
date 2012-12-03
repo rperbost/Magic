@@ -1,0 +1,18 @@
+class RefreshingThread
+!!!135218.java!!!	RefreshingThread(inout c : Component)
+		componentThatNeedRepaint = c;
+		alive = true;
+!!!135346.java!!!	run() : void
+		while(alive){
+			try {
+				componentThatNeedRepaint.repaint();
+				//System.out.println(componentThatNeedRepaint.getName());
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+!!!135474.java!!!	kill() : void
+		
+		alive = false;
+		

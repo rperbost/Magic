@@ -1,0 +1,21 @@
+window_sizes 1200 700 300 894 506 120
+diagrams
+  active  classdiagram_ref 128050 // magic_binder
+    894 506 100 4 0 0
+  classdiagram_ref 128178 // magic_player
+    715 404 100 4 0 0
+  classdiagram_ref 128306 // magic_leecher
+    715 404 100 4 0 0
+  classdiagram_ref 128434 // magic_server
+    715 404 100 4 0 0
+  classdiagram_ref 128562 // magic_ihm
+    715 404 100 4 0 0
+end
+show_stereotypes
+selected classdiagram_ref 128562 // magic_ihm
+open
+  classview_ref 128050 // magic_project
+  
+  package_ref 128050 // src
+end
+end

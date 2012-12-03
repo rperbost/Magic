@@ -1,0 +1,33 @@
+class MainFrame
+!!!134578.java!!!	getInstance() : MainFrame
+		if(theInstance == null){
+			theInstance = new MainFrame();
+		}
+		return theInstance;
+!!!134706.java!!!	MainFrame()
+		this.setSize(800, 600);
+		this.setVisible(true);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		this.screens = new HashMap<String,Screen>();
+		this.actualScreen = "";
+		this.refreshingThread = new RefreshingThread(this);
+		this.refreshingThread.start();
+!!!134834.java!!!	activeScreen(in name : String) : MainFrame
+		if(this.screens.containsKey(name)){
+			if(!actualScreen.equals(""))screens.get(actualScreen).setVisible(true);
+			screens.get(name).setVisible(true);
+			this.actualScreen = name;
+		}
+		return this;
+!!!134962.java!!!	addScreen(in name : String, inout screen : Screen) : MainFrame
+		this.screens.put(name,screen);
+		this.add(screen);
+		screen.setVisible(false);
+		return this;
+!!!135090.java!!!	repaint() : void
+		if(!actualScreen.equals("")){
+			//System.out.println(actualScreen);
+			screens.get(actualScreen).repaint();
+		}
+		super.repaint();

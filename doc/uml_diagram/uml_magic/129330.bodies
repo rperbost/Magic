@@ -1,0 +1,32 @@
+class Player
+!!!136882.java!!!	Player()
+		currentBooster = null;
+		selectedCard = null;
+		chair = -1;
+!!!137010.java!!!	setCallback(inout callback : ServerThread) : void
+		this.callback = callback;
+!!!137138.java!!!	setChair(in chairNumber : int) : void
+		chair = chairNumber;
+!!!137266.java!!!	getChair() : int
+		return chair;
+!!!137394.java!!!	setBooster(inout booster : Booster) : void
+		currentBooster = booster;
+		selectedCard = null;
+!!!137522.java!!!	getSelectedCard() : Card
+		return selectedCard;
+!!!137650.java!!!	setRandomCard() : void
+		selectedCard = currentBooster.get((int)Math.random()*currentBooster.size());
+!!!137778.java!!!	setSelectedCard(in i : int) : void
+		try{
+			selectedCard = currentBooster.get(i);
+		}catch(NullPointerException e){
+			setRandomCard();
+		}
+		callback.notifyReady(this);
+!!!137906.java!!!	getTimer() : int
+		if(callback != null)return callback.getTimer();
+		return 0;
+!!!138034.java!!!	getCard(in cardId : int) : Card
+		return currentBooster.get(cardId);
+!!!138162.java!!!	getBooster() : Booster
+		return currentBooster;

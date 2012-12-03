@@ -1,0 +1,5 @@
+class IA
+!!!138418.java!!!	setBooster(inout booster : Booster) : void
+		super.setBooster(booster);
+		super.setRandomCard();
+		callback.notifyReady(this);

@@ -1,0 +1,23 @@
+class PageLeecher
+!!!136370.java!!!	PageLeecher(in target : String)
+		super();
+		this.retrievePage(target);
+!!!136498.java!!!	retrievePage(in target : String) : void
+		try{
+			pageContent = "";
+			URL url = new URL(target);
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(url.openStream()));
+	
+	        String inputLine;
+	        while ((inputLine = in.readLine()) != null)
+	        	pageContent+=inputLine;
+	        in.close();
+		}catch(IOException e){
+			
+		}
+        
+!!!136626.java!!!	getPageContent() : String
+		return pageContent;
+!!!136754.java!!!	toString() : String
+		return this.getPageContent();

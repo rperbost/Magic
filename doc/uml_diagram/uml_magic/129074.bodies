@@ -1,0 +1,52 @@
+class ClickableCard
+!!!133554.java!!!	ClickableCard(inout p : Player, in cardId : int)
+		super(new ImageIcon(p.getCard(cardId).getLilImageLink()));
+		
+		
+		int col = cardId%5;
+		int row = cardId/5;
+		
+		this.setBounds(col*boxWidth, row*boxHeight, cardWidth, cardHeight);
+		
+		final ClickableCard me = this;
+		this.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+				me.player.setSelectedCard(me.cardId);
+				System.out.println(me.cardId);
+				
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			
+			
+		});
+		this.player = p;
+		this.cardId = cardId;
+		this.setVisible(true);
+		this.setSize(100, 142);

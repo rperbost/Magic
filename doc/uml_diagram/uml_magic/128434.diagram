@@ -1,0 +1,22 @@
+format 74
+
+classcanvas 128050 class_ref 130866 // ServerThread
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 83 124 2000
+end
+classcanvas 128178 class_ref 131250 // Main
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 600 209 2000
+end
+classcanvas 128306 class_ref 131122 // CoreApply
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 388 70 2010
+end
+relationcanvas 128434 relation_ref 131122 // <unidirectional association>
+  from ref 128306 z 2011 to point 358 70
+  line 128562 z 2011 to point 358 100
+  line 128690 z 2011 to ref 128306
+  role_a_pos 314 86 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

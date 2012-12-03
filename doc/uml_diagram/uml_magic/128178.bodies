@@ -1,0 +1,80 @@
+class Card
+!!!129458.java!!!	getName() : String
+		return name;
+!!!129586.java!!!	getRarity() : Rarity
+		return rarity;
+!!!129714.java!!!	getSet() : String
+		return set;
+!!!129842.java!!!	Card(in name : String, in reference : String, in type : String, inout rarity : Rarity)
+		this(name,
+				reference.substring(0, 3),
+				reference.substring(3),
+				type,
+				rarity
+			);
+!!!129970.java!!!	Card(in name : String, in set : String, in index : String, in type : String, inout rarity : Rarity)
+		this.name = name.trim();
+		this.set = set.trim();
+		this.index = index.trim();
+		this.type = type.trim();
+		this.rarity = rarity;
+!!!130098.java!!!	parseCsv(in ligneCsv : String) : Card
+		ArrayList<String> cardAttributes = new ArrayList<String>(Arrays.asList(ligneCsv.split("\t")));
+		return new Card(
+				cardAttributes.get(0),
+				cardAttributes.get(1),
+				cardAttributes.get(2),
+				cardAttributes.get(3),
+				Card.parseRarity(cardAttributes.get(4))
+		);
+		
+!!!130226.java!!!	parseRarity(in rarityString : String) : Rarity
+		Rarity r = Rarity.unknow;
+		
+		if(rarityString.equals("rare"))r = Rarity.rare;
+		else if(rarityString.equals("uncommon"))r = Rarity.uncommon;
+		else if(rarityString.equals("common"))r = Rarity.common;
+		else if(rarityString.equals("timeshifted"))r = Rarity.timeshifted;
+		else if(rarityString.equals("mythic"))r = Rarity.mythic;
+		
+		return r;
+!!!130354.java!!!	toString() : String
+		return this.set+this.index+"|"+this.name;
+!!!130482.java!!!	equals(inout card : Card) : boolean
+		return this.name.equals(card.name)
+			&& this.set.equals(card.set)
+			&& this.index.equals(card.index);
+!!!130610.java!!!	clone() : Card
+		return new Card(this.name,this.set,this.index,this.type,this.rarity);
+!!!130738.java!!!	getLilImageLink() : String
+		return getImageLink("lil");
+!!!130866.java!!!	getBigImageLink() : String
+		return getImageLink("big");
+!!!130994.java!!!	getImageLink(in size : String) : String
+		return "pics/"+size+"/"+this.set+"/"+this.index+".jpg";
+!!!131122.java!!!	GetRarity(in pageContent : String) : Rarity
+		String before = "graph/rarity/carte";
+		String after = ".gif";
+		
+		Rarity rarity = Rarity.unknow;
+		
+		if(pageContent.contains(before+"30"+after)){
+			rarity = Rarity.common;
+		}else if(pageContent.contains(before+"20"+after)){
+			rarity = Rarity.uncommon;
+		}else if(pageContent.contains(before+"10"+after)){
+			rarity = Rarity.rare;
+		}else if(pageContent.contains(before+"4"+after)){
+			rarity = Rarity.mythic;
+		}else  if(pageContent.contains(before+"5"+after)){
+			rarity = Rarity.timeshifted;
+		}
+		return rarity;
+!!!131250.java!!!	getCsv() : String
+		String retour = "";
+		retour+=this.name+"\t";
+		retour+=this.set+"\t";
+		retour+=this.index+"\t";
+		retour+=this.type+"\t";
+		retour+=this.rarity;
+		return retour;

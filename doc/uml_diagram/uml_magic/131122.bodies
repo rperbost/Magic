@@ -1,0 +1,19 @@
+class CoreApply
+!!!138546.java!!!	getInstance() : CoreApply
+		if(theInstance == null)theInstance = new CoreApply();
+		return theInstance;
+!!!138674.java!!!	CoreApply()
+		this.initServer();
+!!!138802.java!!!	initServer() : void
+		
+		Extractor diggingInformations = new Extractor();
+		try {
+			diggingInformations.execute();
+		} catch (IOException e) {
+			System.out.println("Init Error !");
+			e.printStackTrace();
+		}
+		
+		this.megaBinder = SingletonBinder.getInstance();
+		this.boosterFactory = BoosterFactory.getInstance();
+		this.mainFrame = MainFrame.getInstance();

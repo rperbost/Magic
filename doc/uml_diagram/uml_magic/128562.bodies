@@ -1,0 +1,32 @@
+class SingletonBinder
+!!!133170.java!!!	getInstance() : SingletonBinder
+		if(theInstance == null){
+			theInstance = new SingletonBinder();
+		}
+		return theInstance;
+!!!133298.java!!!	SingletonBinder()
+		File f = new File("sets/");
+		ArrayList<File> files = new ArrayList<File>(Arrays.asList(f.listFiles()));
+		
+		for(int i = 0;i < files.size(); i++){
+			this.addFile(files.get(i));
+		}
+!!!133426.java!!!	addFile(inout file : File) : void
+		
+		try {
+			BufferedReader lignes = new BufferedReader(new FileReader(file));
+			
+			String ligne;
+			
+			try {
+				while((ligne = lignes.readLine()) != null){
+					this.addCard(Card.parseCsv(ligne));
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
