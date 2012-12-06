@@ -1,0 +1,62 @@
+﻿2.2.1 Les différents formats de jeu
+
+	Avec un pool de cartes dépassant les 10000 et l'ajout de centaines de cartes chaque année, il a parut important, pour l'organisme qui gère le côté compétitif du jeu, de définir des formats de jeu pour orienter les tournois associés.
+
+	Il existe donc plusieurs formats :
+		- Le Vintage : ce format contient toutes les cartes jamais éditée (avec une « banlist »), ce format se démarque par sa rapidité et son coût d'entrée prohibitif. Ce format rapide peut voir une partie finir au premier tour de jeu. De plus, certaines cartes que les joueurs souhaitent jouer peuvent coûter plusieurs centaines d'Euro.
+		- Le Legacy : format légèrement moins rapide que le Vintage et dont les cartes trop puissante ou trop chére sont bannis
+		- Le Modern : seul les cartes éditées depuis 2004 sont autorisées
+		- Le Standard : Uniquement les cartes éditées depuis moins de 2ans sont autorisées.
+
+	Ces format sont des formats construits, c'est à dire que le joueur vient avec un jeu qu'il a créé lui même en amont et sur lequel il travaille depuis longtemps.
+
+	Un autre type de format existe : le limité, dans ce type de format le joueur ne se présente à l'évènement qu'avec des cartes de terrain de base et doit construire un jeu en concurrence avec d'autre joueurs. Les cartes fournis proviennent de Booster vendus par Wotc.
+
+2.2.2 Présentation du Booster-Draft
+
+Le format de jeu qui nous intéresse dans ce projet est le « Booster­draft ». Dans ce format de Limité 8 joueurs se réunissent autour d'une table. Devant chacun d'entre eux se trouve 3 Boosters. Chaque joueur en ouvre un de ces paquets et choisi une 
+Une fois que les joueurs ont récupéré chacun 45 cartes ils doivent constituer un paquet de carte de 40 cartes minimum constitué de cartes en provenance du draft et de cartes obligatoires provenant de l'extérieur car permettant la mécanique 
+du jeu.
+
+2.2.3 Déroulement d'un draft
+
+Voici l'algorithme déroulement d'un draft : 
+
+Joueur joueurs[] = new Joueur[8]
+
+//distribution des boosters
+foreach(joueurs as j){
+	j.donnerBooster() ;
+	j.donnerBooster() ;
+	j.donnerBooster() ;
+
+	//on donne au joueurs assez de terrains de base pour lui permettre de faire son jeu par la suite
+	j.deck.add(plaine,42) ;
+	j.deck.add(île,42) ;
+	j.deck.add(marais,42) ;
+	j.deck.add(montagne,42) ;
+	j.deck.add(forêt,42) ;
+}
+
+//on effectue l'opération pour 3 boosters
+for(int nbBooster = 0;nbBooster < 3;nbBooster++){
+	//on effectue l'opération pour chaque carte du booster
+	for(int nbCarte = 0;nbCarte < 15;nbCarte++){
+		foreach(joueurs as j){
+			//chaque joueur va effectuer son choix
+			j.getBooster(nbBooster).pickCard() ;
+			//puis passe le booster à son voisin
+			j.passerLeBoosterASonVoisin(nbBooster) ;
+		}
+	}
+}
+
+2.2.4 que faire ensuite ?
+
+Après avoir récupéré 45 cartes le joueur doit constituer son jeu. Ce jeu doit comporter au minimum 40 cartes et doit être constitué uniquement de cartes en provenance des 45 cartes récupérées lors du draft et de terrains de base.
+
+Une fois que chaque joueurs ont finis leurs jeux, ils se rencontrent en partie 1 contre 1 afin de déterminer un classement.
+
+2.2.5 Les enjeux du draft.
+
+Le draft oblige le joueur à analyser la puissance des cartes d'un booster par rapport aux autres cartes de ce dernier. Il doit aussi deviner ce que ces « adversaires » recherchent afin de pouvoir prendre leur carte avant eux. De plus le moment où le joueur doit faire son jeu est extrêmement important car il doit réussir à faire le tri et à composer son jeu afin qu'il se rapproche le plus des 40 cartes (bien qu'il n'y ai pas de limite maximale à un jeu il est fortement conseillé de ne pas jouer plus que 40 cartes afin d'optimiser  ce dernier).
