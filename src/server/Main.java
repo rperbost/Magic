@@ -2,7 +2,6 @@ package server;
 
 import ihm.DraftScreen;
 import ihm.MainFrame;
-import ihm.Screen;
 
 import java.util.ArrayList;
 
@@ -12,6 +11,7 @@ import player.Player;
 
 public class Main {
 	public static void main(String args[]){
+
 		CoreApply apply = CoreApply.getInstance();
 		
 		

@@ -13,11 +13,8 @@ public class CoreApply {
 
 	static CoreApply theInstance = null;
 	
-	@SuppressWarnings("unused")
 	public SingletonBinder megaBinder;
-	@SuppressWarnings("unused")
 	public BoosterFactory boosterFactory;
-	@SuppressWarnings("unused")
 	public MainFrame mainFrame;
 	
 	public static CoreApply getInstance(){

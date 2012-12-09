@@ -5,6 +5,7 @@ import java.util.Map;
 
 import javax.swing.JPanel;
 
+@SuppressWarnings("serial")
 public abstract class Screen extends JPanel{
 	Map <String,JPanel> panels;
 	public Screen(){

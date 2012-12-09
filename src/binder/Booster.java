@@ -21,5 +21,8 @@ public class Booster {
 		return booster.get(i);
 	}
 	
+	public int indexOf(Card card){
+		return this.booster.indexOf(card);
+	}
 	
 }

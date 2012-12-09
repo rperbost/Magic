@@ -61,4 +61,12 @@ public abstract class Player {
 	public Booster getBooster() {
 		return currentBooster;
 	}
+
+	public void refresh() {
+	}
+
+	public int getSelectedCardId() {
+		if(selectedCard == null) return -1;
+		return currentBooster.indexOf(selectedCard);
+	}
 }

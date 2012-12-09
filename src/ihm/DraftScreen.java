@@ -6,6 +6,7 @@ import javax.swing.JPanel;
 
 import player.Player;
 
+@SuppressWarnings("serial")
 public class DraftScreen extends Screen{
 	
 	private Player player;
@@ -22,7 +23,7 @@ public class DraftScreen extends Screen{
 		this.panel("TOP").setBackground(new Color(0,0,255));
 		
 		this.panel("RIGHT").setBounds(200, 50, 600, 750);
-		this.panel("RIGHT").setBackground(new Color(0,255,0));
+		this.panel("RIGHT").setBackground(new Color(0,255,255));
 		this.panel("RIGHT").setLayout(null);
 		
 		this.player = null;
@@ -45,7 +46,9 @@ public class DraftScreen extends Screen{
 		if(this.player.getBooster() == null)return;
 		this.panel("RIGHT").removeAll();
 		for(int i = 0;i < this.player.getBooster().size() ;i++){
-			this.panel("RIGHT").add(new ClickableCard(this.player,i));
+			ClickableCard card = null;
+			
+			this.panel("RIGHT").add(ClickableCardFactory.getClickableCard(this.player,i,this.panel("RIGHT")));
 		}
 	}
 	

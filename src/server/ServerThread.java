@@ -45,8 +45,16 @@ public class ServerThread extends Thread{
 	
 	public void notifyReady(Player me){
 		this.readyFlags[me.getChair()] = true;
+		refresh();
 	}
 	
+	private void refresh() {
+		for(int i = 0;i < 8;i++){
+			this.players.get(i).refresh();			
+		}
+	}
+
+
 	public void run() {
 		for(int nbBooster = 0;nbBooster < 3;nbBooster++){
 			for(int nbCarte = 0;nbCarte < 15;nbCarte++){
@@ -80,7 +88,7 @@ public class ServerThread extends Thread{
 		for(int i = 0;i < 8;i++){
 			if(this.readyFlags[i] == false)return false;
 		}
-		return true;
+		return false;
 	}
 
 	private void rotate(int nbBooster){

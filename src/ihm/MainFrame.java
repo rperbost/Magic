@@ -1,14 +1,10 @@
 package ihm;
 
-import java.awt.Color;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
-
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
+@SuppressWarnings("serial")
 public class MainFrame extends JFrame{
 	private static MainFrame theInstance= null;
 	public static MainFrame getInstance(){
@@ -19,7 +15,6 @@ public class MainFrame extends JFrame{
 	}
 	
 	private Map<String,Screen> screens;
-	private RefreshingThread refreshingThread;
 	private String actualScreen;
 	
 	private MainFrame(){
@@ -29,8 +24,6 @@ public class MainFrame extends JFrame{
 		
 		this.screens = new HashMap<String,Screen>();
 		this.actualScreen = "";
-		this.refreshingThread = new RefreshingThread(this);
-		this.refreshingThread.start();
 	}
 	
 	public MainFrame activeScreen(String name){
