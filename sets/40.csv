@@ -1,0 +1,350 @@
+Advance Scout	tem	002	Creature - Human Soldier Scout	common
+Angelic Protector	tem	008	Creature - Angel	uncommon
+Anoint	tem	009	Instant	common
+Armor Sliver	tem	012	Creature - Sliver	uncommon
+Armored Pegasus	tem	013	Creature - Pegasus	common
+Auratog	tem	014	Creature - Atog	rare
+Avenging Angel	tem	015	Creature - Angel	rare
+Circle of Protection: Shadow	tem	042	Enchantment	common
+Circle of Protection: Black	tem	038	Enchantment	common
+Circle of Protection: Blue	tem	039	Enchantment	common
+Circle of Protection: Green	tem	040	Enchantment	common
+Circle of Protection: Red	tem	041	Enchantment	common
+Circle of Protection: White	tem	043	Enchantment	common
+Clergy en-Vec	tem	044	Creature - Human Cleric	common
+Cloudchaser Eagle	tem	046	Creature - Bird	common
+Disenchant	tem	071	Instant	common
+Elite Javelineer	tem	083	Creature - Human Soldier	common
+Field of Souls	tem	099	Enchantment	rare
+Flickering Ward	tem	104	Enchantment - Aura	uncommon
+Gallantry	tem	118	Instant	uncommon
+Gerrard's Battle Cry	tem	120	Enchantment	rare
+Hanna's Custody	tem	128	Enchantment	rare
+Hero's Resolve	tem	136	Enchantment - Aura	common
+Humility	tem	139	Enchantment	rare
+Invulnerability	tem	144	Instant	uncommon
+Knight of Dawn	tem	154	Creature - Human Knight	uncommon
+Light of Day	tem	160	Enchantment	uncommon
+Marble Titan	tem	173	Creature - Giant	rare
+Master Decoy	tem	175	Creature - Human Soldier	common
+Mounted Archers	tem	195	Creature - Human Soldier Archer	common
+Oracle en-Vec	tem	203	Creature - Human Wizard	rare
+Orim's Prayer	tem	204	Enchantment	uncommon
+Orim, Samite Healer	tem	205	Legendary Creature - Human Cleric	rare
+Pacifism	tem	207	Enchantment - Aura	common
+Pegasus Refuge	tem	211	Enchantment	rare
+Quickening Licid	tem	227	Creature - Licid	uncommon
+Repentance	tem	240	Sorcery	uncommon
+Sacred Guide	tem	252	Creature - Human Cleric	rare
+Safeguard	tem	254	Enchantment	rare
+Serene Offering	tem	270	Instant	uncommon
+Soltari Crusader	tem	284	Creature - Soltari Knight	uncommon
+Soltari Emissary	tem	285	Creature - Soltari Soldier	rare
+Soltari Foot Soldier	tem	286	Creature - Soltari Soldier	common
+Soltari Lancer	tem	288	Creature - Soltari Knight	common
+Soltari Monk	tem	289	Creature - Soltari Monk Cleric	uncommon
+Soltari Priest	tem	290	Creature - Soltari Cleric	uncommon
+Soltari Trooper	tem	291	Creature - Soltari Soldier	common
+Spirit Mirror	tem	296	Enchantment	rare
+Staunch Defenders	tem	302	Creature - Human Soldier	uncommon
+Talon Sliver	tem	314	Creature - Sliver	common
+Warmth	tem	338	Enchantment	uncommon
+Winds of Rath	tem	346	Sorcery	rare
+Worthy Cause	tem	350	Instant	uncommon
+Benthic Behemoth	tem	019	Creature - Serpent	rare
+Capsize	tem	031	Instant	common
+Chill	tem	035	Enchantment	uncommon
+Counterspell	tem	053	Instant	common
+Dismiss	tem	072	Instant	uncommon
+Dream Cache	tem	076	Sorcery	common
+Duplicity	tem	078	Enchantment	rare
+Ertai's Meddling	tem	092	Instant	rare
+Escaped Shapeshifter	tem	093	Creature - Shapeshifter	rare
+Fighting Drake	tem	100	Creature - Drake	uncommon
+Fylamarid	tem	117	Creature - Squid Beast	uncommon
+Gaseous Form	tem	119	Enchantment - Aura	common
+Giant Crab	tem	122	Creature - Crab	common
+Horned Turtle	tem	138	Creature - Turtle	common
+Insight	tem	141	Enchantment	uncommon
+Interdict	tem	142	Instant	uncommon
+Intuition	tem	143	Instant	rare
+Legacy's Allure	tem	158	Enchantment	uncommon
+Legerdemain	tem	159	Sorcery	uncommon
+Mana Severance	tem	170	Sorcery	rare
+Manta Riders	tem	172	Creature - Merfolk	common
+Mawcor	tem	176	Creature - Beast	rare
+Meditate	tem	178	Instant	rare
+Mnemonic Sliver	tem	183	Creature - Sliver	uncommon
+Power Sink	tem	223	Instant	common
+Precognition	tem	224	Enchantment	rare
+Propaganda	tem	225	Enchantment	uncommon
+Rootwater Diver	tem	247	Creature - Merfolk	uncommon
+Rootwater Hunter	tem	248	Creature - Merfolk	common
+Rootwater Matriarch	tem	249	Creature - Merfolk	rare
+Rootwater Shaman	tem	250	Creature - Merfolk Shaman	rare
+Sea Monster	tem	265	Creature - Serpent	common
+Shadow Rift	tem	272	Instant	common
+Shimmering Wings	tem	275	Enchantment - Aura	common
+Skyshroud Condor	tem	278	Creature - Bird	uncommon
+Spell Blast	tem	293	Instant	common
+Steal Enchantment	tem	303	Enchantment - Aura	uncommon
+Stinging Licid	tem	304	Creature - Licid	uncommon
+Thalakos Dreamsower	tem	316	Creature - Thalakos Wizard	uncommon
+Thalakos Mistfolk	tem	318	Creature - Thalakos Illusion	common
+Thalakos Seer	tem	319	Creature - Thalakos Wizard	common
+Thalakos Sentry	tem	320	Creature - Thalakos Soldier	common
+Time Ebb	tem	322	Sorcery	common
+Time Warp	tem	323	Sorcery	rare
+Tradewind Rider	tem	326	Creature - Spirit	rare
+Twitch	tem	330	Instant	common
+Unstable Shapeshifter	tem	331	Creature - Shapeshifter	rare
+Volrath's Curse	tem	336	Enchantment - Aura	common
+Whim of Volrath	tem	341	Instant	rare
+Whispers of the Muse	tem	342	Instant	uncommon
+Wind Dancer	tem	344	Creature - Faerie	uncommon
+Wind Drake	tem	345	Creature - Drake	common
+Winged Sliver	tem	347	Creature - Sliver	common
+Abandon Hope	tem	001	Sorcery	uncommon
+Bellowing Fiend	tem	018	Creature - Spirit	rare
+Blood Pet	tem	021	Creature - Thrull	common
+Bounty Hunter	tem	025	Creature - Human Archer Minion	rare
+Carrionette	tem	032	Creature - Skeleton	rare
+Clot Sliver	tem	045	Creature - Sliver	common
+Coercion	tem	047	Sorcery	common
+Coffin Queen	tem	048	Creature - Zombie Wizard	rare
+Commander Greven il-Vec	tem	051	Legendary Creature - Human Warrior	rare
+Corpse Dance	tem	052	Instant	rare
+Dark Banishing	tem	057	Instant	common
+Dark Ritual	tem	058	Instant	common
+Darkling Stalker	tem	059	Creature - Shade Spirit	common
+Dauthi Embrace	tem	060	Enchantment	uncommon
+Dauthi Ghoul	tem	061	Creature - Dauthi Zombie	uncommon
+Dauthi Horror	tem	062	Creature - Dauthi Horror	common
+Dauthi Marauder	tem	063	Creature - Dauthi Minion	common
+Dauthi Mercenary	tem	064	Creature - Dauthi Knight Mercenary	uncommon
+Dauthi Mindripper	tem	065	Creature - Dauthi Minion	uncommon
+Dauthi Slayer	tem	066	Creature - Dauthi Soldier	common
+Death Pits of Rath	tem	068	Enchantment	rare
+Diabolic Edict	tem	069	Instant	common
+Disturbed Burial	tem	073	Sorcery	common
+Dread of Night	tem	075	Enchantment	uncommon
+Dregs of Sorrow	tem	077	Sorcery	rare
+Endless Scream	tem	088	Enchantment - Aura	common
+Enfeeblement	tem	090	Enchantment - Aura	common
+Evincar's Justice	tem	095	Sorcery	common
+Extinction	tem	097	Sorcery	rare
+Fevered Convulsions	tem	098	Enchantment	rare
+Gravedigger	tem	125	Creature - Zombie	common
+Imps' Taunt	tem	140	Instant	uncommon
+Kezzerdrix	tem	152	Creature - Rabbit Beast	rare
+Knight of Dusk	tem	155	Creature - Human Knight	uncommon
+Leeching Licid	tem	157	Creature - Licid	uncommon
+Living Death	tem	163	Sorcery	rare
+Maddening Imp	tem	167	Creature - Imp	rare
+Marsh Lurker	tem	174	Creature - Beast	common
+Mindwhip Sliver	tem	180	Creature - Sliver	uncommon
+Minion of the Wastes	tem	181	Creature - Minion	rare
+Perish	tem	212	Sorcery	uncommon
+Pit Imp	tem	218	Creature - Imp	common
+Rain of Tears	tem	228	Sorcery	uncommon
+Rats of Rath	tem	232	Creature - Rat	common
+Reanimate	tem	234	Sorcery	uncommon
+Reckless Spite	tem	236	Instant	uncommon
+Sadistic Glee	tem	253	Enchantment - Aura	common
+Sarcomancy	tem	258	Enchantment	rare
+Screeching Harpy	tem	263	Creature - Harpy Beast	uncommon
+Servant of Volrath	tem	271	Creature - Minion	common
+Skyshroud Vampire	tem	283	Creature - Vampire	uncommon
+Souldrinker	tem	292	Creature - Spirit	uncommon
+Spinal Graft	tem	295	Enchantment - Aura	common
+Aftershock	tem	003	Sorcery	common
+Ancient Runes	tem	006	Enchantment	uncommon
+Apocalypse	tem	011	Sorcery	rare
+Barbed Sliver	tem	016	Creature - Sliver	uncommon
+Blood Frenzy	tem	020	Instant	common
+Boil	tem	022	Instant	uncommon
+Canyon Drake	tem	029	Creature - Drake	rare
+Canyon Wildcat	tem	030	Creature - Cat	common
+Chaotic Goo	tem	033	Creature - Ooze	rare
+Crown of Flames	tem	055	Enchantment - Aura	common
+Deadshot	tem	067	Sorcery	rare
+Enraging Licid	tem	091	Creature - Licid	uncommon
+Firefly	tem	101	Creature - Insect	uncommon
+Fireslinger	tem	102	Creature - Human Wizard	common
+Flowstone Giant	tem	105	Creature - Giant	common
+Flowstone Salamander	tem	106	Creature - Salamander	uncommon
+Flowstone Wyvern	tem	108	Creature - Drake	rare
+Furnace of Rath	tem	116	Enchantment	rare
+Giant Strength	tem	123	Enchantment - Aura	common
+Goblin Bombardment	tem	124	Enchantment	uncommon
+Hand to Hand	tem	127	Enchantment	rare
+Havoc	tem	130	Enchantment	uncommon
+Heart Sliver	tem	131	Creature - Sliver	common
+Jackal Pup	tem	149	Creature - Hound	uncommon
+Kindle	tem	153	Instant	common
+Lightning Blast	tem	161	Instant	common
+Lightning Elemental	tem	162	Creature - Elemental	common
+Lowland Giant	tem	166	Creature - Giant	common
+Magmasaur	tem	168	Creature - Elemental Lizard	rare
+Mogg Conscripts	tem	185	Creature - Goblin	common
+Mogg Fanatic	tem	186	Creature - Goblin	common
+Mogg Raider	tem	188	Creature - Goblin	common
+Mogg Squad	tem	189	Creature - Goblin	uncommon
+No Quarter	tem	200	Enchantment	rare
+Opportunist	tem	202	Creature - Human Soldier	uncommon
+Pallimud	tem	208	Creature - Beast	rare
+Rathi Dragon	tem	231	Creature - Dragon	rare
+Renegade Warlord	tem	239	Creature - Human Warrior	uncommon
+Rolling Thunder	tem	242	Sorcery	common
+Sandstone Warrior	tem	256	Creature - Human Soldier Warrior	common
+Scorched Earth	tem	261	Sorcery	rare
+Searing Touch	tem	266	Instant	uncommon
+Shadowstorm	tem	273	Sorcery	uncommon
+Shatter	tem	274	Instant	common
+Shocker	tem	276	Creature - Insect	rare
+Starke of Rath	tem	300	Legendary Creature - Human Rogue	rare
+Stone Rain	tem	305	Sorcery	common
+Stun	tem	307	Instant	common
+Sudden Impact	tem	308	Instant	uncommon
+Tahngarth's Rage	tem	313	Enchantment - Aura	uncommon
+Tooth and Claw	tem	324	Enchantment	rare
+Wall of Diffusion	tem	337	Creature - Wall	common
+Wild Wurm	tem	343	Creature - Wurm	uncommon
+Aluren	tem	005	Enchantment	rare
+Apes of Rath	tem	010	Creature - Ape	uncommon
+Bayou Dragonfly	tem	017	Creature - Insect	common
+Broken Fall	tem	026	Enchantment	common
+Canopy Spider	tem	028	Creature - Spider	common
+Charging Rhino	tem	034	Creature - Rhino	uncommon
+Choke	tem	036	Enchantment	uncommon
+Crazed Armodon	tem	054	Creature - Elephant	rare
+Dirtcowl Wurm	tem	070	Creature - Wurm	rare
+Earthcraft	tem	079	Enchantment	rare
+Eladamri's Vineyard	tem	081	Enchantment	rare
+Eladamri, Lord of Leaves	tem	082	Legendary Creature - Elf Warrior	rare
+Elven Warhounds	tem	084	Creature - Hound	rare
+Elvish Fury	tem	085	Instant	common
+Flailing Drake	tem	103	Creature - Drake	uncommon
+Frog Tongue	tem	114	Enchantment - Aura	common
+Fugitive Druid	tem	115	Creature - Human Druid	rare
+Harrow	tem	129	Instant	uncommon
+Heartwood Dryad	tem	132	Creature - Dryad	common
+Heartwood Giant	tem	133	Creature - Giant	rare
+Heartwood Treefolk	tem	134	Creature - Treefolk	uncommon
+Horned Sliver	tem	137	Creature - Sliver	uncommon
+Krakilin	tem	156	Creature - Beast	uncommon
+Mirri's Guile	tem	182	Enchantment	rare
+Mongrel Pack	tem	190	Creature - Hound	rare
+Muscle Sliver	tem	196	Creature - Sliver	common
+Natural Spring	tem	197	Sorcery	common
+Nature's Revolt	tem	198	Enchantment	rare
+Needle Storm	tem	199	Sorcery	uncommon
+Nurturing Licid	tem	201	Creature - Licid	uncommon
+Overrun	tem	206	Sorcery	uncommon
+Pincher Beetles	tem	216	Creature - Insect	common
+Rampant Growth	tem	229	Sorcery	common
+Reality Anchor	tem	233	Instant	common
+Reap	tem	235	Instant	uncommon
+Recycle	tem	237	Enchantment	rare
+Respite	tem	241	Instant	common
+Root Maze	tem	243	Enchantment	rare
+Rootbreaker Wurm	tem	244	Creature - Wurm	common
+Rootwalla	tem	245	Creature - Lizard	common
+Scragnoth	tem	262	Creature - Beast	uncommon
+Seeker of Skybreak	tem	267	Creature - Elf	common
+Skyshroud Elf	tem	279	Creature - Elf Druid	common
+Skyshroud Ranger	tem	281	Creature - Elf	common
+Skyshroud Troll	tem	282	Creature - Troll Giant	common
+Spike Drone	tem	294	Creature - Spike Drone	common
+Storm Front	tem	306	Enchantment	uncommon
+Trained Armodon	tem	327	Creature - Elephant	common
+Tranquility	tem	328	Sorcery	common
+Trumpeting Armodon	tem	329	Creature - Elephant	uncommon
+Verdant Force	tem	333	Creature - Elemental	rare
+Verdigris	tem	334	Instant	uncommon
+Winter's Grasp	tem	348	Sorcery	uncommon
+Dracoplasm	tem	074	Creature - Shapeshifter	rare
+Lobotomy	tem	164	Sorcery	uncommon
+Ranger en-Vec	tem	230	Creature - Human Soldier Archer	uncommon
+Segmented Wurm	tem	268	Creature - Wurm	uncommon
+Selenia, Dark Angel	tem	269	Legendary Creature - Angel	rare
+Sky Spirit	tem	277	Creature - Spirit	uncommon
+Soltari Guerrillas	tem	287	Creature - Soltari Soldier	rare
+Spontaneous Combustion	tem	297	Instant	uncommon
+Vhati il-Dal	tem	335	Legendary Creature - Human Warrior	rare
+Wood Sage	tem	349	Creature - Human Druid	rare
+Altar of Dementia	tem	004	Artifact	rare
+Booby Trap	tem	023	Artifact	rare
+Bottle Gnomes	tem	024	Artifact Creature - Gnome	uncommon
+Coiled Tinviper	tem	049	Artifact Creature - Snake	common
+Cold Storage	tem	050	Artifact	rare
+Cursed Scroll	tem	056	Artifact	rare
+Echo Chamber	tem	080	Artifact	rare
+Emerald Medallion	tem	086	Artifact	rare
+Emmessi Tome	tem	087	Artifact	rare
+Energizer	tem	089	Artifact Creature - Juggernaut	rare
+Essence Bottle	tem	094	Artifact	uncommon
+Excavator	tem	096	Artifact	uncommon
+Flowstone Sculpture	tem	107	Artifact Creature - Shapeshifter	rare
+Fool's Tome	tem	109	Artifact	rare
+Grindstone	tem	126	Artifact	rare
+Helm of Possession	tem	135	Artifact	rare
+Jet Medallion	tem	150	Artifact	rare
+Jinxed Idol	tem	151	Artifact	rare
+Lotus Petal	tem	165	Artifact	common
+Magnetic Web	tem	169	Artifact	rare
+Manakin	tem	171	Artifact Creature - Construct	common
+Metallic Sliver	tem	179	Artifact Creature - Sliver	common
+Mogg Cannon	tem	184	Artifact	uncommon
+Patchwork Gnomes	tem	209	Artifact Creature - Gnome	uncommon
+Pearl Medallion	tem	210	Artifact	rare
+Phyrexian Grimoire	tem	213	Artifact	rare
+Phyrexian Hulk	tem	214	Artifact Creature - Golem	uncommon
+Phyrexian Splicer	tem	215	Artifact	uncommon
+Puppet Strings	tem	226	Artifact	uncommon
+Ruby Medallion	tem	251	Artifact	rare
+Sapphire Medallion	tem	257	Artifact	rare
+Scalding Tongs	tem	260	Artifact	rare
+Scroll Rack	tem	264	Artifact	rare
+Squee's Toy	tem	298	Artifact	common
+Static Orb	tem	301	Artifact	rare
+Telethopter	tem	315	Artifact Creature - Thopter	uncommon
+Thumbscrews	tem	321	Artifact	rare
+Torture Chamber	tem	325	Artifact	rare
+Watchdog	tem	340	Artifact Creature - Hound	uncommon
+Ancient Tomb	tem	007	Land	uncommon
+Caldera Lake	tem	027	Land	rare
+Cinder Marsh	tem	037	Land	uncommon
+Ghost Town	tem	121	Land	uncommon
+Maze of Shadows	tem	177	Land	uncommon
+Mogg Hollows	tem	187	Land	uncommon
+Pine Barrens	tem	217	Land	rare
+Reflecting Pool	tem	238	Land	rare
+Rootwater Depths	tem	246	Land	uncommon
+Salt Flats	tem	255	Land	rare
+Scabland	tem	259	Land	rare
+Skyshroud Forest	tem	280	Land	rare
+Stalking Stones	tem	299	Land	uncommon
+Thalakos Lowlands	tem	317	Land	uncommon
+Vec Townships	tem	332	Land	uncommon
+Wasteland	tem	339	Land	uncommon
+Plains	tem	219	Basic Land - Plains	unknow
+Plains	tem	220	Basic Land - Plains	unknow
+Plains	tem	221	Basic Land - Plains	unknow
+Plains	tem	222	Basic Land - Plains	unknow
+Island	tem	145	Basic Land - Island	unknow
+Island	tem	146	Basic Land - Island	unknow
+Island	tem	147	Basic Land - Island	unknow
+Island	tem	148	Basic Land - Island	unknow
+Swamp	tem	309	Basic Land - Swamp	unknow
+Swamp	tem	310	Basic Land - Swamp	unknow
+Swamp	tem	311	Basic Land - Swamp	unknow
+Swamp	tem	312	Basic Land - Swamp	unknow
+Mountain	tem	191	Basic Land - Mountain	unknow
+Mountain	tem	192	Basic Land - Mountain	unknow
+Mountain	tem	193	Basic Land - Mountain	unknow
+Mountain	tem	194	Basic Land - Mountain	unknow
+Forest	tem	110	Basic Land - Forest	unknow
+Forest	tem	111	Basic Land - Forest	unknow
+Forest	tem	112	Basic Land - Forest	unknow
+Forest	tem	113	Basic Land - Forest	unknow

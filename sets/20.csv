@@ -1,0 +1,383 @@
+Adarkar Unicorn	ice	003	Creature - Unicorn	common
+Arctic Foxes	ice	010	Creature - Fox	common
+Arenson's Aura	ice	014	Enchantment	common
+Armor of Faith	ice	015	Enchantment - Aura	common
+Battle Cry	ice	028	Instant	uncommon
+Black Scarab	ice	031	Enchantment - Aura	uncommon
+Blessed Wine	ice	032	Instant	common
+Blinking Spirit	ice	033	Creature - Spirit	rare
+Blue Scarab	ice	035	Enchantment - Aura	uncommon
+Call to Arms	ice	044	Enchantment	rare
+Caribou Range	ice	045	Enchantment - Aura	rare
+Circle of Protection: Black	ice	052	Enchantment	common
+Circle of Protection: Blue	ice	053	Enchantment	common
+Circle of Protection: Green	ice	054	Enchantment	common
+Circle of Protection: Red	ice	055	Enchantment	common
+Circle of Protection: White	ice	056	Enchantment	common
+Cold Snap	ice	059	Enchantment	uncommon
+Cooperation	ice	061	Enchantment - Aura	common
+Death Ward	ice	068	Instant	common
+Disenchant	ice	074	Instant	common
+Drought	ice	078	Enchantment	uncommon
+Elvish Healer	ice	085	Creature - Elf Cleric	common
+Enduring Renewal	ice	086	Enchantment	rare
+Energy Storm	ice	087	Enchantment	rare
+Formation	ice	109	Instant	rare
+Fylgja	ice	116	Enchantment - Aura	common
+General Jarkeld	ice	125	Legendary Creature - Human Soldier	rare
+Green Scarab	ice	140	Enchantment - Aura	uncommon
+Hallowed Ground	ice	142	Enchantment	uncommon
+Heal	ice	144	Instant	common
+Hipparion	ice	147	Creature - Horse	uncommon
+Justice	ice	181	Enchantment	uncommon
+Kelsinko Ranger	ice	185	Creature - Human	common
+Kjeldoran Elite Guard	ice	187	Creature - Human Soldier	uncommon
+Kjeldoran Guard	ice	189	Creature - Human Soldier	common
+Kjeldoran Knight	ice	190	Creature - Human Knight	rare
+Kjeldoran Phalanx	ice	191	Creature - Human Soldier	rare
+Kjeldoran Royal Guard	ice	192	Creature - Human Soldier	rare
+Kjeldoran Skycaptain	ice	193	Creature - Human Soldier	uncommon
+Kjeldoran Skyknight	ice	194	Creature - Human Knight	common
+Kjeldoran Warrior	ice	195	Creature - Human Warrior	common
+Lightning Blow	ice	209	Instant	rare
+Lost Order of Jarkeld	ice	212	Creature - Human Knight	rare
+Mercenaries	ice	220	Creature - Human Mercenary	rare
+Order of the Sacred Torch	ice	256	Creature - Human Knight	rare
+Order of the White Shield	ice	257	Creature - Human Knight	uncommon
+Prismatic Ward	ice	271	Enchantment - Aura	common
+Rally	ice	276	Instant	common
+Red Scarab	ice	281	Enchantment - Aura	uncommon
+Sacred Boon	ice	288	Instant	uncommon
+Seraph	ice	292	Creature - Angel	rare
+Shield Bearer	ice	295	Creature - Human Soldier	common
+Snow Hound	ice	305	Creature - Hound	uncommon
+Swords to Plowshares	ice	338	Instant	uncommon
+Warning	ice	364	Instant	common
+White Scarab	ice	366	Enchantment - Aura	uncommon
+Arnjlot's Ascent	ice	016	Enchantment	common
+Balduvian Conjurer	ice	022	Creature - Human Wizard	uncommon
+Balduvian Shaman	ice	024	Creature - Human Cleric Shaman	common
+Binding Grasp	ice	030	Enchantment - Aura	uncommon
+Brainstorm	ice	037	Instant	common
+Breath of Dreams	ice	039	Enchantment	uncommon
+Clairvoyance	ice	057	Instant	common
+Counterspell	ice	062	Instant	common
+Deflection	ice	069	Instant	rare
+Dreams of the Dead	ice	076	Enchantment	uncommon
+Enervate	ice	088	Instant	common
+Errant Minion	ice	089	Enchantment - Aura	common
+Essence Flare	ice	092	Enchantment - Aura	common
+Force Void	ice	104	Instant	uncommon
+Glacial Wall	ice	131	Creature - Wall	uncommon
+Hydroblast	ice	153	Instant	common
+Iceberg	ice	157	Enchantment	uncommon
+Icy Prison	ice	160	Enchantment	rare
+Illusionary Forces	ice	161	Creature - Illusion	common
+Illusionary Presence	ice	162	Creature - Illusion	rare
+Illusionary Terrain	ice	163	Enchantment	uncommon
+Illusionary Wall	ice	164	Creature - Illusion Wall	common
+Illusions of Grandeur	ice	165	Enchantment	rare
+Infuse	ice	171	Instant	common
+Krovikan Sorcerer	ice	199	Creature - Human Wizard	common
+Magus of the Unseen	ice	215	Creature - Human Wizard	rare
+Mesmeric Trance	ice	222	Enchantment	rare
+Mistfolk	ice	229	Creature - Illusion	common
+Musician	ice	239	Creature - Human Wizard	rare
+Mystic Might	ice	240	Enchantment - Aura	rare
+Mystic Remora	ice	241	Enchantment	common
+Phantasmal Mount	ice	262	Creature - Illusion Horse	uncommon
+Polar Kraken	ice	267	Creature - Kraken	rare
+Portent	ice	268	Sorcery	common
+Power Sink	ice	269	Instant	common
+Ray of Command	ice	277	Instant	common
+Ray of Erasure	ice	278	Instant	common
+Reality Twist	ice	279	Enchantment	rare
+Sea Spirit	ice	290	Creature - Elemental Spirit	uncommon
+Shyft	ice	297	Creature - Shapeshifter	rare
+Sibilant Spirit	ice	298	Creature - Spirit	rare
+Silver Erne	ice	299	Creature - Bird	uncommon
+Sleight of Mind	ice	302	Instant	uncommon
+Snow Devil	ice	303	Enchantment - Aura	common
+Snowfall	ice	312	Enchantment	common
+Soldevi Machinist	ice	314	Creature - Human Wizard Artificer	uncommon
+Soul Barrier	ice	317	Enchantment	uncommon
+Thunder Wall	ice	342	Creature - Wall	uncommon
+Updraft	ice	352	Instant	uncommon
+Wind Spirit	ice	370	Creature - Elemental Spirit	uncommon
+Winter's Chill	ice	372	Instant	rare
+Word of Undoing	ice	377	Instant	common
+Wrath of Marit Lage	ice	378	Enchantment	rare
+Zur's Weirding	ice	380	Enchantment	rare
+Zuran Enchanter	ice	381	Creature - Human Wizard	common
+Zuran Spellcaster	ice	383	Creature - Human Wizard	common
+Abyssal Specter	ice	001	Creature - Specter	uncommon
+Ashen Ghoul	ice	017	Creature - Zombie	uncommon
+Brine Shaman	ice	040	Creature - Human Cleric Shaman	common
+Burnt Offering	ice	043	Instant	common
+Cloak of Confusion	ice	058	Enchantment - Aura	common
+Dance of the Dead	ice	065	Enchantment - Aura	uncommon
+Dark Banishing	ice	066	Instant	common
+Dark Ritual	ice	067	Instant	common
+Demonic Consultation	ice	070	Instant	uncommon
+Dread Wight	ice	075	Creature - Zombie	rare
+Drift of the Dead	ice	077	Creature - Wall	uncommon
+Fear	ice	095	Enchantment - Aura	common
+Flow of Maggots	ice	101	Creature - Insect	rare
+Foul Familiar	ice	110	Creature - Spirit	common
+Gangrenous Zombies	ice	123	Creature - Zombie	common
+Gaze of Pain	ice	124	Sorcery	common
+Gravebind	ice	139	Instant	rare
+Hecatomb	ice	145	Enchantment	rare
+Hoar Shade	ice	148	Creature - Shade	common
+Howl from Beyond	ice	150	Instant	common
+Hyalopterous Lemure	ice	152	Creature - Spirit	uncommon
+Icequake	ice	158	Sorcery	uncommon
+Infernal Darkness	ice	168	Enchantment	rare
+Infernal Denizen	ice	169	Creature - Demon	rare
+Kjeldoran Dead	ice	186	Creature - Skeleton	common
+Knight of Stromgald	ice	196	Creature - Human Knight	uncommon
+Krovikan Elementalist	ice	197	Creature - Human Wizard	uncommon
+Krovikan Fetish	ice	198	Enchantment - Aura	common
+Krovikan Vampire	ice	200	Creature - Vampire	uncommon
+Legions of Lim-D&ucirc;l	ice	205	Creature - Zombie	common
+Leshrac's Rite	ice	206	Enchantment - Aura	uncommon
+Leshrac's Sigil	ice	207	Enchantment	uncommon
+Lim-D&ucirc;l's Cohort	ice	210	Creature - Zombie	common
+Lim-D&ucirc;l's Hex	ice	211	Enchantment	uncommon
+Mind Ravel	ice	224	Sorcery	common
+Mind Warp	ice	225	Sorcery	uncommon
+Mind Whip	ice	226	Enchantment - Aura	rare
+Minion of Leshrac	ice	227	Creature - Demon Minion	rare
+Minion of Tevesh Szat	ice	228	Creature - Demon Minion	rare
+Mole Worms	ice	230	Creature - Worm	uncommon
+Moor Fiend	ice	232	Creature - Horror	common
+Necropotence	ice	245	Enchantment	rare
+Norritt	ice	246	Creature - Imp	common
+Oath of Lim-D&ucirc;l	ice	247	Enchantment	rare
+Pestilence Rats	ice	261	Creature - Rat	common
+Pox	ice	270	Sorcery	rare
+Seizures	ice	291	Enchantment - Aura	common
+Songs of the Damned	ice	316	Instant	common
+Soul Burn	ice	318	Sorcery	common
+Soul Kiss	ice	319	Enchantment - Aura	common
+Spoils of Evil	ice	321	Instant	rare
+Spoils of War	ice	322	Sorcery	rare
+Stench of Evil	ice	325	Sorcery	uncommon
+Stromgald Cabal	ice	331	Creature - Human Knight	rare
+Touch of Death	ice	348	Sorcery	common
+Withering Wisps	ice	373	Enchantment	uncommon
+Aggression	ice	006	Enchantment - Aura	uncommon
+Anarchy	ice	009	Sorcery	uncommon
+Avalanche	ice	019	Sorcery	uncommon
+Balduvian Barbarians	ice	020	Creature - Human Barbarian	common
+Balduvian Hydra	ice	023	Creature - Hydra	rare
+Barbarian Guides	ice	025	Creature - Human Barbarian	common
+Battle Frenzy	ice	029	Instant	common
+Bone Shaman	ice	036	Creature - Giant Shaman	common
+Brand of Ill Omen	ice	038	Enchantment - Aura	rare
+Chaos Lord	ice	048	Creature - Human	rare
+Chaos Moon	ice	049	Enchantment	rare
+Conquer	ice	060	Enchantment - Aura	uncommon
+Curse of Marit Lage	ice	064	Enchantment	rare
+Dwarven Armory	ice	079	Enchantment	rare
+Errantry	ice	090	Enchantment - Aura	common
+Flame Spirit	ice	098	Creature - Elemental Spirit	uncommon
+Flare	ice	099	Instant	common
+Game of Chaos	ice	122	Sorcery	rare
+Glacial Crevasses	ice	130	Enchantment	rare
+Goblin Mutant	ice	134	Creature - Goblin Mutant	uncommon
+Goblin Sappers	ice	135	Creature - Goblin	common
+Goblin Ski Patrol	ice	136	Creature - Goblin	common
+Goblin Snowman	ice	137	Creature - Goblin	uncommon
+Grizzled Wolverine	ice	141	Creature - Wolverine	common
+Imposing Visage	ice	166	Enchantment - Aura	common
+Incinerate	ice	167	Instant	common
+Jokulhaups	ice	179	Sorcery	rare
+Karplusan Giant	ice	183	Creature - Giant	uncommon
+Karplusan Yeti	ice	184	Creature - Yeti	rare
+Lava Burst	ice	203	Sorcery	common
+Marton Stromgald	ice	217	Legendary Creature - Human Knight	rare
+Melee	ice	218	Instant	uncommon
+Melting	ice	219	Enchantment	uncommon
+Meteor Shower	ice	223	Sorcery	common
+Mountain Goat	ice	236	Creature - Goat	common
+Mudslide	ice	238	Enchantment	rare
+Orcish Cannoneers	ice	249	Creature - Orc Warrior	uncommon
+Orcish Conscripts	ice	250	Creature - Orc	common
+Orcish Farmer	ice	251	Creature - Orc	common
+Orcish Healer	ice	252	Creature - Orc Cleric	uncommon
+Orcish Librarian	ice	253	Creature - Orc	rare
+Orcish Lumberjack	ice	254	Creature - Orc	common
+Orcish Squatters	ice	255	Creature - Orc	rare
+Panic	ice	259	Instant	common
+Pyroblast	ice	274	Instant	common
+Pyroclasm	ice	275	Sorcery	uncommon
+Sabretooth Tiger	ice	287	Creature - Cat	common
+Shatter	ice	294	Instant	common
+Stone Rain	ice	326	Sorcery	common
+Stone Spirit	ice	327	Creature - Elemental Spirit	uncommon
+Stonehands	ice	328	Enchantment - Aura	common
+Tor Giant	ice	346	Creature - Giant	common
+Total War	ice	347	Enchantment	rare
+Vertigo	ice	356	Instant	uncommon
+Wall of Lava	ice	360	Creature - Wall	uncommon
+Word of Blasting	ice	376	Instant	uncommon
+Aurochs	ice	018	Creature - Aurochs	common
+Balduvian Bears	ice	021	Creature - Bear	common
+Blizzard	ice	034	Enchantment	rare
+Brown Ouphe	ice	041	Creature - Ouphe	common
+Chub Toad	ice	051	Creature - Frog	common
+Dire Wolves	ice	073	Creature - Wolf	common
+Earthlore	ice	081	Enchantment - Aura	common
+Elder Druid	ice	082	Creature - Elf Cleric Druid	rare
+Essence Filter	ice	091	Sorcery	common
+Fanatical Fever	ice	094	Instant	uncommon
+Folk of the Pines	ice	102	Creature - Dryad	common
+Forbidden Lore	ice	103	Enchantment - Aura	rare
+Forgotten Lore	ice	108	Sorcery	uncommon
+Foxfire	ice	111	Instant	common
+Freyalise Supplicant	ice	112	Creature - Human Cleric	uncommon
+Freyalise's Charm	ice	113	Enchantment	uncommon
+Freyalise's Winds	ice	114	Enchantment	rare
+Fyndhorn Brownie	ice	118	Creature - Ouphe	common
+Fyndhorn Elder	ice	119	Creature - Elf Druid	uncommon
+Fyndhorn Elves	ice	120	Creature - Elf Druid	common
+Fyndhorn Pollen	ice	121	Enchantment	rare
+Giant Growth	ice	127	Instant	common
+Gorilla Pack	ice	138	Creature - Ape	common
+Hot Springs	ice	149	Enchantment - Aura	rare
+Hurricane	ice	151	Sorcery	uncommon
+Johtull Wurm	ice	178	Creature - Wurm	uncommon
+Juniper Order Druid	ice	180	Creature - Human Cleric Druid	common
+Lhurgoyf	ice	208	Creature - Lhurgoyf	rare
+Lure	ice	213	Enchantment - Aura	uncommon
+Maddening Wind	ice	214	Enchantment - Aura	uncommon
+Nature's Lore	ice	244	Sorcery	uncommon
+Pale Bears	ice	258	Creature - Bear	rare
+Pygmy Allosaurus	ice	272	Creature - Lizard	rare
+Pyknite	ice	273	Creature - Ouphe	common
+Regeneration	ice	282	Enchantment - Aura	common
+Rime Dryad	ice	283	Creature - Dryad	common
+Ritual of Subdual	ice	284	Enchantment	rare
+Scaled Wurm	ice	289	Creature - Wurm	common
+Shambling Strider	ice	293	Creature - Yeti	common
+Snowblind	ice	311	Enchantment - Aura	rare
+Stampede	ice	324	Instant	rare
+Stunted Growth	ice	332	Sorcery	rare
+Tarpan	ice	339	Creature - Horse	common
+Thermokarst	ice	340	Sorcery	uncommon
+Thoughtleech	ice	341	Enchantment	uncommon
+Tinder Wall	ice	345	Creature - Plant Wall	common
+Touch of Vitae	ice	349	Instant	uncommon
+Trailblazer	ice	350	Instant	rare
+Venomous Breath	ice	355	Instant	uncommon
+Wall of Pine Needles	ice	361	Creature - Plant Wall	uncommon
+Whiteout	ice	367	Instant	uncommon
+Wiitigo	ice	368	Creature - Yeti	rare
+Wild Growth	ice	369	Enchantment - Aura	common
+Woolly Mammoths	ice	374	Creature - Elephant	common
+Woolly Spider	ice	375	Creature - Spider	common
+Yavimaya Gnats	ice	379	Creature - Insect	uncommon
+Altar of Bone	ice	007	Sorcery	rare
+Centaur Archer	ice	047	Creature - Centaur Archer	uncommon
+Chromatic Armor	ice	050	Enchantment - Aura	rare
+Diabolic Vision	ice	072	Sorcery	uncommon
+Earthlink	ice	080	Enchantment	rare
+Elemental Augury	ice	083	Enchantment	rare
+Essence Vortex	ice	093	Instant	uncommon
+Fiery Justice	ice	096	Sorcery	rare
+Fire Covenant	ice	097	Instant	uncommon
+Flooded Woodlands	ice	100	Enchantment	rare
+Fumarole	ice	115	Sorcery	uncommon
+Ghostly Flame	ice	126	Enchantment	rare
+Giant Trap Door Spider	ice	128	Creature - Spider	uncommon
+Glaciers	ice	132	Enchantment	rare
+Hymn of Rebirth	ice	154	Sorcery	uncommon
+Kjeldoran Frostbeast	ice	188	Creature - Elemental Beast	uncommon
+Merieke Ri Berit	ice	221	Legendary Creature - Human	rare
+Monsoon	ice	231	Enchantment	rare
+Mountain Titan	ice	237	Creature - Giant	rare
+Reclamation	ice	280	Enchantment	rare
+Skeleton Ship	ice	300	Legendary Creature - Skeleton	rare
+Spectral Shield	ice	320	Enchantment - Aura	uncommon
+Storm Spirit	ice	329	Creature - Elemental Spirit	rare
+Stormbind	ice	330	Enchantment	rare
+Wings of Aesthir	ice	371	Enchantment - Aura	uncommon
+Adarkar Sentinel	ice	002	Artifact Creature - Soldier	uncommon
+Aegis of the Meek	ice	005	Artifact	rare
+Amulet of Quoz	ice	008	Artifact	rare
+Arcum's Sleigh	ice	011	Artifact	uncommon
+Arcum's Weathervane	ice	012	Artifact	uncommon
+Arcum's Whistle	ice	013	Artifact	uncommon
+Barbed Sextant	ice	026	Artifact	common
+Baton of Morale	ice	027	Artifact	uncommon
+Celestial Sword	ice	046	Artifact	rare
+Crown of the Ages	ice	063	Artifact	rare
+Despotic Scepter	ice	071	Artifact	rare
+Elkin Bottle	ice	084	Artifact	rare
+Fyndhorn Bow	ice	117	Artifact	uncommon
+Goblin Lyre	ice	133	Artifact	rare
+Hematite Talisman	ice	146	Artifact	uncommon
+Ice Cauldron	ice	155	Artifact	rare
+Icy Manipulator	ice	159	Artifact	uncommon
+Infinite Hourglass	ice	170	Artifact	rare
+Jester's Cap	ice	175	Artifact	rare
+Jester's Mask	ice	176	Artifact	rare
+Jeweled Amulet	ice	177	Artifact	uncommon
+Lapis Lazuli Talisman	ice	202	Artifact	uncommon
+Malachite Talisman	ice	216	Artifact	uncommon
+Nacre Talisman	ice	242	Artifact	uncommon
+Naked Singularity	ice	243	Artifact	rare
+Onyx Talisman	ice	248	Artifact	uncommon
+Pentagram of the Ages	ice	260	Artifact	rare
+Pit Trap	ice	263	Artifact	uncommon
+Runed Arch	ice	286	Artifact	rare
+Shield of the Ages	ice	296	Artifact	uncommon
+Skull Catapult	ice	301	Artifact	uncommon
+Snow Fortress	ice	304	Artifact Creature - Wall	rare
+Soldevi Golem	ice	313	Artifact Creature - Golem	rare
+Soldevi Simulacrum	ice	315	Artifact Creature - Soldier	uncommon
+Staff of the Ages	ice	323	Artifact	rare
+Sunstone	ice	334	Artifact	uncommon
+Time Bomb	ice	344	Artifact	rare
+Urza's Bauble	ice	353	Artifact	uncommon
+Vexing Arcanix	ice	357	Artifact	rare
+Vibrating Sphere	ice	358	Artifact	rare
+Walking Wall	ice	359	Artifact Creature - Wall	uncommon
+Wall of Shields	ice	362	Artifact Creature - Wall	uncommon
+War Chariot	ice	363	Artifact	uncommon
+Whalebone Glider	ice	365	Artifact	uncommon
+Zuran Orb	ice	382	Artifact	uncommon
+Adarkar Wastes	ice	004	Land	rare
+Brushland	ice	042	Land	rare
+Glacial Chasm	ice	129	Land	uncommon
+Halls of Mist	ice	143	Land	rare
+Ice Floe	ice	156	Land	uncommon
+Karplusan Forest	ice	182	Land	rare
+Land Cap	ice	201	Land	rare
+Lava Tubes	ice	204	Land	rare
+River Delta	ice	285	Land	rare
+Sulfurous Springs	ice	333	Land	rare
+Timberline Ridge	ice	343	Land	rare
+Underground River	ice	351	Land	rare
+Veldt	ice	354	Land	rare
+Snow-Covered Plains	ice	309	Basic Snow Land - Plains	unknow
+Plains	ice	264	Basic Land - Plains	unknow
+Plains	ice	265	Basic Land - Plains	unknow
+Plains	ice	266	Basic Land - Plains	unknow
+Snow-Covered Island	ice	307	Basic Snow Land - Island	unknow
+Island	ice	172	Basic Land - Island	unknow
+Island	ice	173	Basic Land - Island	unknow
+Island	ice	174	Basic Land - Island	unknow
+Snow-Covered Swamp	ice	310	Basic Snow Land - Swamp	unknow
+Swamp	ice	335	Basic Land - Swamp	unknow
+Swamp	ice	336	Basic Land - Swamp	unknow
+Swamp	ice	337	Basic Land - Swamp	unknow
+Snow-Covered Mountain	ice	308	Basic Snow Land - Mountain	unknow
+Mountain	ice	233	Basic Land - Mountain	unknow
+Mountain	ice	234	Basic Land - Mountain	unknow
+Mountain	ice	235	Basic Land - Mountain	unknow
+Snow-Covered Forest	ice	306	Basic Snow Land - Forest	unknow
+Forest	ice	105	Basic Land - Forest	unknow
+Forest	ice	106	Basic Land - Forest	unknow
+Forest	ice	107	Basic Land - Forest	unknow

@@ -1,0 +1,143 @@
+Bandage	str	004	Instant	common
+Calming Licid	str	009	Creature - Licid	uncommon
+Change of Heart	str	012	Instant	common
+Contemplation	str	015	Enchantment	uncommon
+Conviction	str	017	Enchantment - Aura	common
+Hidden Retreat	str	051	Enchantment	rare
+Honor Guard	str	052	Creature - Human Soldier	common
+Lancers en-Kor	str	059	Creature - Kor Soldier	uncommon
+Nomads en-Kor	str	077	Creature - Kor Nomad Soldier	common
+Pursuit of Knowledge	str	082	Enchantment	rare
+Rolling Stones	str	088	Enchantment	rare
+Sacred Ground	str	090	Enchantment	rare
+Samite Blessing	str	091	Enchantment - Aura	common
+Scapegoat	str	092	Instant	uncommon
+Shaman en-Kor	str	095	Creature - Kor Cleric Shaman	rare
+Skyshroud Falcon	str	103	Creature - Bird	common
+Smite	str	106	Instant	common
+Soltari Champion	str	107	Creature - Soltari Soldier	rare
+Spirit en-Kor	str	116	Creature - Kor Spirit	common
+Temper	str	121	Instant	uncommon
+Venerable Monk	str	128	Creature - Human Monk Cleric	common
+Wall of Essence	str	137	Creature - Wall	uncommon
+Warrior Angel	str	141	Creature - Angel Warrior	rare
+Warrior en-Kor	str	142	Creature - Kor Warrior Knight	uncommon
+Youthful Knight	str	143	Creature - Human Knight	common
+Cloud Spirit	str	013	Creature - Spirit	common
+Contempt	str	016	Enchantment - Aura	common
+Dream Halls	str	026	Enchantment	rare
+Dream Prowler	str	027	Creature - Illusion	common
+Evacuation	str	033	Instant	rare
+Gliding Licid	str	043	Creature - Licid	uncommon
+Hammerhead Shark	str	045	Creature - Fish	common
+Hesitation	str	049	Enchantment	uncommon
+Intruder Alarm	str	055	Enchantment	rare
+Leap	str	060	Instant	common
+Mana Leak	str	062	Instant	common
+Mask of the Mimic	str	063	Instant	uncommon
+Mind Games	str	065	Instant	common
+Ransack	str	084	Sorcery	uncommon
+Rebound	str	085	Instant	uncommon
+Reins of Power	str	086	Instant	rare
+Sift	str	099	Sorcery	common
+Silver Wyvern	str	100	Creature - Drake	rare
+Spindrift Drake	str	113	Creature - Drake	common
+Thalakos Deceiver	str	123	Creature - Thalakos Wizard	rare
+Tidal Surge	str	124	Sorcery	common
+Tidal Warrior	str	125	Creature - Merfolk Warrior	common
+Volrath's Shapeshifter	str	133	Creature - Shapeshifter	rare
+Walking Dream	str	135	Creature - Illusion	uncommon
+Wall of Tears	str	140	Creature - Wall	uncommon
+Bottomless Pit	str	005	Enchantment	uncommon
+Brush with Death	str	006	Sorcery	common
+Cannibalize	str	010	Sorcery	common
+Corrupting Licid	str	019	Creature - Licid	uncommon
+Crovax the Cursed	str	022	Legendary Creature - Vampire	rare
+Dauthi Trapper	str	024	Creature - Dauthi Minion	uncommon
+Death Stroke	str	025	Sorcery	common
+Dungeon Shade	str	029	Creature - Shade Spirit	common
+Foul Imp	str	041	Creature - Imp	common
+Grave Pact	str	044	Enchantment	rare
+Lab Rats	str	058	Sorcery	common
+Megrim	str	064	Enchantment	uncommon
+Mind Peel	str	066	Sorcery	uncommon
+Mindwarper	str	067	Creature - Spirit	rare
+Morgue Thrull	str	073	Creature - Thrull	common
+Mortuary	str	074	Enchantment	rare
+Rabid Rats	str	083	Creature - Rat	common
+Revenant	str	087	Creature - Spirit	rare
+Serpent Warrior	str	094	Creature - Snake Warrior	common
+Skeleton Scavengers	str	101	Creature - Skeleton	rare
+Stronghold Assassin	str	118	Creature - Zombie Assassin	rare
+Stronghold Taskmaster	str	119	Creature - Giant Minion	uncommon
+Torment	str	126	Enchantment - Aura	common
+Tortured Existence	str	127	Enchantment	common
+Wall of Souls	str	139	Creature - Wall	uncommon
+Amok	str	002	Enchantment	rare
+Convulsing Licid	str	018	Creature - Licid	uncommon
+Craven Giant	str	020	Creature - Giant	common
+Duct Crawler	str	028	Creature - Insect	common
+Fanning the Flames	str	034	Sorcery	uncommon
+Flame Wave	str	035	Sorcery	uncommon
+Fling	str	036	Instant	common
+Flowstone Blade	str	037	Enchantment - Aura	common
+Flowstone Hellion	str	038	Creature - Hellion Beast	uncommon
+Flowstone Mauler	str	039	Creature - Beast	rare
+Flowstone Shambler	str	040	Creature - Beast	common
+Furnace Spirit	str	042	Creature - Spirit	common
+Heat of Battle	str	047	Enchantment	uncommon
+Invasion Plans	str	056	Enchantment	rare
+Mob Justice	str	068	Sorcery	common
+Mogg Bombers	str	069	Creature - Goblin	common
+Mogg Flunkies	str	070	Creature - Goblin	common
+Mogg Infestation	str	071	Sorcery	rare
+Mogg Maniac	str	072	Creature - Goblin	uncommon
+Ruination	str	089	Sorcery	rare
+Seething Anger	str	093	Sorcery	common
+Shard Phoenix	str	096	Creature - Phoenix	rare
+Shock	str	098	Instant	common
+Spitting Hydra	str	117	Creature - Hydra	rare
+Wall of Razors	str	138	Creature - Wall	uncommon
+Awakening	str	003	Enchantment	rare
+Burgeoning	str	008	Enchantment	rare
+Carnassid	str	011	Creature - Beast	rare
+Constant Mists	str	014	Instant	uncommon
+Crossbow Ambush	str	021	Instant	common
+Elven Rite	str	030	Sorcery	uncommon
+Endangered Armodon	str	031	Creature - Elephant	common
+Hermit Druid	str	048	Creature - Human Druid	rare
+Lowland Basilisk	str	061	Creature - Basilisk	common
+Mulch	str	076	Sorcery	common
+Overgrowth	str	078	Enchantment - Aura	common
+Primal Rage	str	080	Enchantment	uncommon
+Provoke	str	081	Instant	common
+Skyshroud Archer	str	102	Creature - Elf Archer	common
+Skyshroud Troopers	str	104	Creature - Elf Druid Warrior	common
+Spike Breeder	str	108	Creature - Spike	rare
+Spike Colony	str	109	Creature - Spike	common
+Spike Feeder	str	110	Creature - Spike	uncommon
+Spike Soldier	str	111	Creature - Spike Soldier	uncommon
+Spike Worker	str	112	Creature - Spike	common
+Spined Wurm	str	115	Creature - Wurm	common
+Tempting Licid	str	122	Creature - Licid	uncommon
+Verdant Touch	str	129	Sorcery	rare
+Volrath's Gardens	str	131	Enchantment	rare
+Wall of Blossoms	str	136	Creature - Plant Wall	uncommon
+Acidic Sliver	str	001	Creature - Sliver	uncommon
+Crystalline Sliver	str	023	Creature - Sliver	uncommon
+Hibernation Sliver	str	050	Creature - Sliver	uncommon
+Sliver Queen	str	105	Legendary Creature - Sliver	rare
+Spined Sliver	str	114	Creature - Sliver	uncommon
+Victual Sliver	str	130	Creature - Sliver	uncommon
+Bullwhip	str	007	Artifact	uncommon
+Ensnaring Bridge	str	032	Artifact	rare
+Heartstone	str	046	Artifact	uncommon
+Horn of Greed	str	053	Artifact	rare
+Hornet Cannon	str	054	Artifact	uncommon
+Jinxed Ring	str	057	Artifact	rare
+Mox Diamond	str	075	Artifact	rare
+Portcullis	str	079	Artifact	rare
+Shifting Wall	str	097	Artifact Creature - Wall	uncommon
+Sword of the Chosen	str	120	Legendary Artifact	rare
+Volrath's Laboratory	str	132	Artifact	rare
+Volrath's Stronghold	str	134	Legendary Land	rare

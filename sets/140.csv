@@ -1,0 +1,422 @@
+Amrou Scout	tsp	001	Creature - Kithkin Rebel Scout	common
+Amrou Seekers	tsp	002	Creature - Kithkin Rebel	common
+Angel's Grace	tsp	003	Instant	rare
+Benalish Cavalry	tsp	004	Creature - Human Knight	common
+Castle Raptors	tsp	005	Creature - Bird Soldier	common
+Cavalry Master	tsp	006	Creature - Human Knight	uncommon
+Celestial Crusader	tsp	007	Creature - Spirit	uncommon
+Children of Korlis	tsp	008	Creature - Human Rebel Cleric	common
+Chronosavant	tsp	009	Creature - Giant	rare
+Cloudchaser Kestrel	tsp	010	Creature - Bird	common
+D'Avenant Healer	tsp	011	Creature - Human Cleric Archer	common
+Detainment Spell	tsp	012	Enchantment - Aura	common
+Divine Congregation	tsp	013	Sorcery	common
+Duskrider Peregrine	tsp	014	Creature - Bird	uncommon
+Errant Doomsayers	tsp	015	Creature - Human Rebel	common
+Evangelize	tsp	016	Sorcery	rare
+Flickering Spirit	tsp	017	Creature - Spirit	common
+Foriysian Interceptor	tsp	018	Creature - Human Soldier	common
+Fortify	tsp	019	Instant	common
+Gaze of Justice	tsp	020	Sorcery	common
+Griffin Guide	tsp	021	Enchantment - Aura	uncommon
+Gustcloak Cavalier	tsp	022	Creature - Human Knight	uncommon
+Icatian Crier	tsp	023	Creature - Human Spellshaper	common
+Ivory Giant	tsp	024	Creature - Giant	common
+Jedit's Dragoons	tsp	025	Creature - Cat Soldier	common
+Knight of the Holy Nimbus	tsp	026	Creature - Human Rebel Knight	uncommon
+Magus of the Disk	tsp	027	Creature - Human Wizard	rare
+Mangara of Corondor	tsp	028	Legendary Creature - Human Wizard	rare
+Momentary Blink	tsp	029	Instant	common
+Opal Guardian	tsp	030	Enchantment	rare
+Outrider en-Kor	tsp	031	Creature - Kor Rebel Knight	uncommon
+Pentarch Paladin	tsp	032	Creature - Human Knight	rare
+Pentarch Ward	tsp	033	Enchantment - Aura	common
+Plated Pegasus	tsp	034	Creature - Pegasus	uncommon
+Pull from Eternity	tsp	035	Instant	uncommon
+Pulmonic Sliver	tsp	036	Creature - Sliver	rare
+Quilled Sliver	tsp	037	Creature - Sliver	uncommon
+Restore Balance	tsp	038	Sorcery	rare
+Return to Dust	tsp	039	Instant	uncommon
+Serra Avenger	tsp	040	Creature - Angel	rare
+Sidewinder Sliver	tsp	041	Creature - Sliver	common
+Spirit Loop	tsp	042	Enchantment - Aura	uncommon
+Temporal Isolation	tsp	043	Enchantment - Aura	common
+Tivadar of Thorn	tsp	044	Legendary Creature - Human Knight	rare
+Watcher Sliver	tsp	045	Creature - Sliver	common
+Weathered Bodyguards	tsp	046	Creature - Human Soldier	rare
+Zealot il-Vec	tsp	047	Creature - Human Rebel	common
+Ancestral Vision	tsp	048	Sorcery	rare
+Bewilder	tsp	049	Instant	common
+Brine Elemental	tsp	050	Creature - Elemental	uncommon
+Cancel	tsp	051	Instant	common
+Careful Consideration	tsp	052	Instant	uncommon
+Clockspinning	tsp	053	Instant	common
+Coral Trickster	tsp	054	Creature - Merfolk Rogue	common
+Crookclaw Transmuter	tsp	055	Creature - Bird Wizard	common
+Deep-Sea Kraken	tsp	056	Creature - Kraken	rare
+Draining Whelk	tsp	057	Creature - Illusion	rare
+Dream Stalker	tsp	058	Creature - Illusion	common
+Drifter il-Dal	tsp	059	Creature - Human Wizard	common
+Errant Ephemeron	tsp	060	Creature - Illusion	common
+Eternity Snare	tsp	061	Enchantment - Aura	common
+Fathom Seer	tsp	062	Creature - Illusion	common
+Fledgling Mawcor	tsp	063	Creature - Beast	uncommon
+Fool's Demise	tsp	064	Enchantment - Aura	uncommon
+Ixidron	tsp	065	Creature - Illusion	rare
+Looter il-Kor	tsp	066	Creature - Kor Rogue	common
+Magus of the Jar	tsp	067	Creature - Human Wizard	rare
+Moonlace	tsp	068	Instant	rare
+Mystical Teachings	tsp	069	Instant	common
+Ophidian Eye	tsp	070	Enchantment - Aura	common
+Paradox Haze	tsp	071	Enchantment - Aura	uncommon
+Psionic Sliver	tsp	072	Creature - Sliver	rare
+Riftwing Cloudskate	tsp	073	Creature - Illusion	uncommon
+Sage of Epityr	tsp	074	Creature - Human Wizard	common
+Screeching Sliver	tsp	075	Creature - Sliver	common
+Shadow Sliver	tsp	076	Creature - Sliver	common
+Slipstream Serpent	tsp	077	Creature - Serpent	common
+Snapback	tsp	078	Instant	common
+Spell Burst	tsp	079	Instant	uncommon
+Spiketail Drakeling	tsp	080	Creature - Drake	common
+Sprite Noble	tsp	081	Creature - Faerie	rare
+Stormcloud Djinn	tsp	082	Creature - Djinn	uncommon
+Teferi, Mage of Zhalfir	tsp	083	Legendary Creature - Human Wizard	rare
+Telekinetic Sliver	tsp	084	Creature - Sliver	uncommon
+Temporal Eddy	tsp	085	Sorcery	common
+Think Twice	tsp	086	Instant	common
+Tolarian Sentinel	tsp	087	Creature - Human Spellshaper	common
+Trickbind	tsp	088	Instant	rare
+Truth or Tale	tsp	089	Instant	uncommon
+Vesuvan Shapeshifter	tsp	090	Creature - Shapeshifter	rare
+Viscerid Deepwalker	tsp	091	Creature - Homarid Warrior	common
+Voidmage Husher	tsp	092	Creature - Human Wizard	uncommon
+Walk the Aeons	tsp	093	Sorcery	rare
+Wipe Away	tsp	094	Instant	uncommon
+Assassinate	tsp	095	Sorcery	common
+Basal Sliver	tsp	096	Creature - Sliver	common
+Call to the Netherworld	tsp	097	Sorcery	common
+Corpulent Corpse	tsp	098	Creature - Zombie	common
+Curse of the Cabal	tsp	099	Sorcery	rare
+Cyclopean Giant	tsp	100	Creature - Zombie Giant	common
+Dark Withering	tsp	101	Instant	common
+Deathspore Thallid	tsp	102	Creature - Zombie Fungus	common
+Demonic Collusion	tsp	103	Sorcery	rare
+Dread Return	tsp	104	Sorcery	uncommon
+Drudge Reavers	tsp	105	Creature - Skeleton	common
+Endrek Sahr, Master Breeder	tsp	106	Legendary Creature - Human Wizard	rare
+Evil Eye of Urborg	tsp	107	Creature - Eye	uncommon
+Faceless Devourer	tsp	108	Creature - Nightmare Horror	uncommon
+Fallen Ideal	tsp	109	Enchantment - Aura	uncommon
+Feebleness	tsp	110	Enchantment - Aura	common
+Gorgon Recluse	tsp	111	Creature - Gorgon	common
+Haunting Hymn	tsp	112	Instant	uncommon
+Liege of the Pit	tsp	113	Creature - Demon	rare
+Lim-D&ucirc;l the Necromancer	tsp	114	Legendary Creature - Human Wizard	rare
+Living End	tsp	115	Sorcery	rare
+Magus of the Mirror	tsp	116	Creature - Human Wizard	rare
+Mana Skimmer	tsp	117	Creature - Leech	common
+Mindlash Sliver	tsp	118	Creature - Sliver	common
+Mindstab	tsp	119	Sorcery	common
+Nether Traitor	tsp	120	Creature - Spirit	rare
+Nightshade Assassin	tsp	121	Creature - Human Assassin	uncommon
+Phthisis	tsp	122	Sorcery	uncommon
+Pit Keeper	tsp	123	Creature - Human Wizard	common
+Plague Sliver	tsp	124	Creature - Sliver	rare
+Premature Burial	tsp	125	Sorcery	uncommon
+Psychotic Episode	tsp	126	Sorcery	common
+Sangrophage	tsp	127	Creature - Zombie	common
+Sengir Nosferatu	tsp	128	Creature - Vampire	rare
+Skittering Monstrosity	tsp	129	Creature - Horror	uncommon
+Skulking Knight	tsp	130	Creature - Zombie Knight	common
+Smallpox	tsp	131	Sorcery	uncommon
+Strangling Soot	tsp	132	Instant	common
+Stronghold Overseer	tsp	133	Creature - Demon	rare
+Sudden Death	tsp	134	Instant	uncommon
+Sudden Spoiling	tsp	135	Instant	rare
+Tendrils of Corruption	tsp	136	Instant	common
+Traitor's Clutch	tsp	137	Instant	common
+Trespasser il-Vec	tsp	138	Creature - Human Rogue	common
+Urborg Syphon-Mage	tsp	139	Creature - Human Spellshaper	common
+Vampiric Sliver	tsp	140	Creature - Sliver	uncommon
+Viscid Lemures	tsp	141	Creature - Spirit	common
+&AElig;therflame Wall	tsp	142	Creature - Wall	common
+Ancient Grudge	tsp	143	Instant	common
+Barbed Shocker	tsp	144	Creature - Insect	uncommon
+Basalt Gargoyle	tsp	145	Creature - Gargoyle	uncommon
+Blazing Blade Askari	tsp	146	Creature - Human Knight	common
+Bogardan Hellkite	tsp	147	Creature - Dragon	rare
+Bogardan Rager	tsp	148	Creature - Elemental	common
+Bonesplitter Sliver	tsp	149	Creature - Sliver	common
+Coal Stoker	tsp	150	Creature - Elemental	common
+Conflagrate	tsp	151	Sorcery	uncommon
+Empty the Warrens	tsp	152	Sorcery	common
+Firemaw Kavu	tsp	153	Creature - Kavu	uncommon
+Flamecore Elemental	tsp	154	Creature - Elemental	common
+Flowstone Channeler	tsp	155	Creature - Human Spellshaper	common
+Fortune Thief	tsp	156	Creature - Human Rogue	rare
+Fury Sliver	tsp	157	Creature - Sliver	uncommon
+Ghitu Firebreathing	tsp	158	Enchantment - Aura	common
+Goblin Skycutter	tsp	159	Creature - Goblin Warrior	common
+Grapeshot	tsp	160	Sorcery	common
+Greater Gargadon	tsp	161	Creature - Beast	rare
+Ground Rift	tsp	162	Sorcery	common
+Ib Halfheart, Goblin Tactician	tsp	163	Legendary Creature - Goblin Advisor	rare
+Ignite Memories	tsp	164	Sorcery	uncommon
+Ironclaw Buzzardiers	tsp	165	Creature - Orc Scout	common
+Jaya Ballard, Task Mage	tsp	166	Legendary Creature - Human Spellshaper	rare
+Keldon Halberdier	tsp	167	Creature - Human Warrior	common
+Lightning Axe	tsp	168	Instant	common
+Magus of the Scroll	tsp	169	Creature - Human Wizard	rare
+Mogg War Marshal	tsp	170	Creature - Goblin Warrior	common
+Norin the Wary	tsp	171	Legendary Creature - Human Warrior	rare
+Orcish Cannonade	tsp	172	Instant	common
+Pardic Dragon	tsp	173	Creature - Dragon	rare
+Plunder	tsp	174	Sorcery	common
+Reiterate	tsp	175	Instant	rare
+Rift Bolt	tsp	176	Sorcery	common
+Sedge Sliver	tsp	177	Creature - Sliver	rare
+Subterranean Shambler	tsp	178	Creature - Elemental	common
+Sudden Shock	tsp	179	Instant	uncommon
+Sulfurous Blast	tsp	180	Instant	uncommon
+Tectonic Fiend	tsp	181	Creature - Elemental	uncommon
+Thick-Skinned Goblin	tsp	182	Creature - Goblin Shaman	uncommon
+Two-Headed Sliver	tsp	183	Creature - Sliver	common
+Undying Rage	tsp	184	Enchantment - Aura	uncommon
+Viashino Bladescout	tsp	185	Creature - Viashino Scout	common
+Volcanic Awakening	tsp	186	Sorcery	uncommon
+Wheel of Fate	tsp	187	Sorcery	rare
+Word of Seizing	tsp	188	Instant	rare
+&AElig;ther Web	tsp	189	Enchantment - Aura	common
+Ashcoat Bear	tsp	190	Creature - Bear	common
+Aspect of Mongoose	tsp	191	Enchantment - Aura	uncommon
+Chameleon Blur	tsp	192	Instant	common
+Durkwood Baloth	tsp	193	Creature - Beast	common
+Durkwood Tracker	tsp	194	Creature - Giant	uncommon
+Fungus Sliver	tsp	195	Creature - Fungus Sliver	rare
+Gemhide Sliver	tsp	196	Creature - Sliver	common
+Glass Asp	tsp	197	Creature - Snake	common
+Greenseeker	tsp	198	Creature - Elf Spellshaper	common
+Havenwood Wurm	tsp	199	Creature - Wurm	common
+Herd Gnarr	tsp	200	Creature - Beast	common
+Hypergenesis	tsp	201	Sorcery	rare
+Krosan Grip	tsp	202	Instant	uncommon
+Magus of the Candelabra	tsp	203	Creature - Human Wizard	rare
+Might of Old Krosa	tsp	205	Instant	uncommon
+Might Sliver	tsp	204	Creature - Sliver	uncommon
+Molder	tsp	206	Instant	common
+Mwonvuli Acid-Moss	tsp	207	Sorcery	common
+Nantuko Shaman	tsp	208	Creature - Insect Shaman	common
+Pendelhaven Elder	tsp	209	Creature - Elf Shaman	uncommon
+Penumbra Spider	tsp	210	Creature - Spider	common
+Phantom Wurm	tsp	211	Creature - Wurm Spirit	uncommon
+Primal Forcemage	tsp	212	Creature - Elf Shaman	uncommon
+Savage Thallid	tsp	213	Creature - Fungus	common
+Scarwood Treefolk	tsp	214	Creature - Treefolk	common
+Scryb Ranger	tsp	215	Creature - Faerie	uncommon
+Search for Tomorrow	tsp	216	Sorcery	common
+Spectral Force	tsp	217	Creature - Elemental Spirit	rare
+Spike Tiller	tsp	218	Creature - Spike	rare
+Spinneret Sliver	tsp	219	Creature - Sliver	common
+Sporesower Thallid	tsp	220	Creature - Fungus	uncommon
+Sprout	tsp	221	Instant	common
+Squall Line	tsp	222	Instant	rare
+Stonewood Invocation	tsp	223	Instant	rare
+Strength in Numbers	tsp	224	Instant	common
+Thallid Germinator	tsp	225	Creature - Fungus	common
+Thallid Shell-Dweller	tsp	226	Creature - Fungus	common
+Thelon of Havenwood	tsp	227	Legendary Creature - Elf Druid	rare
+Thelonite Hermit	tsp	228	Creature - Elf Shaman	rare
+Thrill of the Hunt	tsp	229	Instant	common
+Tromp the Domains	tsp	230	Sorcery	uncommon
+Unyaro Bees	tsp	231	Creature - Insect	rare
+Verdant Embrace	tsp	232	Enchantment - Aura	rare
+Wormwood Dryad	tsp	233	Creature - Dryad	common
+Wurmcalling	tsp	234	Sorcery	rare
+Yavimaya Dryad	tsp	235	Creature - Dryad	uncommon
+Dementia Sliver	tsp	236	Creature - Sliver	uncommon
+Dralnu, Lich Lord	tsp	237	Legendary Creature - Zombie Wizard	rare
+Firewake Sliver	tsp	238	Creature - Sliver	uncommon
+Ghostflame Sliver	tsp	239	Creature - Sliver	uncommon
+Harmonic Sliver	tsp	240	Creature - Sliver	uncommon
+Ith, High Arcanist	tsp	241	Legendary Creature - Human Wizard	rare
+Kaervek the Merciless	tsp	242	Legendary Creature - Human Shaman	rare
+Mishra, Artificer Prodigy	tsp	243	Legendary Creature - Human Artificer	rare
+Opaline Sliver	tsp	244	Creature - Sliver	uncommon
+Saffi Eriksdotter	tsp	245	Legendary Creature - Human Scout	rare
+Scion of the Ur-Dragon	tsp	246	Legendary Creature - Dragon Avatar	rare
+Stonebrow, Krosan Hero	tsp	247	Legendary Creature - Centaur Warrior	rare
+Assembly-Worker	tsp	248	Artifact Creature - Assembly-Worker	uncommon
+Brass Gnat	tsp	249	Artifact Creature - Insect	common
+Candles of Leng	tsp	250	Artifact	rare
+Chromatic Star	tsp	251	Artifact	common
+Chronatog Totem	tsp	252	Artifact	uncommon
+Clockwork Hydra	tsp	253	Artifact Creature - Hydra	uncommon
+Foriysian Totem	tsp	254	Artifact	uncommon
+Gauntlet of Power	tsp	255	Artifact	rare
+Hivestone	tsp	256	Artifact	rare
+Jhoira's Timebug	tsp	257	Artifact Creature - Insect	common
+Locket of Yesterdays	tsp	258	Artifact	uncommon
+Lotus Bloom	tsp	259	Artifact	rare
+Paradise Plume	tsp	260	Artifact	uncommon
+Phyrexian Totem	tsp	261	Artifact	uncommon
+Prismatic Lens	tsp	262	Artifact	common
+Sarpadian Empires, Vol. VII	tsp	263	Artifact	rare
+Stuffy Doll	tsp	264	Artifact Creature - Construct	rare
+Thunder Totem	tsp	265	Artifact	uncommon
+Triskelavus	tsp	266	Artifact Creature - Construct	rare
+Venser's Sliver	tsp	267	Artifact Creature - Sliver	common
+Weatherseed Totem	tsp	268	Artifact	uncommon
+Academy Ruins	tsp	269	Legendary Land	rare
+Calciform Pools	tsp	270	Land	uncommon
+Dreadship Reef	tsp	271	Land	uncommon
+Flagstones of Trokair	tsp	272	Legendary Land	rare
+Fungal Reaches	tsp	273	Land	uncommon
+Gemstone Caverns	tsp	274	Legendary Land	rare
+Kher Keep	tsp	275	Legendary Land	rare
+Molten Slagheap	tsp	276	Land	uncommon
+Saltcrusted Steppe	tsp	277	Land	uncommon
+Swarmyard	tsp	278	Land	rare
+Terramorphic Expanse	tsp	279	Land	common
+Urza's Factory	tsp	280	Land - Urza's	uncommon
+Vesuva	tsp	281	Land	rare
+Plains	tsp	282	Basic Land - Plains	unknow
+Plains	tsp	283	Basic Land - Plains	unknow
+Plains	tsp	284	Basic Land - Plains	unknow
+Plains	tsp	285	Basic Land - Plains	unknow
+Island	tsp	286	Basic Land - Island	unknow
+Island	tsp	287	Basic Land - Island	unknow
+Island	tsp	288	Basic Land - Island	unknow
+Island	tsp	289	Basic Land - Island	unknow
+Swamp	tsp	290	Basic Land - Swamp	unknow
+Swamp	tsp	291	Basic Land - Swamp	unknow
+Swamp	tsp	292	Basic Land - Swamp	unknow
+Swamp	tsp	293	Basic Land - Swamp	unknow
+Mountain	tsp	294	Basic Land - Mountain	unknow
+Mountain	tsp	295	Basic Land - Mountain	unknow
+Mountain	tsp	296	Basic Land - Mountain	unknow
+Mountain	tsp	297	Basic Land - Mountain	unknow
+Forest	tsp	298	Basic Land - Forest	unknow
+Forest	tsp	299	Basic Land - Forest	unknow
+Forest	tsp	300	Basic Land - Forest	unknow
+Forest	tsp	301	Basic Land - Forest	unknow
+Akroma, Angel of Wrath	tsp	302	Legendary Creature - Angel	timeshifted
+Auratog	tsp	305	Creature - Atog	timeshifted
+Celestial Dawn	tsp	312	Enchantment	timeshifted
+Consecrate Land	tsp	316	Enchantment - Aura	timeshifted
+Defiant Vanguard	tsp	322	Creature - Human Rebel	timeshifted
+Disenchant	tsp	325	Instant	timeshifted
+Enduring Renewal	tsp	330	Enchantment	timeshifted
+Essence Sliver	tsp	332	Creature - Sliver	timeshifted
+Honorable Passage	tsp	349	Instant	timeshifted
+Icatian Javelineers	tsp	351	Creature - Human Soldier	timeshifted
+Moorish Cavalry	tsp	364	Creature - Human Knight	timeshifted
+Resurrection	tsp	376	Sorcery	timeshifted
+Sacred Mesa	tsp	377	Enchantment	timeshifted
+Soltari Priest	tsp	386	Creature - Soltari Cleric	timeshifted
+Squire	tsp	391	Creature - Human Soldier	timeshifted
+Valor	tsp	409	Creature - Incarnation	timeshifted
+Witch Hunter	tsp	420	Creature - Human Cleric	timeshifted
+Zhalfirin Commander	tsp	422	Creature - Human Knight	timeshifted
+Dand&acirc;n	tsp	319	Creature - Fish	timeshifted
+Flying Men	tsp	339	Creature - Human	timeshifted
+Ghost Ship	tsp	344	Creature - Spirit	timeshifted
+Giant Oyster	tsp	345	Creature - Oyster	timeshifted
+Leviathan	tsp	356	Creature - Leviathan	timeshifted
+Lord of Atlantis	tsp	358	Creature - Merfolk	timeshifted
+Merfolk Assassin	tsp	359	Creature - Merfolk Assassin	timeshifted
+Mistform Ultimus	tsp	363	Legendary Creature - Illusion	timeshifted
+Ovinomancer	tsp	370	Creature - Human Wizard	timeshifted
+Pirate Ship	tsp	373	Creature - Human Pirate	timeshifted
+Prodigal Sorcerer	tsp	374	Creature - Human Wizard	timeshifted
+Psionic Blast	tsp	375	Instant	timeshifted
+Sindbad	tsp	384	Creature - Human	timeshifted
+Stormscape Familiar	tsp	393	Creature - Bird	timeshifted
+Unstable Mutation	tsp	407	Enchantment - Aura	timeshifted
+Voidmage Prodigy	tsp	413	Creature - Human Wizard	timeshifted
+Whispers of the Muse	tsp	417	Instant	timeshifted
+Willbender	tsp	419	Creature - Human Wizard	timeshifted
+Avatar of Woe	tsp	307	Creature - Avatar	timeshifted
+Bad Moon	tsp	309	Enchantment	timeshifted
+Conspiracy	tsp	317	Enchantment	timeshifted
+Darkness	tsp	320	Instant	timeshifted
+Dauthi Slayer	tsp	321	Creature - Dauthi Soldier	timeshifted
+Evil Eye of Orms-by-Gore	tsp	333	Creature - Eye	timeshifted
+Faceless Butcher	tsp	334	Creature - Nightmare Horror	timeshifted
+Funeral Charm	tsp	340	Instant	timeshifted
+Sengir Autocrat	tsp	380	Creature - Human	timeshifted
+Shadow Guildmage	tsp	382	Creature - Human Wizard	timeshifted
+Soul Collector	tsp	387	Creature - Vampire	timeshifted
+Stupor	tsp	394	Sorcery	timeshifted
+Swamp Mosquito	tsp	396	Creature - Insect	timeshifted
+Twisted Abomination	tsp	403	Creature - Zombie Mutant	timeshifted
+Uncle Istvan	tsp	404	Creature - Human	timeshifted
+Undead Warchief	tsp	405	Creature - Zombie	timeshifted
+Undertaker	tsp	406	Creature - Human Spellshaper	timeshifted
+Withered Wretch	tsp	421	Creature - Zombie Cleric	timeshifted
+Avalanche Riders	tsp	306	Creature - Human Nomad	timeshifted
+Browbeat	tsp	310	Sorcery	timeshifted
+Desolation Giant	tsp	324	Creature - Giant	timeshifted
+Disintegrate	tsp	326	Sorcery	timeshifted
+Dragon Whelp	tsp	328	Creature - Dragon	timeshifted
+Dragonstorm	tsp	329	Sorcery	timeshifted
+Eron the Relentless	tsp	331	Legendary Creature - Human Rogue	timeshifted
+Fiery Temper	tsp	337	Instant	timeshifted
+Fire Whip	tsp	338	Enchantment - Aura	timeshifted
+Goblin Snowman	tsp	346	Creature - Goblin	timeshifted
+Kobold Taskmaster	tsp	354	Creature - Kobold	timeshifted
+Orcish Librarian	tsp	368	Creature - Orc	timeshifted
+Orgg	tsp	369	Creature - Orgg	timeshifted
+Pandemonium	tsp	371	Enchantment	timeshifted
+Suq'Ata Lancer	tsp	395	Creature - Human Knight	timeshifted
+Tribal Flames	tsp	402	Sorcery	timeshifted
+Uthden Troll	tsp	408	Creature - Troll	timeshifted
+Wildfire Emissary	tsp	418	Creature - Efreet	timeshifted
+Avoid Fate	tsp	308	Instant	timeshifted
+Call of the Herd	tsp	311	Sorcery	timeshifted
+Cockatrice	tsp	315	Creature - Cockatrice	timeshifted
+Craw Giant	tsp	318	Creature - Giant	timeshifted
+Gaea's Blessing	tsp	341	Sorcery	timeshifted
+Gaea's Liege	tsp	342	Creature - Avatar	timeshifted
+Hail Storm	tsp	348	Instant	timeshifted
+Hunting Moa	tsp	350	Creature - Bird Beast	timeshifted
+Jolrael, Empress of Beasts	tsp	353	Legendary Creature - Human Spellshaper	timeshifted
+Krosan Cloudscraper	tsp	355	Creature - Beast Mutant	timeshifted
+Scragnoth	tsp	379	Creature - Beast	timeshifted
+Spike Feeder	tsp	388	Creature - Spike	timeshifted
+Spitting Slug	tsp	390	Creature - Slug	timeshifted
+Thallid	tsp	398	Creature - Fungus	timeshifted
+Thornscape Battlemage	tsp	400	Creature - Elf Wizard	timeshifted
+Verdeloth the Ancient	tsp	410	Legendary Creature - Treefolk	timeshifted
+Wall of Roots	tsp	414	Creature - Plant Wall	timeshifted
+Whirling Dervish	tsp	416	Creature - Human Monk	timeshifted
+Coalition Victory	tsp	314	Sorcery	timeshifted
+Fiery Justice	tsp	336	Sorcery	timeshifted
+Jasmine Boreal	tsp	352	Legendary Creature - Human	timeshifted
+Lightning Angel	tsp	357	Creature - Angel	timeshifted
+Merieke Ri Berit	tsp	360	Legendary Creature - Human	timeshifted
+Mystic Enforcer	tsp	365	Creature - Human Nomad Mystic	timeshifted
+Mystic Snake	tsp	366	Creature - Snake	timeshifted
+Nicol Bolas	tsp	367	Legendary Creature - Elder Dragon	timeshifted
+Shadowmage Infiltrator	tsp	383	Creature - Human Wizard	timeshifted
+Sol'kanar the Swamp King	tsp	385	Legendary Creature - Demon	timeshifted
+Spined Sliver	tsp	389	Creature - Sliver	timeshifted
+Stormbind	tsp	392	Enchantment	timeshifted
+Teferi's Moat	tsp	397	Enchantment	timeshifted
+Vhati il-Dal	tsp	411	Legendary Creature - Human Warrior	timeshifted
+Void	tsp	412	Sorcery	timeshifted
+Assault / Battery	tsp	304	Sorcery	timeshifted
+Claws of Gix	tsp	313	Artifact	timeshifted
+Dodecapod	tsp	327	Artifact Creature - Golem	timeshifted
+Feldon's Cane	tsp	335	Artifact	timeshifted
+Grinning Totem	tsp	347	Artifact	timeshifted
+Mindless Automaton	tsp	361	Artifact Creature - Construct	timeshifted
+Mirari	tsp	362	Legendary Artifact	timeshifted
+The Rack	tsp	399	Artifact	timeshifted
+Serrated Arrows	tsp	381	Artifact	timeshifted
+Tormod's Crypt	tsp	401	Artifact	timeshifted
+War Barge	tsp	415	Artifact	timeshifted
+Arena	tsp	303	Land	timeshifted
+Desert	tsp	323	Land - Desert	timeshifted
+Gemstone Mine	tsp	343	Land	timeshifted
+Pendelhaven	tsp	372	Legendary Land	timeshifted
+Safe Haven	tsp	378	Land	timeshifted

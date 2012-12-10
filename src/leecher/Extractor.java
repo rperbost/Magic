@@ -126,6 +126,7 @@ public class Extractor {
 		        			"pics/lil/"+set+"/"+index+".jpg"
 		        	);		        	
 		        }
+		        
 		      }
 		      in.close();
 		    } catch (Exception e) {

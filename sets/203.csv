@@ -1,0 +1,277 @@
+Abbey Griffin	isd	001	Creature - Griffin	common
+Angel of Flight Alabaster	isd	002	Creature - Angel	rare
+Angelic Overseer	isd	003	Creature - Angel	mythic
+Avacynian Priest	isd	004	Creature - Human Cleric	common
+Bonds of Faith	isd	005	Enchantment - Aura	common
+Champion of the Parish	isd	006	Creature - Human Soldier	rare
+Chapel Geist	isd	007	Creature - Spirit	common
+Cloistered Youth	isd	008		uncommon
+Dearly Departed	isd	009	Creature - Spirit	rare
+Divine Reckoning	isd	010	Sorcery	rare
+Doomed Traveler	isd	011	Creature - Human Soldier	common
+Elder Cathar	isd	012	Creature - Human Soldier	common
+Elite Inquisitor	isd	013	Creature - Human Soldier	rare
+Feeling of Dread	isd	014	Instant	common
+Fiend Hunter	isd	015	Creature - Human Cleric	uncommon
+Gallows Warden	isd	016	Creature - Spirit	uncommon
+Geist-Honored Monk	isd	017	Creature - Human Monk	rare
+Ghostly Possession	isd	018	Enchantment - Aura	common
+Intangible Virtue	isd	019	Enchantment	uncommon
+Mausoleum Guard	isd	020	Creature - Human Scout	uncommon
+Mentor of the Meek	isd	021	Creature - Human Soldier	rare
+Midnight Haunting	isd	022	Instant	uncommon
+Mikaeus, the Lunarch	isd	023	Legendary Creature - Human Cleric	mythic
+Moment of Heroism	isd	024	Instant	common
+Nevermore	isd	025	Enchantment	rare
+Paraselene	isd	032	Sorcery	uncommon
+Purify the Grave	isd	027	Instant	uncommon
+Rally the Peasants	isd	033	Instant	uncommon
+Rebuke	isd	029	Instant	common
+Selfless Cathar	isd	030	Creature - Human Cleric	common
+Silverchase Fox	isd	031	Creature - Fox	common
+Slayer of the Wicked	isd	026	Creature - Human Soldier	uncommon
+Smite the Monstrous	isd	034	Instant	common
+Spare from Evil	isd	035	Instant	common
+Spectral Rider	isd	028	Creature - Spirit Knight	uncommon
+Stony Silence	isd	036	Enchantment	rare
+Thraben Purebloods	isd	037	Creature - Hound	common
+Thraben Sentry	isd	038		common
+Unruly Mob	isd	039	Creature - Human	common
+Urgent Exorcism	isd	040	Instant	common
+Village Bell-Ringer	isd	041	Creature - Human Scout	common
+Voiceless Spirit	isd	042	Creature - Spirit	common
+Armored Skaab	isd	043	Creature - Zombie Warrior	common
+Back from the Brink	isd	044	Enchantment	rare
+Battleground Geist	isd	045	Creature - Spirit	uncommon
+Cackling Counterpart	isd	046	Instant	rare
+Civilized Scholar	isd	047		uncommon
+Claustrophobia	isd	048	Enchantment - Aura	common
+Curiosity	isd	049	Enchantment - Aura	uncommon
+Curse of the Bloody Tome	isd	050	Enchantment - Aura Curse	common
+Delver of Secrets	isd	051		common
+Deranged Assistant	isd	052	Creature - Human Wizard	common
+Dissipate	isd	053	Instant	uncommon
+Dream Twist	isd	054	Instant	common
+Forbidden Alchemy	isd	055	Instant	common
+Fortress Crab	isd	056	Creature - Crab	common
+Frightful Delusion	isd	057	Instant	common
+Grasp of Phantoms	isd	058	Sorcery	uncommon
+Hysterical Blindness	isd	059	Instant	common
+Invisible Stalker	isd	060	Creature - Human Rogue	uncommon
+Laboratory Maniac	isd	061	Creature - Human Wizard	rare
+Lantern Spirit	isd	062	Creature - Spirit	uncommon
+Lost in the Mist	isd	063	Instant	common
+Ludevic's Test Subject	isd	064		rare
+Makeshift Mauler	isd	065	Creature - Zombie Horror	common
+Memory's Journey	isd	066	Instant	uncommon
+Mindshrieker	isd	067	Creature - Spirit Bird	rare
+Mirror-Mad Phantasm	isd	068	Creature - Spirit	mythic
+Moon Heron	isd	069	Creature - Spirit Bird	common
+Murder of Crows	isd	070	Creature - bird	uncommon
+Rooftop Storm	isd	071	Enchantment	rare
+Runic Repetition	isd	072	Sorcery	uncommon
+Selhoff Occultist	isd	073	Creature - Human Rogue	common
+Sensory Deprivation	isd	074	Enchantment - Aura	common
+Silent Departure	isd	075	Sorcery	common
+Skaab Goliath	isd	076	Creature - Zombie Giant	uncommon
+Skaab Ruinator	isd	077	Creature - Zombie Horror	mythic
+Snapcaster Mage	isd	078	Creature - Human Wizard	rare
+Spectral Flight	isd	079	Enchantment - Aura	common
+Stitched Drake	isd	080	Creature - Zombie Drake	common
+Stitcher's Apprentice	isd	081	Creature - Homunculus	common
+Sturmgeist	isd	082	Creature - Spirit	rare
+Think Twice	isd	083	Instant	common
+Undead Alchemist	isd	084	Creature - Zombie	rare
+Abattoir Ghoul	isd	085	Creature - Zombie	uncommon
+Altar's Reap	isd	086	Instant	common
+Army of the Damned	isd	087	Sorcery	mythic
+Bitterheart Witch	isd	088	Creature - Human Shaman	uncommon
+Bloodgift Demon	isd	089	Creature - Demon	rare
+Bloodline Keeper	isd	090		rare
+Brain Weevil	isd	091	Creature - Insect	common
+Bump in the Night	isd	092	Sorcery	common
+Corpse Lunge	isd	093	Instant	common
+Curse of Death's Hold	isd	094	Enchantment - Aura Curse	rare
+Curse of Oblivion	isd	095	Enchantment - Aura Curse	common
+Dead Weight	isd	096	Enchantment - Aura	common
+Diregraf Ghoul	isd	097	Creature - Zombie	uncommon
+Disciple of Griselbrand	isd	098	Creature - Human Cleric	uncommon
+Endless Ranks of the Dead	isd	099	Enchantment	rare
+Falkenrath Noble	isd	100	Creature - Vampire	uncommon
+Ghoulcaller's Chant	isd	101	Sorcery	common
+Ghoulraiser	isd	102	Creature - Zombie	common
+Gruesome Deformity	isd	103	Enchantment - Aura	common
+Heartless Summoning	isd	104	Enchantment	rare
+Liliana of the Veil	isd	105	Planeswalker - Liliana	mythic
+Manor Skeleton	isd	106	Creature - Skeleton	common
+Markov Patrician	isd	107	Creature - Vampire	common
+Maw of the Mire	isd	108	Sorcery	common
+Moan of the Unhallowed	isd	109	Sorcery	uncommon
+Morkrut Banshee	isd	110	Creature - Spirit	uncommon
+Night Terrors	isd	111	Sorcery	common
+Reaper from the Abyss	isd	112	Creature - Demon	mythic
+Rotting Fensnake	isd	113	Creature - Zombie Snake	common
+Screeching Bat	isd	114		uncommon
+Sever the Bloodline	isd	115	Sorcery	rare
+Skeletal Grimace	isd	116	Enchantment - Aura	common
+Skirsdag High Priest	isd	117	Creature - Human Cleric	rare
+Stromkirk Patrol	isd	118	Creature - Vampire Soldier	common
+Tribute to Hunger	isd	119	Instant	uncommon
+Typhoid Rats	isd	120	Creature - Rat	common
+Unbreathing Horde	isd	121	Creature - Zombie	rare
+Unburial Rites	isd	122	Sorcery	uncommon
+Vampire Interloper	isd	123	Creature - Vampire Scout	common
+Victim of Night	isd	124	Instant	common
+Village Cannibals	isd	125	Creature - Human	uncommon
+Walking Corpse	isd	126	Creature - Zombie	common
+Ancient Grudge	isd	127	Instant	common
+Ashmouth Hound	isd	128	Creature - Elemental	 Hound	common
+Balefire Dragon	isd	129	Creature - Dragon	mythic
+Blasphemous Act	isd	130	Sorcery	rare
+Bloodcrazed Neonate	isd	131	Creature - Vampire	common
+Brimstone Volley	isd	132	Instant	common
+Burning Vengeance	isd	135	Enchantment	uncommon
+Charmbreaker Devils	isd	133	Creature - Devil	rare
+Crossway Vampire	isd	136	Creature - Vampire	common
+Curse of Stalked Prey	isd	134	Enchantment - Aura Curse	rare
+Curse of the Nightly Hunt	isd	137	Enchantment - Aura Curse	uncommon
+Curse of the Pierced Heart	isd	138	Enchantment - Aura Curse	common
+Desperate Ravings	isd	139	Instant	uncommon
+Devil's Play	isd	140	Sorcery	rare
+Falkenrath Marauders	isd	144	Creature - Vampire Warrior	rare
+Feral Ridgewolf	isd	142	Creature - Wolf	common
+Furor of the Bitten	isd	143	Enchantment - Aura	common
+Geistflame	isd	141	Instant	common
+Hanweir Watchkeep	isd	147		uncommon
+Harvest Pyre	isd	146	Instant	common
+Heretic's Punishment	isd	145	Enchantment	rare
+Infernal Plunge	isd	148	Sorcery	common
+Instigator Gang	isd	150		rare
+Into the Maw of Hell	isd	151	Sorcery	uncommon
+Kessig Wolf	isd	149	Creature - Wolf	common
+Kruin Outlaw	isd	152		rare
+Night Revelers	isd	153	Creature - Vampire	common
+Nightbird's Clutches	isd	154	Sorcery	common
+Past in Flames	isd	155	Sorcery	mythic
+Pitchburn Devils	isd	156	Creature - Devil	common
+Rage Thrower	isd	157	Creature - Human Shaman	uncommon
+Rakish Heir	isd	158	Creature - Vampire	uncommon
+Reckless Waif	isd	159		uncommon
+Riot Devils	isd	162	Creature - Devil	common
+Rolling Temblor	isd	163	Sorcery	uncommon
+Scourge of Geier Reach	isd	160	Creature - Elemental	uncommon
+Skirsdag Cultist	isd	161	Creature - Human Shaman	uncommon
+Stromkirk Noble	isd	164	Creature - Vampire	rare
+Tormented Pariah	isd	165		common
+Traitorous Blood	isd	166	Sorcery	common
+Vampiric Fury	isd	167	Instant	common
+Village Ironsmith	isd	168		common
+Ambush Viper	isd	169	Creature - Snake	common
+Avacyn's Pilgrim	isd	170	Creature - Human Monk	common
+Boneyard Wurm	isd	171	Creature - Wurm	uncommon
+Bramblecrush	isd	172	Sorcery	uncommon
+Caravan Vigil	isd	173	Sorcery	common
+Creeping Renaissance	isd	174	Sorcery	rare
+Darkthicket Wolf	isd	175	Creature - Wolf	common
+Daybreak Ranger	isd	176		rare
+Elder of Laurels	isd	177	Creature - Human Advisor	rare
+Essence of the Wild	isd	178	Creature - Avatar	mythic
+Festerhide Boar	isd	179	Creature - Boar	common
+Full Moon's Rise	isd	180	Enchantment	uncommon
+Garruk Relentless	isd	181		mythic
+Gatstaf Shepherd	isd	182		uncommon
+Gnaw to the Bone	isd	183	Instant	common
+Grave Bramble	isd	184	Creature - Plant	common
+Grizzled Outcasts	isd	185		common
+Gutter Grime	isd	186	Enchantment	rare
+Hamlet Captain	isd	187	Creature - Human Warrior	uncommon
+Hollowhenge Scavenger	isd	188	Creature - Elemental	uncommon
+Kessig Cagebreakers	isd	189	Creature - Human Rogue	rare
+Kindercatch	isd	190	Creature - Spirit	common
+Lumberknot	isd	191	Creature - Treefolk	uncommon
+Make a Wish	isd	192	Sorcery	uncommon
+Mayor of Avabruck	isd	193		rare
+Moldgraf Monstrosity	isd	194	Creature - Insect	rare
+Moonmist	isd	195	Instant	common
+Mulch	isd	196	Sorcery	common
+Naturalize	isd	197	Instant	common
+Orchard Spirit	isd	198	Creature - Spirit	common
+Parallel Lives	isd	199	Enchantment	rare
+Prey Upon	isd	200	Sorcery	common
+Ranger's Guile	isd	201	Instant	common
+Somberwald Spider	isd	202	Creature - Spider	common
+Spider Spawning	isd	203	Sorcery	uncommon
+Spidery Grasp	isd	204	Instant	common
+Splinterfright	isd	206	Creature - Elemental	rare
+Travel Preparations	isd	205	Sorcery	common
+Tree of Redemption	isd	207	Creature - Plant	mythic
+Ulvenwald Mystics	isd	208		uncommon
+Villagers of Estwald	isd	209		common
+Woodland Sleuth	isd	210	Creature - Human Scout	common
+Wreath of Geists	isd	211	Enchantment - Aura	uncommon
+Evil Twin	isd	212	Creature - Shapeshifter	rare
+Geist of Saint Traft	isd	213	Legendary Creature - Spirit Cleric	mythic
+Grimgrin, Corpse-Born	isd	214	Legendary Creature - Zombie Warrior	mythic
+Olivia Voldaren	isd	215	Legendary Creature - Vampire	mythic
+Blazing Torch	isd	216	Artifact - Equipment	common
+Butcher's Cleaver	isd	217	Artifact - Equipment	uncommon
+Cellar Door	isd	218	Artifact	uncommon
+Cobbled Wings	isd	219	Artifact - Equipment	common
+Creepy Doll	isd	220	Artifact Creature - Construct	rare
+Demonmail Hauberk	isd	221	Artifact - Equipment	uncommon
+Galvanic Juggernaut	isd	222	Artfact Creature - Juggernaut	uncommon
+Geistcatcher's Rig	isd	223	Artfact Creature - Construct	uncommon
+Ghoulcaller's Bell	isd	224	Artifact	common
+Graveyard Shovel	isd	225	Artifact	uncommon
+Grimoire of the Dead	isd	226	Legendary Artifact	mythic
+Inquisitor's Flail	isd	227	Artifact - Equipment	uncommon
+Manor Gargoyle	isd	228	Artfact Creature - Gargoyle	rare
+Mask of Avacyn	isd	229	Artifact - Equipment	uncommon
+One-Eyed Scarecrow	isd	230	Artifact Creature - Scarecrow	common
+Runechanter's Pike	isd	231	Artifact - Equipment	rare
+Sharpened Pitchfork	isd	233	Artifact - Equipment	uncommon
+Silver-Inlaid Dagger	isd	232	Artifact - Equipment	uncommon
+Traveler's Amulet	isd	234	Artifact	common
+Trepanation Blade	isd	235	Artifact - Equipment	uncommon
+Witchbane Orb	isd	236	Artifact	rare
+Wooden Stake	isd	237	Artifact - Equipment	common
+Clifftop Retreat	isd	238	Land	rare
+Gavony Township	isd	239	Land	rare
+Ghost Quarter	isd	240	Land	uncommon
+Hinterland Harbor	isd	241	Land	rare
+Isolated Chapel	isd	242	Land	rare
+Kessig Wolf Run	isd	243	Land	rare
+Moorland Haunt	isd	244	Land	rare
+Nephalia Drownyard	isd	245	Land	rare
+Shimmering Grotto	isd	247	Land	common
+Stensia Bloodhall	isd	246	Land	rare
+Sulfur Falls	isd	248	Land	rare
+Woodland Cemetery	isd	249	Land	rare
+Plains	isd	250	Basic Land - Plains	unknow
+Plains	isd	251	Basic Land - Plains	unknow
+Plains	isd	252	Basic Land - Plains	unknow
+Island	isd	253	Basic Land - Island	unknow
+Island	isd	254	Basic Land - Island	unknow
+Island	isd	255	Basic Land - Island	unknow
+Swamp	isd	256	Basic Land - Swamp	unknow
+Swamp	isd	257	Basic Land - Swamp	unknow
+Swamp	isd	258	Basic Land - Swamp	unknow
+Mountain	isd	259	Basic Land - Mountain	unknow
+Mountain	isd	260	Basic Land - Mountain	unknow
+Mountain	isd	261	Basic Land - Mountain	unknow
+Forest	isd	262	Basic Land - Forest	unknow
+Forest	isd	263	Basic Land - Forest	unknow
+Forest	isd	264	Basic Land - Forest	unknow
+Checklist card	isd	280		unknow
+Angel	isd	284	Creature - Angel	unknow
+Spirit	isd	285	Creature - Spirit	unknow
+Homunculus	isd	287	Creature - Homunculus	unknow
+Demon	isd	289	Creature - Demon	unknow
+Vampire	isd	290	Creature - Vampire	unknow
+Wolf	isd	291	Creature - Wolf	unknow
+Zombie	isd	288	Creature - Zombie	unknow
+Zombie	isd	286	Creature - Zombie	unknow
+Zombie	isd	292	Creature - Zombie	unknow
+Ooze	isd	294	Creature - Ooze	unknow
+Spider	isd	293	Creature - Spider	unknow
+Wolf	isd	295	Creature - Wolf	unknow

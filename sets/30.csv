@@ -1,0 +1,350 @@
+Afterlife	mir	004	Instant	uncommon
+Alarum	mir	006	Instant	common
+Auspicious Ancestor	mir	015	Creature - Human Cleric	rare
+Benevolent Unicorn	mir	024	Creature - Unicorn	common
+Blinding Light	mir	029	Sorcery	uncommon
+Celestial Dawn	mir	044	Enchantment	rare
+Civic Guildmage	mir	053	Creature - Human Wizard	common
+Dazzling Beauty	mir	068	Instant	common
+Disempower	mir	073	Instant	common
+Disenchant	mir	074	Instant	common
+Divine Offering	mir	076	Instant	common
+Divine Retribution	mir	077	Instant	rare
+Ekundu Griffin	mir	087	Creature - Griffin	common
+Enlightened Tutor	mir	094	Instant	uncommon
+Ethereal Champion	mir	097	Creature - Avatar	rare
+Favorable Destiny	mir	099	Enchantment - Aura	uncommon
+Femeref Healer	mir	101	Creature - Human Cleric	common
+Femeref Knight	mir	102	Creature - Human Knight	common
+Femeref Scouts	mir	103	Creature - Human Scout	common
+Healing Salve	mir	143	Instant	common
+Illumination	mir	148	Instant	uncommon
+Iron Tusk Elephant	mir	151	Creature - Elephant	uncommon
+Ivory Charm	mir	156	Instant	common
+Jabari's Influence	mir	157	Instant	rare
+Mangara's Blessing	mir	177	Instant	uncommon
+Mangara's Equity	mir	178	Enchantment	uncommon
+Melesse Spirit	mir	183	Creature - Angel Spirit	uncommon
+Mtenda Griffin	mir	199	Creature - Griffin	uncommon
+Mtenda Herder	mir	200	Creature - Human Scout	common
+Noble Elephant	mir	205	Creature - Elephant	common
+Null Chamber	mir	207	World Enchantment	rare
+Pacifism	mir	208	Enchantment - Aura	common
+Pearl Dragon	mir	212	Creature - Dragon	rare
+Prismatic Circle	mir	226	Enchantment	common
+Rashida Scalebane	mir	236	Legendary Creature - Human Soldier	rare
+Ritual of Steel	mir	248	Enchantment - Aura	common
+Sacred Mesa	mir	253	Enchantment	rare
+Shadowbane	mir	268	Instant	uncommon
+Sidar Jabari	mir	274	Legendary Creature - Human Knight	rare
+Soul Echo	mir	279	Enchantment	rare
+Spectral Guardian	mir	283	Creature - Spirit	rare
+Sunweb	mir	290	Creature - Wall	rare
+Teremko Griffin	mir	308	Creature - Griffin	common
+Unyaro Griffin	mir	321	Creature - Griffin	uncommon
+Vigilant Martyr	mir	326	Creature - Human Cleric	uncommon
+Wall of Resistance	mir	333	Creature - Wall	common
+Ward of Lights	mir	335	Enchantment - Aura	common
+Yare	mir	344	Instant	rare
+Zhalfirin Commander	mir	346	Creature - Human Knight	uncommon
+Zhalfirin Knight	mir	347	Creature - Human Knight	common
+Zuberi, Golden Feather	mir	350	Legendary Creature - Griffin	rare
+Ancestral Memories	mir	010	Sorcery	rare
+Azimaet Drake	mir	016	Creature - Drake	common
+Bay Falcon	mir	022	Creature - Bird	common
+Bazaar of Wonders	mir	023	World Enchantment	rare
+Boomerang	mir	033	Instant	common
+Cerulean Wyvern	mir	045	Creature - Drake	uncommon
+Cloak of Invisibility	mir	054	Enchantment - Aura	common
+Coral Fighters	mir	056	Creature - Merfolk Soldier	uncommon
+Daring Apprentice	mir	065	Creature - Human Wizard	rare
+Dissipate	mir	075	Instant	uncommon
+Dream Cache	mir	080	Sorcery	common
+Dream Fighter	mir	081	Creature - Human Soldier	common
+Energy Vortex	mir	092	Enchantment	rare
+Ether Well	mir	096	Instant	uncommon
+Flash	mir	111	Instant	rare
+Floodgate	mir	113	Creature - Wall	uncommon
+Hakim, Loreweaver	mir	135	Legendary Creature - Human Wizard	rare
+Harmattan Efreet	mir	140	Creature - Efreet	uncommon
+Jolt	mir	159	Instant	common
+Kukemssa Pirates	mir	167	Creature - Human Pirate	rare
+Kukemssa Serpent	mir	168	Creature - Serpent	common
+Meddle	mir	182	Instant	uncommon
+Memory Lapse	mir	184	Instant	common
+Merfolk Raiders	mir	185	Creature - Merfolk Soldier	common
+Merfolk Seer	mir	186	Creature - Merfolk Wizard	common
+Mind Bend	mir	187	Instant	uncommon
+Mind Harness	mir	188	Enchantment - Aura	uncommon
+Mist Dragon	mir	192	Creature - Dragon	rare
+Mystical Tutor	mir	202	Instant	uncommon
+Political Trickery	mir	221	Sorcery	rare
+Polymorph	mir	222	Sorcery	rare
+Power Sink	mir	223	Instant	common
+Prismatic Lace	mir	227	Instant	rare
+Psychic Transfer	mir	228	Sorcery	rare
+Ray of Command	mir	238	Instant	common
+Reality Ripple	mir	240	Instant	common
+Sandbar Crocodile	mir	255	Creature - Crocodile	common
+Sapphire Charm	mir	257	Instant	common
+Sea Scryer	mir	260	Creature - Merfolk Wizard	common
+Shaper Guildmage	mir	270	Creature - Human Wizard	common
+Shimmer	mir	273	Enchantment	rare
+Soar	mir	278	Enchantment - Aura	common
+Suq'Ata Firewalker	mir	292	Creature - Human Wizard	uncommon
+Taniwha	mir	299	Legendary Creature - Serpent	rare
+Teferi's Curse	mir	301	Enchantment - Aura	common
+Teferi's Drake	mir	302	Creature - Drake	common
+Teferi's Imp	mir	303	Creature - Imp	rare
+Thirst	mir	309	Enchantment - Aura	common
+Tidal Wave	mir	310	Instant	uncommon
+Vaporous Djinn	mir	323	Creature - Djinn	uncommon
+Wave Elemental	mir	337	Creature - Elemental	uncommon
+Abyssal Hunter	mir	001	Creature - Human Assassin	rare
+Ashen Powder	mir	013	Sorcery	rare
+Barbed-Back Wurm	mir	019	Creature - Wurm	uncommon
+Binding Agony	mir	026	Enchantment - Aura	common
+Blighted Shaman	mir	027	Creature - Human Cleric Shaman	uncommon
+Bone Harvest	mir	031	Instant	common
+Breathstealer	mir	034	Creature - Nightstalker	common
+Cadaverous Knight	mir	040	Creature - Zombie Knight	common
+Carrion	mir	042	Instant	rare
+Catacomb Dragon	mir	043	Creature - Dragon	rare
+Choking Sands	mir	050	Sorcery	common
+Crypt Cobra	mir	060	Creature - Snake	uncommon
+Dark Banishing	mir	066	Instant	common
+Dark Ritual	mir	067	Instant	common
+Dirtwater Wraith	mir	071	Creature - Wraith	common
+Drain Life	mir	078	Sorcery	common
+Dread Specter	mir	079	Creature - Specter	uncommon
+Ebony Charm	mir	085	Instant	common
+Enfeeblement	mir	093	Enchantment - Aura	common
+Feral Shadow	mir	104	Creature - Nightstalker	common
+Fetid Horror	mir	105	Creature - Shade Horror	common
+Forbidden Crypt	mir	116	Enchantment	rare
+Forsaken Wastes	mir	121	World Enchantment	rare
+Grave Servitude	mir	131	Enchantment - Aura	common
+Gravebane Zombie	mir	132	Creature - Zombie	common
+Harbinger of Night	mir	138	Creature - Spirit	rare
+Infernal Contract	mir	150	Sorcery	rare
+Kaervek's Hex	mir	163	Sorcery	uncommon
+Mire Shade	mir	190	Creature - Shade	uncommon
+Nocturnal Raid	mir	206	Instant	uncommon
+Painful Memories	mir	209	Sorcery	uncommon
+Phyrexian Tribute	mir	215	Sorcery	rare
+Purraj of Urborg	mir	230	Legendary Creature - Cat Warrior	rare
+Ravenous Vampire	mir	237	Creature - Vampire	uncommon
+Reign of Terror	mir	245	Sorcery	uncommon
+Restless Dead	mir	247	Creature - Skeleton	common
+Sewer Rats	mir	266	Creature - Rat	common
+Shadow Guildmage	mir	267	Creature - Human Wizard	common
+Shallow Grave	mir	269	Instant	rare
+Shauku, Endbringer	mir	272	Legendary Creature - Vampire	rare
+Skulking Ghost	mir	276	Creature - Spirit	common
+Soul Rend	mir	280	Instant	uncommon
+Soulshriek	mir	281	Instant	common
+Spirit of the Night	mir	284	Legendary Creature - Demon Spirit	rare
+Stupor	mir	288	Sorcery	uncommon
+Tainted Specter	mir	297	Creature - Specter	rare
+Tombstone Stairwell	mir	311	World Enchantment	rare
+Urborg Panther	mir	322	Creature - Nightstalker Cat	common
+Wall of Corpses	mir	332	Creature - Wall	common
+Withering Boon	mir	342	Instant	uncommon
+Zombie Mob	mir	349	Creature - Zombie	uncommon
+Agility	mir	005	Enchantment - Aura	common
+Aleatory	mir	007	Instant	uncommon
+Armorer Guildmage	mir	012	Creature - Human Wizard	common
+Barreling Attack	mir	020	Instant	rare
+Blind Fury	mir	028	Instant	uncommon
+Blistering Barrier	mir	030	Creature - Wall	common
+Builder's Bane	mir	036	Sorcery	common
+Burning Palm Efreet	mir	037	Creature - Efreet	uncommon
+Burning Shield Askari	mir	038	Creature - Human Knight	common
+Chaos Charm	mir	046	Instant	common
+Chaosphere	mir	047	World Enchantment	rare
+Cinder Cloud	mir	051	Instant	uncommon
+Consuming Ferocity	mir	055	Enchantment - Aura	uncommon
+Crimson Hellkite	mir	058	Creature - Dragon	rare
+Crimson Roc	mir	059	Creature - Bird	uncommon
+Dwarven Miner	mir	082	Creature - Dwarf	uncommon
+Dwarven Nomad	mir	083	Creature - Dwarf Nomad	common
+Ekundu Cyclops	mir	086	Creature - Cyclops	common
+Emberwilde Djinn	mir	090	Creature - Djinn	rare
+Final Fortune	mir	106	Instant	rare
+Firebreathing	mir	107	Enchantment - Aura	common
+Flame Elemental	mir	109	Creature - Elemental	uncommon
+Flare	mir	110	Instant	common
+Goblin Elite Infantry	mir	125	Creature - Goblin Warrior	common
+Goblin Scouts	mir	126	Sorcery	uncommon
+Goblin Soothsayer	mir	127	Creature - Goblin Shaman	uncommon
+Goblin Tinkerer	mir	128	Creature - Goblin Artificer	common
+Hammer of Bogardan	mir	137	Sorcery	rare
+Hivis of the Scale	mir	144	Legendary Creature - Viashino Shaman	rare
+Illicit Auction	mir	147	Sorcery	rare
+Incinerate	mir	149	Instant	common
+Kaervek's Torch	mir	165	Sorcery	common
+Lightning Reflexes	mir	171	Enchantment - Aura	common
+Pyric Salamander	mir	231	Creature - Salamander	common
+Raging Spirit	mir	234	Creature - Spirit	common
+Reckless Embermage	mir	241	Creature - Human Wizard	rare
+Reign of Chaos	mir	244	Sorcery	uncommon
+Searing Spear Askari	mir	262	Creature - Human Knight	common
+Sirocco	mir	275	Instant	uncommon
+Spitting Earth	mir	285	Sorcery	common
+Stone Rain	mir	287	Sorcery	common
+Subterranean Spirit	mir	289	Creature - Elemental Spirit	rare
+Talruum Minotaur	mir	298	Creature - Minotaur Berserker	common
+Telim'Tor	mir	305	Legendary Creature - Human Knight	rare
+Telim'Tor's Edict	mir	307	Instant	rare
+Torrent of Lava	mir	312	Sorcery	rare
+Viashino Warrior	mir	325	Creature - Viashino Warrior	common
+Volcanic Dragon	mir	329	Creature - Dragon	rare
+Volcanic Geyser	mir	330	Instant	uncommon
+Wildfire Emissary	mir	340	Creature - Efreet	uncommon
+Zirilan of the Claw	mir	348	Legendary Creature - Viashino Shaman	rare
+Afiya Grove	mir	003	Enchantment	rare
+Armor of Thorns	mir	011	Enchantment - Aura	common
+Barbed Foliage	mir	018	Enchantment	uncommon
+Brushwagg	mir	035	Creature - Brushwagg	rare
+Canopy Dragon	mir	041	Creature - Dragon	rare
+Crash of Rhinos	mir	057	Creature - Rhino	common
+Cycle of Life	mir	064	Enchantment	rare
+Decomposition	mir	069	Enchantment - Aura	uncommon
+Early Harvest	mir	084	Instant	rare
+Fallow Earth	mir	098	Sorcery	uncommon
+Femeref Archers	mir	100	Creature - Human Archer	uncommon
+Fog	mir	114	Instant	common
+Foratog	mir	115	Creature - Atog	uncommon
+Giant Mantis	mir	123	Creature - Insect	common
+Gibbering Hyenas	mir	124	Creature - Hyena	common
+Granger Guildmage	mir	129	Creature - Human Wizard	common
+Hall of Gemstone	mir	136	World Enchantment	rare
+Jolrael's Centaur	mir	158	Creature - Centaur Archer	common
+Jungle Patrol	mir	160	Creature - Human Soldier	rare
+Jungle Wurm	mir	162	Creature - Wurm	common
+Karoo Meerkat	mir	166	Creature - Mongoose	uncommon
+Locust Swarm	mir	173	Creature - Insect	uncommon
+Lure of Prey	mir	174	Instant	rare
+Maro	mir	181	Creature - Elemental	rare
+Mindbender Spores	mir	189	Creature - Fungus Wall	rare
+Mtenda Lion	mir	201	Creature - Cat	common
+Natural Balance	mir	203	Sorcery	rare
+Nettletooth Djinn	mir	204	Creature - Djinn	uncommon
+Preferred Selection	mir	224	Enchantment	rare
+Quirion Elves	mir	232	Creature - Elf Druid	common
+Rampant Growth	mir	235	Sorcery	common
+Regeneration	mir	243	Enchantment - Aura	common
+Roots of Life	mir	251	Enchantment	uncommon
+Sabertooth Cobra	mir	252	Creature - Snake	common
+Sandstorm	mir	256	Instant	common
+Seedling Charm	mir	263	Instant	common
+Seeds of Innocence	mir	264	Sorcery	rare
+Serene Heart	mir	265	Instant	common
+Stalking Tiger	mir	286	Creature - Cat	common
+Superior Numbers	mir	291	Sorcery	uncommon
+Tranquil Domain	mir	313	Instant	common
+Tropical Storm	mir	314	Sorcery	uncommon
+Uktabi Faerie	mir	315	Creature - Faerie	common
+Uktabi Wildcats	mir	316	Creature - Cat	rare
+Unseen Walker	mir	319	Creature - Dryad	uncommon
+Unyaro Bee Sting	mir	320	Sorcery	uncommon
+Village Elder	mir	327	Creature - Human Druid	common
+Waiting in the Weeds	mir	331	Sorcery	rare
+Wall of Roots	mir	334	Creature - Plant Wall	common
+Wild Elephant	mir	339	Creature - Elephant	common
+Worldly Tutor	mir	343	Instant	uncommon
+Asmira, Holy Avenger	mir	014	Legendary Creature - Human Cleric	rare
+Benthic Djinn	mir	025	Creature - Djinn	rare
+Cadaverous Bloom	mir	039	Enchantment	rare
+Circle of Despair	mir	052	Enchantment	rare
+Delirium	mir	070	Instant	uncommon
+Discordant Spirit	mir	072	Creature - Spirit	rare
+Emberwilde Caliph	mir	089	Creature - Djinn	rare
+Energy Bolt	mir	091	Sorcery	rare
+Frenetic Efreet	mir	122	Creature - Efreet	rare
+Grim Feast	mir	133	Enchantment	rare
+Harbor Guardian	mir	139	Creature - Gargoyle	uncommon
+Haunting Apparition	mir	141	Creature - Spirit	uncommon
+Hazerider Drake	mir	142	Creature - Drake	uncommon
+Jungle Troll	mir	161	Creature - Troll	uncommon
+Kaervek's Purge	mir	164	Sorcery	uncommon
+Leering Gargoyle	mir	170	Creature - Gargoyle	rare
+Malignant Growth	mir	175	Enchantment	rare
+Phyrexian Purge	mir	214	Sorcery	rare
+Prismatic Boon	mir	225	Instant	uncommon
+Purgatory	mir	229	Enchantment	rare
+Radiant Essence	mir	233	Creature - Spirit	uncommon
+Reflect Damage	mir	242	Instant	rare
+Reparations	mir	246	Enchantment	rare
+Rock Basilisk	mir	249	Creature - Basilisk	rare
+Savage Twister	mir	258	Sorcery	uncommon
+Sawback Manticore	mir	259	Creature - Manticore	rare
+Sealed Fate	mir	261	Sorcery	uncommon
+Shauku's Minion	mir	271	Creature - Human Minion	uncommon
+Spatial Binding	mir	282	Enchantment	uncommon
+Unfulfilled Desires	mir	318	Enchantment	rare
+Vitalizing Cascade	mir	328	Instant	uncommon
+Warping Wurm	mir	336	Creature - Wurm	rare
+Wellspring	mir	338	Enchantment - Aura	rare
+Windreaper Falcon	mir	341	Creature - Bird	uncommon
+Zebra Unicorn	mir	345	Creature - Unicorn	uncommon
+Acidic Dagger	mir	002	Artifact	rare
+Amber Prison	mir	008	Artifact	rare
+Amulet of Unmaking	mir	009	Artifact	rare
+Basalt Golem	mir	021	Artifact Creature - Golem	uncommon
+Bone Mask	mir	032	Artifact	rare
+Charcoal Diamond	mir	048	Artifact	uncommon
+Chariot of the Sun	mir	049	Artifact	uncommon
+Crystal Golem	mir	061	Artifact Creature - Golem	uncommon
+Cursed Totem	mir	063	Artifact	rare
+Elixir of Vitality	mir	088	Artifact	uncommon
+Ersatz Gnomes	mir	095	Artifact Creature - Gnome	uncommon
+Fire Diamond	mir	108	Artifact	uncommon
+Grinning Totem	mir	134	Artifact	rare
+Horrible Hordes	mir	145	Artifact Creature - Spirit	uncommon
+Igneous Golem	mir	146	Artifact Creature - Golem	uncommon
+Lead Golem	mir	169	Artifact Creature - Golem	uncommon
+Lion's Eye Diamond	mir	172	Artifact	rare
+Mana Prism	mir	176	Artifact	uncommon
+Mangara's Tome	mir	179	Artifact	rare
+Marble Diamond	mir	180	Artifact	uncommon
+Misers' Cage	mir	191	Artifact	rare
+Moss Diamond	mir	193	Artifact	uncommon
+Patagia Golem	mir	210	Artifact Creature - Golem	uncommon
+Paupers' Cage	mir	211	Artifact	rare
+Phyrexian Dreadnought	mir	213	Artifact Creature - Dreadnought	rare
+Phyrexian Vault	mir	216	Artifact	uncommon
+Razor Pendulum	mir	239	Artifact	rare
+Sand Golem	mir	254	Artifact Creature - Golem	uncommon
+Sky Diamond	mir	277	Artifact	uncommon
+Teeka's Dragon	mir	300	Artifact Creature - Dragon	rare
+Telim'Tor's Darts	mir	306	Artifact	uncommon
+Unerring Sling	mir	317	Artifact	uncommon
+Ventifact Bottle	mir	324	Artifact	rare
+Bad River	mir	017	Land	uncommon
+Crystal Vein	mir	062	Land	uncommon
+Flood Plain	mir	112	Land	uncommon
+Grasslands	mir	130	Land	uncommon
+Mountain Valley	mir	198	Land	uncommon
+Rocky Tar Pit	mir	250	Land	uncommon
+Teferi's Isle	mir	304	Legendary Land	rare
+Plains	mir	217	Basic Land - Plains	unknow
+Plains	mir	218	Basic Land - Plains	unknow
+Plains	mir	219	Basic Land - Plains	unknow
+Plains	mir	220	Basic Land - Plains	unknow
+Island	mir	152	Basic Land - Island	unknow
+Island	mir	153	Basic Land - Island	unknow
+Island	mir	154	Basic Land - Island	unknow
+Island	mir	155	Basic Land - Island	unknow
+Swamp	mir	293	Basic Land - Swamp	unknow
+Swamp	mir	294	Basic Land - Swamp	unknow
+Swamp	mir	295	Basic Land - Swamp	unknow
+Swamp	mir	296	Basic Land - Swamp	unknow
+Mountain	mir	194	Basic Land - Mountain	unknow
+Mountain	mir	195	Basic Land - Mountain	unknow
+Mountain	mir	196	Basic Land - Mountain	unknow
+Mountain	mir	197	Basic Land - Mountain	unknow
+Forest	mir	117	Basic Land - Forest	unknow
+Forest	mir	118	Basic Land - Forest	unknow
+Forest	mir	119	Basic Land - Forest	unknow
+Forest	mir	120	Basic Land - Forest	unknow

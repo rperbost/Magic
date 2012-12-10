@@ -88,7 +88,7 @@ public class ServerThread extends Thread{
 		for(int i = 0;i < 8;i++){
 			if(this.readyFlags[i] == false)return false;
 		}
-		return false;
+		return true;
 	}
 
 	private void rotate(int nbBooster){

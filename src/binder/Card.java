@@ -3,6 +3,8 @@ package binder;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import leecher.Extractor;
+
 public class Card {
 	public enum Rarity {
 	    common, uncommon, rare, timeshifted, mythic, unknow 
@@ -16,6 +18,9 @@ public class Card {
 	
 	public String getName() {
 		return name;
+	}
+	public String getIndex() {
+		return index;
 	}
 	public Rarity getRarity() {
 		return rarity;
