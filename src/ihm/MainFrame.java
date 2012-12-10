@@ -43,11 +43,13 @@ public class MainFrame extends JFrame{
 	}
 	
 	public void repaint(){
-		if(!actualScreen.equals("")){
-			//System.out.println(actualScreen);
-			screens.get(actualScreen).repaint();
+		try{
+			if(!actualScreen.equals("")){
+				screens.get(actualScreen).repaint();
+			}
+			super.repaint();
+		}catch(Exception e){
 		}
-		super.repaint();
 	}
 	
 }

@@ -33,7 +33,6 @@ public class ClickableCard extends DrawableCard{
 		
 		this.player = p;
 		this.cardId = cardId;		
-		
 	}
 	
 	public void mouseEntered(MouseEvent e) {

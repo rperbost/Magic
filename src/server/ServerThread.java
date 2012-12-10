@@ -102,4 +102,13 @@ public class ServerThread extends Thread{
 	public int getTimer() {
 		return this.timer;
 	}
+	
+	public boolean[] getReady() {
+		return this.readyFlags;
+	}
+
+
+	public Booster getDeck(Player player) {
+		return new Booster(this.picks.get(player.getChair()));
+	}
 }

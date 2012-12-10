@@ -69,4 +69,14 @@ public abstract class Player {
 		if(selectedCard == null) return -1;
 		return currentBooster.indexOf(selectedCard);
 	}
+
+	public Booster getDeck() {
+		// TODO Auto-generated method stub
+		return callback.getDeck(this);
+	}
+	
+	public boolean[] getReady(){
+		if(callback != null)return callback.getReady();
+		return new boolean[8];
+	}
 }

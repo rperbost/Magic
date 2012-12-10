@@ -17,6 +17,7 @@ public abstract class Screen extends JPanel{
 	public Screen addPanel(String name,JPanel panel){
 		this.panels.put(name,panel);
 		panel.setVisible(true);
+		panel.setLayout(null);
 		this.add(panel);
 		return this;
 	}

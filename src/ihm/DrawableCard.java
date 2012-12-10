@@ -19,10 +19,14 @@ public abstract class DrawableCard  extends JLabel implements MouseListener,Mous
 	
 	protected ZoomedCard zoomedCard;
 	
+	protected JPanel parent;
+	
 	public DrawableCard(Card card, JPanel parent){
 		super(new ImageIcon(card.getLilImageLink()));
 		
 		this.setSize(CARD_WIDTH, CARD_HEIGHT);
+		
+		this.parent = parent;
 		
 		zoomedCard = new ZoomedCard(card);	
 		parent.add(zoomedCard);
