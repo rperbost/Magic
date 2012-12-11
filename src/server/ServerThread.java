@@ -103,8 +103,15 @@ public class ServerThread extends Thread{
 		return this.timer;
 	}
 	
-	public boolean[] getReady() {
-		return this.readyFlags;
+	public String[] getPseudos() {
+		String[] readys = new String[8];
+		for(int i = 0; i < 8; i++){
+			readys[i] = this.players.get(i).getPseudo();
+		}
+		return readys;
+	}
+	public boolean[] getReadys() {
+		return readyFlags;
 	}
 
 

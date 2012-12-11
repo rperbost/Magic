@@ -75,8 +75,13 @@ public abstract class Player {
 		return callback.getDeck(this);
 	}
 	
-	public boolean[] getReady(){
-		if(callback != null)return callback.getReady();
-		return new boolean[8];
+	public abstract String getPseudo();
+	
+	public boolean[] getReadyStates(){
+		return callback.getReadys();
+	}
+	
+	public String[] getPseudos(){
+		return callback.getPseudos();
 	}
 }

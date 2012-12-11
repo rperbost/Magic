@@ -9,4 +9,8 @@ public class IA extends Player{
 		super.setRandomCard();
 		callback.notifyReady(this);
 	}
+	
+	public String getPseudo() {
+		return "bot";
+	}
 }

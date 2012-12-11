@@ -21,7 +21,7 @@ public class Main {
 		for(int i = 0; i < 8;i++){
 			playersTest.add(new IA());
 		}
-		Player p0 = new Human();
+		Player p0 = new Human("José");
 		playersTest.set(0, p0);
 		
 		MainFrame mainFrame = MainFrame.getInstance();
