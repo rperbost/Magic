@@ -69,6 +69,28 @@ public class SetBinder implements Binder{
 	
 	public ArrayList<String> getSets(){
 		return new ArrayList<String>(binder.keySet());
+	}
+
+	public boolean contains(String name) {
+		if(get(name)==null)return false;
+		else return true;
+	}
+
+	public Card get(String name) {
+		Iterator<String> it = binder.keySet().iterator();
 		
+		while(it.hasNext()){
+			String s = it.next();
+			
+			if(binder.get(s).contains(name)){
+				return binder.get(s).get(name);
+			}
+		}
+
+		return null;
+	}
+	
+	public CardBinder getSet(String set){
+		return binder.get(set);
 	}
 }

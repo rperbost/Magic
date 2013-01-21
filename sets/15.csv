@@ -1,0 +1,154 @@
+River Boa	fnm	001	Creature - Snake	unknow
+Terror	fnm	002	Instant	unknow
+Longbow Archer	fnm	003	Creature - Human Soldier Archer	unknow
+Volcanic Geyser	fnm	004	Instant	unknow
+Mind Warp	fnm	005	Sorcery	unknow
+Shock	fnm	006	Instant	unknow
+Giant Growth	fnm	007	Instant	unknow
+Prodigal Sorcerer	fnm	008	Creature - Human Wizard	unknow
+Stone Rain	fnm	009	Sorcery	unknow
+Llanowar Elves	fnm	010	Creature - Elf Druid	unknow
+Staunch Defenders	fnm	011	Creature - Human Soldier	unknow
+Swords to Plowshares	fnm	012	Instant	unknow
+Ophidian	fnm	013	Creature - Snake	unknow
+Jackal Pup	fnm	014	Creature - Hound	unknow
+Quirion Ranger	fnm	015	Creature - Elf	unknow
+Carnophage	fnm	016	Creature - Zombie	unknow
+Impulse	fnm	017	Instant	unknow
+Fireblast	fnm	018	Instant	unknow
+Soltari Priest	fnm	019	Creature - Soltari Cleric	unknow
+Albino Troll	fnm	020	Creature - Troll	unknow
+Dissipate	fnm	021	Instant	unknow
+Black Knight	fnm	022	Creature - Human Knight	unknow
+Wall of Blossoms	fnm	023	Creature - Plant Wall	unknow
+Fireslinger	fnm	024	Creature - Human Wizard	unknow
+Drain Life	fnm	025	Sorcery	unknow
+Aura of Silence	fnm	026	Enchantment	unknow
+Forbid	fnm	027	Instant	unknow
+Spike Feeder	fnm	028	Creature - Spike	unknow
+Mogg Fanatic	fnm	029	Creature - Goblin	unknow
+White Knight	fnm	030	Creature - Human Knight	unknow
+Bottle Gnomes	fnm	031	Artifact Creature - Gnome	unknow
+Muscle Sliver	fnm	032	Creature - Sliver	unknow
+Crystalline Sliver	fnm	033	Creature - Sliver	unknow
+Capsize	fnm	034	Instant	unknow
+Priest of Titania	fnm	035	Creature - Elf Druid	unknow
+Goblin Bombardment	fnm	036	Enchantment	unknow
+Scragnoth	fnm	037	Creature - Beast	unknow
+Disenchant	fnm	038	Instant	unknow
+Smother	fnm	039	Instant	unknow
+Whipcorder	fnm	040	Creature - Human Soldier Rebel	unknow
+Sparksmith	fnm	041	Creature - Goblin	unknow
+Krosan Tusker	fnm	042	Creature - Boar Beast	unknow
+Withered Wretch	fnm	043	Creature - Zombie Cleric	unknow
+Willbender	fnm	044	Creature - Human Wizard	unknow
+Slice and Dice	fnm	045	Sorcery	unknow
+Silver Knight	fnm	046	Creature - Human Knight	unknow
+Krosan Warchief	fnm	047	Creature - Beast	unknow
+Lightning Rift	fnm	048	Enchantment	unknow
+Carrion Feeder	fnm	049	Creature - Zombie	unknow
+Treetop Village	fnm	050	Land	unknow
+Accumulated Knowledge	fnm	051	Instant	unknow
+Avalanche Riders	fnm	052	Creature - Human Nomad	unknow
+Reanimate	fnm	053	Sorcery	unknow
+Mother of Runes	fnm	054	Creature - Human Cleric	unknow
+Brainstorm	fnm	055	Instant	unknow
+Rancor	fnm	056	Enchantment - Aura	unknow
+Seal of Cleansing	fnm	057	Enchantment	unknow
+Flametongue Kavu	fnm	058	Creature - Kavu	unknow
+Blastoderm	fnm	059	Creature - Beast	unknow
+Cabal Therapy	fnm	060	Sorcery	unknow
+Fact or Fiction	fnm	061	Instant	unknow
+Juggernaut	fnm	062	Artifact Creature - Juggernaut	unknow
+Circle of Protection: Red	fnm	063	Enchantment	unknow
+Kird Ape	fnm	064	Creature - Ape	unknow
+Duress	fnm	065	Sorcery	unknow
+Counterspell	fnm	066	Instant	unknow
+Icy Manipulator	fnm	067	Artifact	unknow
+Elves of Deep Shadow	fnm	068	Creature - Elf Druid	unknow
+Armadillo Cloak	fnm	069	Enchantment - Aura	unknow
+Terminate	fnm	070	Instant	unknow
+Lobotomy	fnm	071	Sorcery	unknow
+Goblin Warchief	fnm	072	Creature - Goblin	unknow
+Wild Mongrel	fnm	073	Creature - Hound	unknow
+Chainer's Edict	fnm	074	Sorcery	unknow
+Circular Logic	fnm	075	Instant	unknow
+Astral Slide	fnm	076	Enchantment	unknow
+Arrogant Wurm	fnm	077	Creature - Wurm	unknow
+Life / Death	fnm	078	Sorcery	unknow
+Fire / Ice	fnm	080	Instant	unknow
+Firebolt	fnm	082	Sorcery	unknow
+Deep Analysis	fnm	083	Sorcery	unknow
+Gerrard's Verdict	fnm	084	Sorcery	unknow
+Basking Rootwalla	fnm	085	Creature - Lizard	unknow
+Wonder	fnm	086	Creature - Incarnation	unknow
+Goblin Legionnaire	fnm	087	Creature - Goblin Soldier	unknow
+Engineered Plague	fnm	088	Enchantment	unknow
+Goblin Ringleader	fnm	089	Creature - Goblin	unknow
+Wing Shards	fnm	090	Instant	unknow
+Cabal Coffers	fnm	091	Land	unknow
+Roar of the Wurm	fnm	092	Sorcery	unknow
+Force Spike	fnm	093	Instant	unknow
+Remand	fnm	094	Instant	unknow
+Tormod's Crypt	fnm	095	Artifact	unknow
+Eternal Witness	fnm	096	Creature - Human Shaman	unknow
+Tendrils of Agony	fnm	097	Sorcery	unknow
+Pendelhaven	fnm	098	Legendary Land	unknow
+Resurrection	fnm	099	Sorcery	unknow
+Wall of Roots	fnm	100	Creature - Plant Wall	unknow
+Desert	fnm	101	Land - Desert	unknow
+Thirst for Knowledge	fnm	102	Instant	unknow
+Serrated Arrows	fnm	103	Artifact	unknow
+Isochron Scepter	fnm	104	Artifact	unknow
+Shrapnel Blast	fnm	105	Instant	unknow
+Magma Jet	fnm	106	Instant	unknow
+Myr Enforcer	fnm	107	Artifact Creature - Myr	unknow
+Kitchen Finks	fnm	108	Creature - Ouphe	unknow
+Merrow Reejerey	fnm	109	Creature - Merfolk Soldier	unknow
+Wren's Run Vanquisher	fnm	110	Creature - Elf Warrior	unknow
+Mulldrifter	fnm	111	Creature - Elemental	unknow
+Murderous Redcap	fnm	112	Creature - Goblin Assassin	unknow
+Lightning Greaves	fnm	113	Artifact - Equipment	unknow
+Watchwolf	fnm	114	Creature - Wolf	unknow
+Browbeat	fnm	115	Sorcery	unknow
+Oblivion Ring	fnm	116	Enchantment	unknow
+Sakura-Tribe Elder	fnm	117	Creature - Snake Shaman	unknow
+Tidehollow Sculler	fnm	118	Artifact Creature - Zombie	unknow
+Ghostly Prison	fnm	119	Enchantment	unknow
+Ancient Ziggurat	fnm	120	Land	unknow
+Bloodbraid Elf	fnm	121	Creature - Elf Berserker	unknow
+Cloudpost	fnm	122	Land - Locus	unknow
+Elvish Visionary	fnm	123	Creature - Elf Shaman	unknow
+Anathemancer	fnm	124	Creature - Zombie Wizard	unknow
+Krosan Grip	fnm	125	Instant	unknow
+Qasali Pridemage	fnm	126	Creature - Cat Wizard	unknow
+Rift Bolt	fnm	127	Sorcery	unknow
+Gatekeeper of Malakir	fnm	128	Creature - Vampire Warrior	unknow
+Wild Nacatl	fnm	129	Creature - Cat Warrior	unknow
+Everflowing Chalice	fnm	130	Artifact	unknow
+Spellstutter Sprite	fnm	131	Creature - Faerie Wizard	unknow
+Wall of Omens	fnm	132	Creature - Wall	unknow
+Artisan of Kozilek	fnm	133	Creature - Eldrazi	unknow
+Squadron Hawk	fnm	134	Creature - Bird	unknow
+Rhox War Monk	fnm	135	Creature - Rhino Monk	unknow
+Jace's Ingenuity	fnm	136	Instant	unknow
+Cultivate	fnm	137	Sorcery	unknow
+Teetering Peaks	fnm	138	Land	unknow
+Contagion Clasp	fnm	139	Artifact	unknow
+Go for the Throat	fnm	140	Instant	unknow
+Savage Lands	fnm	141	Land	unknow
+Glistener Elf	fnm	142	Creature - Elf Warrior	unknow
+Despise	fnm	143	Sorcery	unknow
+Tectonic Edge	fnm	144	Land	unknow
+Dismember	fnm	145	Instant	unknow
+Human	fnm	146		unknow
+Ancient Grudge	fnm	148	Instant	unknow
+Acidic Slime	fnm	149	Creature  -  Ooze	unknow
+Forbidden Alchemy	fnm	150	Instant	unknow
+Avacyn's Pilgrim	fnm	151	Creature - Human Monk	unknow
+Lingering Souls	fnm	152	Sorcery	unknow
+Evolving Wilds	fnm	153	Land	unknow
+Pillar of Flame	fnm	154	Sorcery	unknow
+Gitaxian Probe	fnm	155	Sorcery	unknow
+Searing Spear	fnm	156	Instant	unknow
+Reliquary Tower	fnm	157	Land	unknow

@@ -1,5 +1,8 @@
 package leecher;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Vector;
 
 import binder.Card;
@@ -11,14 +14,26 @@ public class MagicVilleLeecher {
 		
 		Vector<String> liens = new Vector<String>();
 		
-		String[] tableau = pl.getPageContent().split("href=set_cards.php\\?");
+		String[] tableau_ = pl.getPageContent().split("href=set_cards.php\\?");
+		String[] tableau2_ = pl.getPageContent().split("href=set_visual.php\\?setcode=");
 		
-		for(int i = 1;i< tableau.length;i++){
+		List<String> tableau = new ArrayList<String>();
+		tableau.addAll(Arrays.asList(tableau_));
+		tableau.addAll(Arrays.asList(tableau2_));
+		
+		for(int i = 1;i< tableau.size();i++){
 			int positionChevron = -1;
-			positionChevron = tableau[i].indexOf('>');
+			positionChevron = tableau.get(i).indexOf('>');
 			if (positionChevron == -1)continue;
-			tableau[i] = tableau[i].substring(0, positionChevron);
-			liens.add(tableau[i]);
+			tableau.set(i,tableau.get(i).substring(0, positionChevron));
+			int positionCommercialAnd = -1;
+			positionCommercialAnd = tableau.get(i).indexOf('&');
+			if (positionCommercialAnd != -1){
+				tableau.set(i,tableau.get(i).substring(0, positionCommercialAnd));
+			}
+			if(!tableau.get(i).matches("[0-9]*"))continue;
+			liens.add(tableau.get(i));
+			System.out.println(tableau.get(i));
 		}
 		return liens;
 	}

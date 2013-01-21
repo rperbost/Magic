@@ -13,7 +13,7 @@ import binder.SingletonBinder;
 
 
 public class BoosterFactoryTest {
-	;
+
 	SingletonBinder masterBinder = SingletonBinder.getInstance();
 	BoosterFactory boosterFactory = BoosterFactory.getInstance();
 	
@@ -21,6 +21,7 @@ public class BoosterFactoryTest {
 	public void testAnyBoosterContainFifteenCards(){
 		ArrayList<String> editions = masterBinder.getSets();
 		for(int i=0;i< editions.size();i++){
+			//System.out.println(editions.get(i));
 			assertTrue(boosterFactory.getBooster(editions.get(i)).size() == 15);
 		}
 	}

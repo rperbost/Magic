@@ -9,6 +9,9 @@ public class Card {
 	public enum Rarity {
 	    common, uncommon, rare, timeshifted, mythic, unknow 
 	}
+	public enum Land {
+		plains,island,swamp,mountain,forest
+	}
 	Rarity rarity;
 	
 	String set;

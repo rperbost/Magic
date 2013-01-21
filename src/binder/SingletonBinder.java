@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 
 public class SingletonBinder extends SetBinder{
 	static SingletonBinder theInstance = null;
@@ -24,6 +26,20 @@ public class SingletonBinder extends SetBinder{
 		
 		for(int i = 0;i < files.size(); i++){
 			this.addFile(files.get(i));
+		}
+		//clean editions that contains less than 100cards
+		Iterator<String> it = binder.keySet().iterator();
+		
+		List<String> toDelete = new ArrayList<String>();
+		
+		while(it.hasNext()){
+			String set = it.next();
+			if(binder.get(set).size()<100)toDelete.add(set);
+		}
+		
+		while(toDelete.size()>0){
+			binder.remove(toDelete.get(0));
+			toDelete.remove(0);
 		}
 	}
 

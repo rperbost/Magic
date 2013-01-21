@@ -1,9 +1,13 @@
 package server;
 
+import ihm.DeckScreen;
 import ihm.DraftScreen;
 import ihm.MainFrame;
 
 import java.util.ArrayList;
+
+import binder.Booster;
+import binder.Deck;
 
 import player.IA;
 import player.Human;
@@ -26,13 +30,14 @@ public class Main {
 		
 		MainFrame mainFrame = MainFrame.getInstance();
 		
-		DraftScreen dScreen = new DraftScreen();
-		dScreen.setPlayer(p0);
-		mainFrame.addScreen("DRAFT", dScreen ).activeScreen("DRAFT");
+		DraftScreen draftScreen = new DraftScreen(p0);
+		mainFrame.addScreen("DRAFT", draftScreen ).activeScreen("DRAFT");
 		
-		String [] setsTest = {"13m","6th","mrd"};
-		ServerThread st = new ServerThread(playersTest,setsTest);
-		st.start();
-	
+		String [] setsTest = {"13m","13m","13m"};
+		//ServerThread st = new ServerThread(playersTest,setsTest);
+		//st.start();
+		
+		DeckScreen deckScreen = new DeckScreen("13m",new Deck());
+		mainFrame.addScreen("DECK", deckScreen).activeScreen("DECK");
 	}	
 }

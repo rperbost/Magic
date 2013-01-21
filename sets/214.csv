@@ -1,0 +1,257 @@
+Aerial Maneuver	gtc	001	Instant	common
+Angelic Edict	gtc	002	Sorcery	common
+Angelic Skirmisher	gtc	003	Creature - Angel	rare
+Assault Griffin	gtc	004	Creature - Griffin	common
+Basilica Guards	gtc	005	Creature - Human Soldier	common
+Blind Obedience	gtc	006	Enchantment	rare
+Boros Elite	gtc	007	Creature - Human Soldier	uncommon
+Court Street Denizen	gtc	008	Creature - Human Soldier	common
+Daring Skyjek	gtc	009	Creature - Human Knight	common
+Debtor�s Pulpit	gtc	010	Enchantment - Aura	uncommon
+Dutiful Thrull	gtc	011	Creature - Thrull	common
+Frontline Medic	gtc	012	Creature - Human Cleric	rare
+Gideon, Champion of Justice	gtc	013	Planeswalker - Gideon	mythic
+Guardian of the Gateless	gtc	014	Creature - Angel	uncommon
+Guildscorn Ward	gtc	015	Enchantment - Aura	common
+Hold the Gates	gtc	016	Enchantment	uncommon
+Holy Mantle	gtc	017	Enchantment - Aura	uncommon
+Knight of Obligation	gtc	018	Creature - Human Knight	uncommon
+Knight Watch	gtc	019	Sorcery	common
+Luminate Primordial	gtc	020	Creature - Avatar	rare
+Murder Investigation	gtc	021	Enchantment - Aura	uncommon
+Nav Squad Commandos	gtc	022	Creature - Human Soldier	common
+Righteous Charge	gtc	023	Sorcery	uncommon
+Shielded Passage	gtc	024	Instant	common
+Smite	gtc	025	Instant	common
+Syndic of Tithes	gtc	026	Creature - Human Cleric	common
+Urbis Protector	gtc	027	Creature - Human Cleric	uncommon
+Zarichi Tiger	gtc	028	Creature - Cat	common
+&AElig;therize	gtc	029	Instant	uncommon
+Agoraphobia	gtc	030	Enchantment - Aura	uncommon
+Clinging Anemones	gtc	031	Creature - Jellyfish	common
+Cloudfin Raptor	gtc	032	Creature - Bird Mutant	common
+Diluvian Primordial	gtc	033	Creature - Avatar	rare
+Enter the Infinite	gtc	034	Sorcery	mythic
+Frilled Oculus	gtc	035	Creature - Homunculus	common
+Gridlock	gtc	036	Instant	uncommon
+Hands of Binding	gtc	037	Sorcery	common
+Incursion Specialist	gtc	038	Creature - Human Wizard	uncommon
+Keymaster Rogue	gtc	039	Creature - Human Rogue	common
+Last Thoughts	gtc	040	Sorcery	common
+Leyline Phantom	gtc	041	Creature - Illusion	common
+Metropolis Sprite	gtc	042	Creature - Faerie Rogue	common
+Mindeye Drake	gtc	043	Creature - Drake	uncommon
+Rapid Hybridization	gtc	044	Instant	uncommon
+Realmwright	gtc	046	Creature -Vedalken Wizard	rare
+Sage�s Row Denizen	gtc	045	Creature -Vedalken Wizard	common
+Sapphire Drake	gtc	047	Creature - Drake	uncommon
+Scatter Arc	gtc	048	Instant	common
+Simic Fluxmage	gtc	049	Creature - Merfolk Wizard	uncommon
+Simic Manipulator	gtc	050	Creature - Mutant Wizard	rare
+Skygames	gtc	051	Enchantment - Aura	common
+Spell Rupture	gtc	052	Instant	common
+Stolen Identity	gtc	053	Sorcery	rare
+Totally Lost	gtc	054	Instant	common
+Voidwalk	gtc	055	Sorcery	uncommon
+Way of the Thief	gtc	056	Enchantment - Aura	common
+Balustrade Spy	gtc	057	Creature - Vampire Rogue	common
+Basilica Screecher	gtc	058	Creature - Bat	common
+Contaminated Ground	gtc	059	Enchantment  -  Aura	common
+Corpse Blockade	gtc	060	Creature - Zombie	common
+Crypt Ghast	gtc	061	Creature - Spirit	rare
+Death�s Approach	gtc	062	Enchantment  -  Aura	common
+Devour Flesh	gtc	063	Instant	common
+Dying Wish	gtc	064	Enchantment  -  Aura	uncommon
+Gateway Shade	gtc	066	Creature - Shade	uncommon
+Grisly Spectacle	gtc	065	Instant	common
+Gutter Skulk	gtc	067	Creature - Zombie Rat	common
+Horror of the Dim	gtc	068	Creature - Horror	common
+Illness in the Ranks	gtc	069	Enchantment	uncommon
+Killing Glare	gtc	070	Instant	uncommon
+Lord of the Void	gtc	074	Creature - Demon	mythic
+Mental Vapors	gtc	072	Sorcery	uncommon
+Midnight Recovery	gtc	073	Sorcery	common
+Ogre Slumlord	gtc	071	Creature - Ogre Rogue	rare
+Sepulchral Primordial	gtc	075	Creature - Avatar	rare
+Shadow Alley Denizen	gtc	076	Creature - Vampire Rogue	common
+Shadow Slice	gtc	077	Sorcery	common
+Slate Street Ruffian	gtc	078	Creature - Human Warrior	common
+Smog Elemental	gtc	079	Creature - Elemental	uncommon
+Syndicate Enforcer	gtc	080	Creature - Human Rogue	common
+Thrull Parasite	gtc	081	Creature - Thrull	uncommon
+Undercity Informer	gtc	082	Creature - Human Rogue	uncommon
+Undercity Plague	gtc	084	Sorcery	rare
+Wight of Precinct Six	gtc	083	Creature - Zombie	uncommon
+Act of Treason	gtc	085	Sorcery	common
+Bomber Corps	gtc	086	Creature - Human Soldier	common
+Cinder Elemental	gtc	097	Creature - Elemental	uncommon
+Crackling Perimeter	gtc	088	Enchantment	uncommon
+Ember Beast	gtc	089	Creature - Beast	common
+Firefist Striker	gtc	094	Creature - Human Soldier	uncommon
+Five-Alarm Fire	gtc	091	Enchantment	rare
+Foundry Street Denizen	gtc	092	Creature - Goblin Warrior	common
+Furious Resistance	gtc	093	Instant	common
+Hellkite Tyrant	gtc	090	Creature - Dragon	mythic
+Hellraiser Goblin	gtc	095	Creature - Goblin Berserker	uncommon
+Homing Lightning	gtc	096	Instant	uncommon
+Legion Loyalist	gtc	087	Creature - Goblin Soldier	rare
+Madcap Skills	gtc	098	Enchantment - Aura	common
+Mark for Death	gtc	099	Sorcery	uncommon
+Massive Raid	gtc	100	Instant	common
+Molten Primordial	gtc	101	Creature - Avatar	rare
+Mugging	gtc	102	Sorcery	common
+Ripscale Predator	gtc	103	Creature - Lizard	uncommon
+Scorchwalker	gtc	104	Creature - Elemental	common
+Skinbrand Goblin	gtc	106	Creature - Goblin Warrior	common
+Skullcrack	gtc	105	Instant	uncommon
+Structural Collapse	gtc	107	Sorcery	common
+Tin Street Market	gtc	108	Enchantment - Aura	common
+Towering Thunderfist	gtc	109	Creature - Giant Soldier	common
+Viashino Shanktail	gtc	110	Creature - Viashino Warrior	uncommon
+Warmind Infantry	gtc	111	Creature - Elemental Soldier	common
+Wrecking Ogre	gtc	112	Creature - Ogre Warrior	rare
+Adaptive Snapjaw	gtc	113	Creature - Lizard Beast	common
+Alpha Authority	gtc	114	Enchantment - Aura	uncommon
+Burst of Strength	gtc	119	Instant	common
+Crocanura	gtc	116	Creature - Crocodile Frog	common
+Crowned Ceratok	gtc	117	Creature - Rhino	uncommon
+Disciple of the Old Ways	gtc	118	Creature - Human Warrior	common
+Experiment One	gtc	115	Creature - Human Ooze	uncommon
+Forced Adaptation	gtc	120	Enchantment - Aura	common
+Giant Adephage	gtc	121	Creature - Insect	mythic
+Greenside Watcher	gtc	122	Creature - Elf Druid	common
+Gyre Sage	gtc	123	Creature - Elf Druid	rare
+Hindervines	gtc	124	Instant	uncommon
+Ivy Lane Denizen	gtc	125	Creature - Elf Warrior	common
+Miming Slime	gtc	126	Sorcery	uncommon
+Naturalize	gtc	127	Instant	common
+Ooze Flux	gtc	128	Enchantment	rare
+Predator�s Rapport	gtc	129	Instant	common
+Rust Scarab	gtc	130	Creature - Insect	uncommon
+Scab-Clan Charger	gtc	131	Creature - Centaur Warrior	common
+Serene Remembrance	gtc	132	Sorcery	uncommon
+Skarrg Goliath	gtc	133	Creature - Beast	rare
+Slaughterhorn	gtc	134	Creature - Beast	common
+Spire Tracer	gtc	136	Creature - Elf Scout	common
+Sylvan Primordial	gtc	135	Creature - Avatar	rare
+Tower Defense	gtc	137	Instant	uncommon
+Verdant Haven	gtc	138	Enchantment - Aura	common
+Wasteland Viper	gtc	139	Creature - Snake	uncommon
+Wildwood Rebirth	gtc	140	Instant	common
+Alms Beast	gtc	141	Creature - Beast	rare
+Assemble the Legion	gtc	142	Enchantment	rare
+Aurelia, the Warleader	gtc	143	Legendary Creature - Angel	mythic
+Aurelia�s Fury	gtc	144	Instant	mythic
+Bane Alley Broker	gtc	145	Creature - Human Rogue	uncommon
+Biovisionary	gtc	146	Creature - Human Wizard	rare
+Borborygmos Enraged	gtc	147	Legendary Creature - Cyclops	mythic
+Boros Charm	gtc	148	Instant	uncommon
+Call of the Nightwing	gtc	149	Sorcery	uncommon
+Cartel Aristocrat	gtc	156	Creature - Human Advisor	uncommon
+Clan Defiance	gtc	151	Sorcery	rare
+Consuming Aberration	gtc	152	Creature - Horror	rare
+Deathpact Angel	gtc	153	Creature - Angel	mythic
+Dimir Charm	gtc	154	Instant	uncommon
+Dinrova Horror	gtc	155	Creature - Horror	uncommon
+Domri Rade	gtc	150	Planeswalker - Domri	mythic
+Drakewing Krasis	gtc	157	Creature - Lizard Drake	common
+Duskmantle Guildmage	gtc	158	Creature - Human Wizard	uncommon
+Duskmantle Seer	gtc	160	Creature - Vampire Wizard	mythic
+Elusive Krasis	gtc	159	Creature - Fish Mutant	uncommon
+Executioner�s Swing	gtc	161	Instant	common
+Fathom Mage	gtc	162	Creature - Human Wizard	rare
+Firemane Avenger	gtc	163	Creature - Angel	rare
+Fortress Cyclops	gtc	164	Creature - Cyclops Soldier	uncommon
+Foundry Champion	gtc	165	Creature - Elemental Soldier	rare
+Frenzied Tilling	gtc	166	Sorcery	uncommon
+Ghor-Clan Rampager	gtc	167	Creature - Beast	uncommon
+Ground Assault	gtc	169	Sorcery	unknow
+Gruul Charm	gtc	170	Instant	uncommon
+Gruul Ragebeast	gtc	168	Creature - Beast	rare
+High Priest of Penance	gtc	171	Creature - Human Cleric	rare
+Hydroform	gtc	172	Instant	common
+Kingpin�s Pet	gtc	173	Creature - Thrull	common
+Lazav, Dimir Mastermind	gtc	174	Legendary Creature - Shapeshifter	mythic
+Martial Glory	gtc	175	Instant	common
+Master Biomancer	gtc	176	Creature - Elf Wizard	mythic
+Merciless Eviction	gtc	177	Sorcery	rare
+Mind Grind	gtc	178	Sorcery	rare
+Mortus Strider	gtc	179	Creature - Skeleton	common
+Mystic Genesis	gtc	180	Instant	rare
+Nimbus Swimmer	gtc	181	Creature - Leviathan	uncommon
+Obzedat, Ghost Council	gtc	182	Legendary Creature - Spirit Advisor	mythic
+One Thousand Lashes	gtc	185	Enchantment - Aura	uncommon
+Ordruun Veteran	gtc	184	Creature - Minotaur Soldier	uncommon
+Orzhov Charm	gtc	183	Instant	uncommon
+Paranoid Delusions	gtc	186	Sorcery	common
+Primal Visitation	gtc	187	Enchantment - Aura	common
+Prime Speaker Zegana	gtc	188	Legendary Creature - Merfolk Wizard	mythic
+Psychic Strike	gtc	189	Instant	common
+Purge the Profane	gtc	190	Sorcery	common
+Rubblehulk	gtc	191	Creature - Elemental	rare
+Ruination Wurm	gtc	192	Creature - Wurm	common
+Shambleshark	gtc	193	Creature - Fish Crab	common
+Signal the Clans	gtc	194	Instant	rare
+Simic Charm	gtc	195	Instant	uncommon
+Skarrg Guildmage	gtc	196	Creature - Human Shaman	uncommon
+Skyknight Legionnaire	gtc	197	Creature - Human Knight	common
+Soul Ransom	gtc	198	Enchantment - Aura	rare
+Spark Trooper	gtc	199	Creature - Elemental Soldier	rare
+Sunhome Guildmage	gtc	200	Creature - Human Wizard	uncommon
+Treasury Thrull	gtc	201	Creature - Thrull	rare
+Truefire Paladin	gtc	202	Creature - Human Knight	uncommon
+Unexpected Results	gtc	203	Sorcery	rare
+Urban Evolution	gtc	204	Sorcery	uncommon
+Vizkopa Confessor	gtc	205	Creature - Human Cleric	uncommon
+Vizkopa Guildmage	gtc	206	Creature - Human Wizard	uncommon
+Whispering Madness	gtc	207	Sorcery	rare
+Wojek Halberdiers	gtc	208	Creature - Human Soldier	common
+Zameck Guildmage	gtc	209	Creature - Elf Wizard	uncommon
+Zhur-Taa Swine	gtc	210	Creature - Boar	common
+Arrows of Justice	gtc	211	Instant	uncommon
+Beckon Apparition	gtc	212	Instant	common
+Biomass Mutation	gtc	215	instant	rare
+Bioshift	gtc	214	Instant	common
+Boros Reckoner	gtc	213	Creature - Minotaur Wizard	rare
+Burning-Tree Emissary	gtc	216	Creature - Human Shaman	uncommon
+Coerced Confession	gtc	217	Sorcery	uncommon
+Deathcult Rogue	gtc	218	Creature - Human Rogue	common
+Gift of Orzhova	gtc	219	Enchantment - Aura	uncommon
+Immortal Servitude	gtc	220	Sorcery	rare
+Merfolk of the Depths	gtc	221	Creature - Merfolk Soldier	uncommon
+Nightveil Specter	gtc	222	Creature - Specter	rare
+Pit Fight	gtc	225	Instant	common
+Rubblebelt Raiders	gtc	224	Creature - Human Warrior	rare
+Shattering Blow	gtc	227	Instant	common
+Armored Transport	gtc	226	Artifact Creature - Construct	common
+Boros Keyrune	gtc	223	Artifact	uncommon
+Dimir Keyrune	gtc	228	Artifact	uncommon
+Glaring Spotlight	gtc	229	Artifact	rare
+Gruul Keyrune	gtc	230	Artifact	uncommon
+Illusionist�s Bracers	gtc	233	Artifact - Equipment	rare
+Millennial Gargoyle	gtc	232	Artifact Creature - Gargoyle	common
+Orzhov Keyrune	gtc	231	Artifact	uncommon
+Prophetic Prism	gtc	234	Artifact	common
+Razortip Whip	gtc	247	Artifact	common
+Riot Gear	gtc	249	Artifact - Equipment	common
+Simic Keyrune	gtc	245	Artifact	uncommon
+Skyblinder Staff	gtc	246	Artifact - Equipment	common
+Boros Guildgate	gtc	235	Land - Gate	common
+Breeding Pool	gtc	236	Land - Forest Island	rare
+Dimir Guildgate	gtc	237	Land - Gate	common
+Godless Shrine	gtc	238	Land - Plains Swamp	rare
+Gruul Guildgate	gtc	239	Land - Gate	common
+Orzhov Guildgate	gtc	240	Land - Gate	common
+Sacred Foundry	gtc	241	Land - Mountain Plains	rare
+Simic Guildgate	gtc	242	Land - Gate	common
+Stomping Ground	gtc	243	Land - Mountain Forest	rare
+Thespian�s Stage	gtc	248	Land	rare
+Watery Grave	gtc	244	Land - Island Swamp	rare
+Angel	gtc	250	Creature - Angel	unknow
+Rat	gtc	251	Creature - Rat	unknow
+Frog Lizard	gtc	252	Creature - Frog Lizard	unknow
+Cleric	gtc	253	Creature - Cleric	unknow
+Horror	gtc	254	Creature - Horror	unknow
+Soldier	gtc	255	Creature - Soldier	unknow
+Spirit	gtc	256	Creature - Spirit	unknow
+Emblem Domri Rade	gtc	257	Emblem	unknow

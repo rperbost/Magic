@@ -5,4 +5,6 @@ public interface Binder {
 	public void addCard(Card card);
 	public int size();
 	public Card get(int i);
+	public Card get(String name);
+	public boolean contains(String name);
 }

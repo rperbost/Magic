@@ -18,7 +18,8 @@ public class DraftScreen extends Screen{
 	
 	private Thread timerRefreshing;
 	
-	public DraftScreen(){		
+	public DraftScreen(Player p){
+		this.setPlayer(p);
 		this.addPanel("LEFT", new JPanel())
 			.addPanel("TOP",new JPanel())
 			.addPanel("RIGHT",new JPanel());

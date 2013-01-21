@@ -5,6 +5,8 @@ import java.util.Map;
 
 import javax.swing.JPanel;
 
+import player.Player;
+
 @SuppressWarnings("serial")
 public abstract class Screen extends JPanel{
 	Map <String,JPanel> panels;
@@ -25,4 +27,7 @@ public abstract class Screen extends JPanel{
 		return this.panels.get(name);
 	}
 	
+	public void repaint(){
+		super.repaint();
+	}
 }

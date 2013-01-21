@@ -75,4 +75,24 @@ public class CardBinder implements Binder{
 
 		return null;	
 	}
+
+	@Override
+	public boolean contains(String name) {
+		if(get(name)==null)return false;
+		else return true;
+	}
+
+	@Override
+	public Card get(String name) {
+		Character c = new Character(name.charAt(0));
+		ArrayList<Card>binderPart = cards.get(c);
+		
+		for(int i = 0;i < binderPart.size();i++){
+			if(binderPart.get(i).getName().equals(name)){
+				return binderPart.get(i);
+			}
+		}
+		
+		return null;
+	}
 }

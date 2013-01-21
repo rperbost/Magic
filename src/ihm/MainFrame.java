@@ -28,8 +28,9 @@ public class MainFrame extends JFrame{
 	
 	public MainFrame activeScreen(String name){
 		if(this.screens.containsKey(name)){
-			if(!actualScreen.equals(""))screens.get(actualScreen).setVisible(true);
+			if(!actualScreen.equals(""))screens.get(actualScreen).setVisible(false);
 			screens.get(name).setVisible(true);
+			screens.get(name).repaint();
 			this.actualScreen = name;
 		}
 		return this;

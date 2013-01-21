@@ -9,6 +9,10 @@ public class Booster {
 		this.booster = booster;
 	}
 
+	public Booster() {
+		this.booster = new ArrayList<Card>();
+	}
+
 	public void remove(Card selectedCard) {
 		booster.remove(selectedCard);		
 	}
