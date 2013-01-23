@@ -39,7 +39,7 @@ public class DeckScreen extends Screen{
 		this.panel("DECK").setBounds(0, 0, 420, 500);
 		this.panel("DECK").setBackground(new Color(255,255,0));
 		
-		this.panel("ZOOM").setBounds(640, 0, 160, 230);
+		this.panel("ZOOM").setBounds(636, 0, 156, 222);
 		this.panel("ZOOM").setBackground(new Color(255,0,255));
 		
 		this.panel("TRASH").setBounds(300, 500, DrawableCard.CARD_WIDTH, 100);
@@ -48,7 +48,7 @@ public class DeckScreen extends Screen{
 		this.panel("LAND-STACK").setBounds(0, 500, 300, 100);
 		this.panel("LAND-STACK").setBackground(new Color(0,0,255));
 	
-		this.panel("SIDEBOARD").setBounds(420, 0, 220, 500);
+		this.panel("SIDEBOARD").setBounds(418, 0, 218, 500);
 		this.panel("SIDEBOARD").setBackground(new Color(0,255,255));
 		
 		this.refreshBottom();
@@ -64,9 +64,9 @@ public class DeckScreen extends Screen{
 		p.removeAll();
 		
 		Booster b = deck.getMainDeck();
-		for(int i = 0; i < b.size();i++){
+		for(int i = b.size()-1; i >= 0 ;i--){
 			DragableCard c = new DragableCard(b.get(i), this);
-			c.setLocation(i*10,i*10);
+			c.setLocation((i%4)*(DrawableCard.CARD_WIDTH+5)+2,i/4*15);
 			p.add(c);
 		}
 		
@@ -74,9 +74,9 @@ public class DeckScreen extends Screen{
 		p.removeAll();
 		
 		b = deck.getSideboard();
-		for(int i = 0; i < b.size();i++){
+		for(int i = b.size()-1; i >= 0 ;i--){
 			DragableCard c = new DragableCard(b.get(i), this);
-			c.setLocation(i*10,i*10);
+			c.setLocation((i%2)*(DrawableCard.CARD_WIDTH+6)+7,i/2*15);
 			p.add(c);
 		}
 		this.repaint();

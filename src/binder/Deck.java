@@ -19,9 +19,11 @@ public class Deck {
 	
 	public void addToSideboard(Card card){
 		sideboard.add(card);
+		sideboard.sortMe();
 	}
 	public void addToDeck(Card card){
 		mainDeck.add(card);
+		mainDeck.sortMe();
 	}
 	public void removeFromSideboard(Card card){
 		sideboard.remove(card);

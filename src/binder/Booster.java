@@ -1,6 +1,7 @@
 package binder;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Booster {
 	ArrayList<Card> booster;
@@ -31,7 +32,21 @@ public class Booster {
 	
 	public void add(Card card){
 		booster.add(card);
-		System.out.println(card + " added "+this.size());
+	}
+	
+	public void sortMe(){
+		boolean flag=false;
+		do{
+			flag=false;
+			
+			for(int i = 0; i < booster.size()-1; i++){
+				if(booster.get(i).getName().compareTo(booster.get(i+1).getName())>0){
+					Collections.swap(booster,i,i+1);
+					flag=true;
+				}
+			}
+			
+		}while(flag);
 	}
 	
 }

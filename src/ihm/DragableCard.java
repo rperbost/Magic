@@ -9,8 +9,10 @@ import binder.Card;
 
 public class DragableCard extends DrawableCard implements MouseInputListener{
 	
+	DeckScreen screen;
 	public DragableCard(Card card, JPanel parent) {
 		super(card, parent);
+		screen = (DeckScreen)this.parent;
 	}
 	
 	String sourcePanel;
@@ -21,21 +23,26 @@ public class DragableCard extends DrawableCard implements MouseInputListener{
 	
 	public void mouseDragged(MouseEvent e) {
 		super.mouseDragged(e);
-		//System.out.println("dragged : " + this.card);
+		
+		this.setVisible(true);
+		
+		int x = (int) (e.getLocationOnScreen().getX() - screen.getLocationOnScreen().getX());
+		int y = (int) (e.getLocationOnScreen().getY() - screen.getLocationOnScreen().getY());
+		
+		this.setLocation(x-DrawableCard.CARD_WIDTH/2,y-CARD_HEIGHT/2);
+		screen.add(this,0);
 	}
 
 	public void mouseReleased(MouseEvent e) {
 		super.mouseReleased(e);
 		
-		DeckScreen screen = (DeckScreen)this.parent;
-		
 		String targetPanel = screen.pointIsOnByScreen(e.getLocationOnScreen());
-		//String originPanel = e.getX()+"";
+		
 		screen.getDeck().transferCard(this.card, sourcePanel, targetPanel);
 		
-		System.out.println("drop : " + this.card+ " "+targetPanel+ " source "+ sourcePanel);
-		
+		screen.remove(this);
 		screen.refreshDeck();
+		screen.refreshBottom();
 	}
 	
 	public void mouseEntered(MouseEvent arg0) {
