@@ -19,7 +19,7 @@ public class DraftScreen extends Screen{
 	private Thread timerRefreshing;
 	
 	public DraftScreen(Player p){
-		this.setPlayer(p);
+		
 		this.addPanel("LEFT", new JPanel())
 			.addPanel("TOP",new JPanel())
 			.addPanel("RIGHT",new JPanel());
@@ -33,7 +33,7 @@ public class DraftScreen extends Screen{
 		this.panel("RIGHT").setBounds(204, 50, 596, 750);
 		this.panel("RIGHT").setBackground(new Color(0,255,255));
 		
-		this.player = null;
+		this.setPlayer(p);
 		
 		readyContainer = new JPanel();
 		readyContainer.setLocation(46,5);

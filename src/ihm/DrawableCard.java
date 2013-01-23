@@ -21,8 +21,12 @@ public abstract class DrawableCard  extends JLabel implements MouseListener,Mous
 	
 	protected JPanel parent;
 	
+	protected Card card;
+	
 	public DrawableCard(Card card, JPanel parent){
 		super(new ImageIcon(card.getLilImageLink()));
+		
+		this.card = card;
 		
 		this.setSize(CARD_WIDTH, CARD_HEIGHT);
 		

@@ -34,7 +34,7 @@ public class Main {
 		mainFrame.addScreen("DRAFT", draftScreen ).activeScreen("DRAFT");
 		
 		String [] setsTest = {"13m","13m","13m"};
-		//ServerThread st = new ServerThread(playersTest,setsTest);
+		ServerThread st = new ServerThread(playersTest,setsTest);
 		//st.start();
 		
 		DeckScreen deckScreen = new DeckScreen("13m",new Deck());

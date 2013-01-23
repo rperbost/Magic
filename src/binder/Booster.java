@@ -29,4 +29,9 @@ public class Booster {
 		return this.booster.indexOf(card);
 	}
 	
+	public void add(Card card){
+		booster.add(card);
+		System.out.println(card + " added "+this.size());
+	}
+	
 }

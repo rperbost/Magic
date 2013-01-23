@@ -95,4 +95,15 @@ public class CardBinder implements Binder{
 		
 		return null;
 	}
+
+	public boolean isStandAlone() {
+		if(this.contains("Plains")
+			&& this.contains("Island")
+			&& this.contains("Swamp")
+			&& this.contains("Mountain")
+			&& this.contains("Forest")){
+			return true;
+		}
+		return false;
+	}
 }

@@ -24,6 +24,8 @@ public class MainFrame extends JFrame{
 		
 		this.screens = new HashMap<String,Screen>();
 		this.actualScreen = "";
+		
+		this.setResizable(false);
 	}
 	
 	public MainFrame activeScreen(String name){

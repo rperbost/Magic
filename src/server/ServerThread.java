@@ -89,6 +89,7 @@ public class ServerThread extends Thread{
 			if(this.readyFlags[i] == false)return false;
 		}
 		return true;
+		//return false;
 	}
 
 	private void rotate(int nbBooster){

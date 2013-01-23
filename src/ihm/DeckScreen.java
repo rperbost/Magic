@@ -1,7 +1,10 @@
 package ihm;
 
 import java.awt.Color;
+import java.awt.Panel;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.swing.JLabel;
@@ -20,25 +23,82 @@ import player.Player;
 @SuppressWarnings("serial")
 public class DeckScreen extends Screen{
 	
-	String landSet;
+	String landSet = null;
 	Map <Card.Land, Card> lands = new HashMap<Card.Land,Card>();
 	private Deck deck;
 	
 	public DeckScreen(String landSet, Deck deck){
 		this.setLandSet(landSet);
 		this.setDeck(deck);
-		this.addPanel("LEFT", new JPanel())
-		.addPanel("BOTTOM",new JPanel())
-		.addPanel("RIGHT",new JPanel());
+		this.addPanel("DECK", new JPanel())
+		.addPanel("LAND-STACK",new JPanel())
+		.addPanel("TRASH",new JPanel())
+		.addPanel("ZOOM",new JPanel())
+		.addPanel("SIDEBOARD",new JPanel());
 	
-		this.panel("LEFT").setBounds(0, 0, 500, 500);
-		this.panel("LEFT").setBackground(new Color(255,255,0));
+		this.panel("DECK").setBounds(0, 0, 420, 500);
+		this.panel("DECK").setBackground(new Color(255,255,0));
+		
+		this.panel("ZOOM").setBounds(640, 0, 160, 230);
+		this.panel("ZOOM").setBackground(new Color(255,0,255));
+		
+		this.panel("TRASH").setBounds(300, 500, DrawableCard.CARD_WIDTH, 100);
+		this.panel("TRASH").setBackground(new Color(255,0,0));
 	
-		this.panel("BOTTOM").setBounds(0, 500, 800, 100);
-		this.panel("BOTTOM").setBackground(new Color(0,0,255));
+		this.panel("LAND-STACK").setBounds(0, 500, 300, 100);
+		this.panel("LAND-STACK").setBackground(new Color(0,0,255));
 	
-		this.panel("RIGHT").setBounds(500, 0, 300, 500);
-		this.panel("RIGHT").setBackground(new Color(0,255,255));
+		this.panel("SIDEBOARD").setBounds(420, 0, 220, 500);
+		this.panel("SIDEBOARD").setBackground(new Color(0,255,255));
+		
+		this.refreshBottom();
+		this.refreshDeck();
+	}
+
+	public Deck getDeck() {
+		return deck;
+	}
+
+	public void refreshDeck(){
+		JPanel p = this.panel("DECK");
+		p.removeAll();
+		
+		Booster b = deck.getMainDeck();
+		for(int i = 0; i < b.size();i++){
+			DragableCard c = new DragableCard(b.get(i), this);
+			c.setLocation(i*10,i*10);
+			p.add(c);
+		}
+		
+		p = this.panel("SIDEBOARD");
+		p.removeAll();
+		
+		b = deck.getSideboard();
+		for(int i = 0; i < b.size();i++){
+			DragableCard c = new DragableCard(b.get(i), this);
+			c.setLocation(i*10,i*10);
+			p.add(c);
+		}
+		this.repaint();
+	}
+	public void refreshBottom() {
+		JPanel p = this.panel("LAND-STACK");
+		p.removeAll();
+		
+		List<LandCard> landCards = new ArrayList<LandCard>();
+		
+		landCards.add(new LandCard(lands.get(Land.plains),this));
+		landCards.add(new LandCard(lands.get(Land.island),this));
+		landCards.add(new LandCard(lands.get(Land.swamp),this));
+		landCards.add(new LandCard(lands.get(Land.mountain),this));
+		landCards.add(new LandCard(lands.get(Land.forest),this));
+		
+		for(int i = 4; i >= 0; i--){
+			landCards.get(i).setLocation((i*DrawableCard.CARD_WIDTH/2),5);
+			p.add(landCards.get(i));
+		}
+		
+		this.repaint();
 	}
 
 	public void setDeck(Deck deck) {
@@ -51,11 +111,7 @@ public class DeckScreen extends Screen{
 		CardBinder setAsBinder = masterBinder.getSet(set);		
 		
 		if(
-			setAsBinder.contains("Plains")
-			&& setAsBinder.contains("Island")
-			&& setAsBinder.contains("Swamp")
-			&& setAsBinder.contains("Mountain")
-			&& setAsBinder.contains("Forest")		
+			setAsBinder.isStandAlone()	
 		){
 			this.landSet = set;
 			this.lands.put(Land.plains,setAsBinder.get("Plains"));
@@ -64,13 +120,18 @@ public class DeckScreen extends Screen{
 			this.lands.put(Land.mountain,setAsBinder.get("Mountain"));
 			this.lands.put(Land.forest,setAsBinder.get("Forest"));
 		}
-		
-		
-		
-		
-		
 	}
 
-	
+	public void repaint(){
+		super.repaint();		
+	}
+
+	public void setZoom(ZoomedCard zoomedCard) {
+		this.panel("ZOOM").removeAll();
+		this.panel("ZOOM").add(zoomedCard);
+		zoomedCard.setVisible(true);
+		zoomedCard.setLocation(0,0);
+		this.repaint();
+	}
 	
 }

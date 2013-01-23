@@ -1,6 +1,8 @@
 package ihm;
 
+import java.awt.Point;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import javax.swing.JPanel;
@@ -18,6 +20,7 @@ public abstract class Screen extends JPanel{
 	}
 	public Screen addPanel(String name,JPanel panel){
 		this.panels.put(name,panel);
+		panel.setName(name);
 		panel.setVisible(true);
 		panel.setLayout(null);
 		this.add(panel);
@@ -29,5 +32,22 @@ public abstract class Screen extends JPanel{
 	
 	public void repaint(){
 		super.repaint();
+	}
+	public String pointIsOnByScreen(Point p) {
+		
+		double x = p.getX()-this.getLocationOnScreen().getX();
+		double y = p.getY()-this.getLocationOnScreen().getY();
+		
+		Iterator<String> it = panels.keySet().iterator();
+		
+		while(it.hasNext()){
+			String panel_name = it.next();
+			JPanel panel = panels.get(panel_name);
+			if( panel.getBounds().contains(x,y) ){
+				return panel_name;
+			}
+		}
+		
+		return null;
 	}
 }
