@@ -1,8 +1,13 @@
 package ihm;
 
+import ihm.screen.Screen;
+
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 @SuppressWarnings("serial")
 public class MainFrame extends JFrame{
@@ -21,6 +26,10 @@ public class MainFrame extends JFrame{
 		this.setSize(800, 600);
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JLabel backgroundImage = new JLabel();
+		backgroundImage.setBounds(0, 0, 800, 600);
+		backgroundImage.setIcon(new ImageIcon("pics/background.jpg"));
+		this.add(backgroundImage);
 		
 		this.screens = new HashMap<String,Screen>();
 		this.actualScreen = "";
@@ -40,7 +49,7 @@ public class MainFrame extends JFrame{
 	
 	public MainFrame addScreen(String name,Screen screen){
 		this.screens.put(name,screen);
-		this.add(screen);
+		this.add(screen,0);
 		screen.setVisible(false);
 		return this;
 	}

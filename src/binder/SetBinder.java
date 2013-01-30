@@ -37,6 +37,9 @@ public class SetBinder implements Binder{
 	public Card get(String set,int i){
 		return binder.get(set).get(i);
 	}
+	public Card getByRef(String ref){
+		return binder.get(ref.substring(0, 3)).get(Integer.parseInt(ref.substring(3, 6)));
+	}
 	
 	@Override
 	public int size() {

@@ -31,6 +31,9 @@ public class Card {
 	public String getSet(){
 		return set;
 	}
+	public String getReference(){
+		return set+index;
+	}
 	
 	public Card(String name,String reference,String type,Rarity rarity){
 		this(name,

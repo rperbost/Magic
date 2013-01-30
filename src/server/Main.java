@@ -1,8 +1,9 @@
 package server;
 
-import ihm.DeckScreen;
-import ihm.DraftScreen;
 import ihm.MainFrame;
+import ihm.screen.DeckScreen;
+import ihm.screen.DraftScreen;
+import ihm.screen.IaImprovementScreen;
 
 import java.util.ArrayList;
 
@@ -39,5 +40,8 @@ public class Main {
 		
 		DeckScreen deckScreen = new DeckScreen("13m",new Deck());
 		mainFrame.addScreen("DECK", deckScreen).activeScreen("DECK");
+		
+		IaImprovementScreen iaScreen = new IaImprovementScreen();
+		//mainFrame.addScreen("IA",iaScreen).activeScreen("IA");
 	}	
 }
