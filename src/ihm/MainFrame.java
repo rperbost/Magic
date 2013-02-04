@@ -57,7 +57,7 @@ public class MainFrame extends JFrame{
 	public void repaint(){
 		try{
 			if(!actualScreen.equals("")){
-				screens.get(actualScreen).repaint();
+				screens.get(actualScreen).refresh();
 			}
 			super.repaint();
 		}catch(Exception e){

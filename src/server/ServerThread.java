@@ -5,13 +5,14 @@ import java.util.ArrayList;
 import binder.BoosterFactory;
 import binder.Card;
 import binder.Booster;
+import binder.Deck;
 
 import player.Player;
 
 public class ServerThread extends Thread{
 	private ArrayList<Player> players;
 	
-	private ArrayList< ArrayList<Card> > picks;
+	private ArrayList< Deck > picks;
 	private ArrayList< ArrayList< Booster > >boosters;
 	
 	private boolean[] readyFlags;
@@ -26,7 +27,7 @@ public class ServerThread extends Thread{
 	};
 	public ServerThread (ArrayList<Player> players, String[] sets){
 		this.players = players;
-		this.picks = new ArrayList<ArrayList<Card>>();
+		this.picks = new ArrayList<Deck>();
 		this.boosters = new ArrayList<ArrayList< Booster >>();
 		this.readyFlags = new boolean[8];
 		BoosterFactory boosterFactory = BoosterFactory.getInstance();
@@ -34,7 +35,7 @@ public class ServerThread extends Thread{
 		for(int i = 0;i < 8;i++){
 			this.players.get(i).setChair(i);
 			this.players.get(i).setCallback(this);
-			this.picks.add(new ArrayList<Card>());
+			this.picks.add(new Deck());
 			this.boosters.add(new ArrayList<Booster>());
 			for(int j = 0;j < 3;j++){
 				this.boosters.get(i).add(boosterFactory.getBooster(sets[j]));
@@ -63,6 +64,7 @@ public class ServerThread extends Thread{
 				for(int nbPlayers = 0;nbPlayers < 8;nbPlayers++){
 					this.readyFlags[nbPlayers] = false;
 					players.get(nbPlayers).setBooster(boosters.get(nbPlayers).get(nbBooster));
+					players.get(nbPlayers).setDeck(picks.get(nbPlayers));
 				}
 				this.timer = TIMERS[nbCarte];
 				while(this.timer>0 && !areTheyAllReady()){
@@ -76,10 +78,13 @@ public class ServerThread extends Thread{
 				for(int nbJoueurs = 0;nbJoueurs < 8;nbJoueurs++){
 					Card selectedCard = players.get(nbJoueurs).getSelectedCard();
 					boosters.get(nbJoueurs).get(nbBooster).remove(selectedCard);
-					picks.get(nbJoueurs).add(selectedCard);
+					picks.get(nbJoueurs).addToDeck(selectedCard);
 				}
 				this.rotate(nbBooster);
 			}
+		}
+		for(int nbPlayers = 0;nbPlayers < 8;nbPlayers++){
+			players.get(nbPlayers).startDeckList();
 		}
 	}
 
@@ -116,7 +121,7 @@ public class ServerThread extends Thread{
 	}
 
 
-	public Booster getDeck(Player player) {
-		return new Booster(this.picks.get(player.getChair()));
+	public Deck getDeck(Player player) {
+		return this.picks.get(player.getChair());
 	}
 }

@@ -33,18 +33,16 @@ public class Main {
 		MainFrame mainFrame = MainFrame.getInstance();
 		//mainFrame.addScreen("test", new TestScreen() ).activeScreen("test");
 		
-		DraftScreen draftScreen = new DraftScreen(p0);
-		mainFrame.addScreen("DRAFT", draftScreen ).activeScreen("DRAFT");
+		
+		mainFrame.addScreen("DRAFT", new DraftScreen(p0) ).activeScreen("DRAFT");
 		
 		String [] setsTest = {"13m","13m","13m"};
 		ServerThread st = new ServerThread(playersTest,setsTest);
 		st.start();
 		
-		//DeckScreen deckScreen = new DeckScreen("13m",new Deck());
-		//mainFrame.addScreen("DECK", deckScreen).activeScreen("DECK");
-		
-		//IaImprovementScreen iaScreen = new IaImprovementScreen();
-		//mainFrame.addScreen("IA",iaScreen).activeScreen("IA");
+		//mainFrame.addScreen("DECK", new DeckScreen("13m",new Deck())).activeScreen("DECK");
+
+		//mainFrame.addScreen("IA",new IaImprovementScreen()).activeScreen("IA");
 		
 	}	
 }

@@ -2,7 +2,7 @@ package ihm.card;
 
 import ia.Datawork;
 import ihm.MainFrame;
-import ihm.screen.IaImprovementScreen;
+import ihm.screen.*;
 
 import java.awt.event.MouseEvent;
 
@@ -22,7 +22,8 @@ public class CardIaImprovement extends CardDecorator{
 	public void mouseClicked(MouseEvent e) {
 		Datawork ia = new Datawork();
 		ia.modifIa(this.good, this.bad);
-		((IaImprovementScreen)MainFrame.getInstance().getScreen()).newChoice();
+		MainFrame.getInstance().activeScreen("DECK");
+		MainFrame.getInstance().getScreen().refresh();
 		super.mouseClicked(e);
 	}
 

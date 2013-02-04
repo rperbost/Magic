@@ -3,15 +3,18 @@ package player;
 import server.ServerThread;
 import binder.Booster;
 import binder.Card;
+import binder.Deck;
 
 public abstract class Player {
 	protected Booster currentBooster;
+	protected Deck currentDeck;
 	protected Card selectedCard;
 	protected int chair;
 	protected ServerThread callback;
 	
 	public Player(){
-		currentBooster = null;
+		currentBooster = new Booster();
+		currentDeck = new Deck();
 		selectedCard = null;
 		chair = -1;
 	}
@@ -30,6 +33,10 @@ public abstract class Player {
 	public void setBooster(Booster booster){
 		currentBooster = booster;
 		selectedCard = null;
+	}
+	
+	public void setDeck(Deck deck){
+		currentDeck = deck;
 	}
 	
 	public Card getSelectedCard(){
@@ -62,7 +69,7 @@ public abstract class Player {
 	}
 
 	public Booster getBooster() {
-		return currentBooster;
+		return this.currentBooster;
 	}
 
 	public void refresh() {
@@ -73,19 +80,26 @@ public abstract class Player {
 		return currentBooster.indexOf(selectedCard);
 	}
 
-	public Booster getDeck() {
-		// TODO Auto-generated method stub
-		return callback.getDeck(this);
+	public Deck getDeck() {
+		return this.currentDeck;
 	}
 	
 	public abstract String getPseudo();
 	
 	public boolean[] getReadyStates(){
-		return callback.getReadys();
+		try{
+			return callback.getReadys();
+		}catch(NullPointerException e){
+			return null;
+		}
 	}
 	
 	public String[] getPseudos(){
 		return callback.getPseudos();
+	}
+	
+	public void startDeckList(){
+		
 	}
 
 	

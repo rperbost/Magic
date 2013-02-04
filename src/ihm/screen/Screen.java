@@ -28,14 +28,19 @@ public abstract class Screen extends JPanel{
 		this.add(panel);
 		return this;
 	}
+	
 	public JPanel panel(String name){
 		return this.panels.get(name);
 	}
 	
-	public void refresh(){
-		this.repaint();
+	private void addPanels() {
+		Iterator<String> it = panels.keySet().iterator();
+		
+		while(it.hasNext()){
+			this.add(panels.get(it.next()));
+		}
+		
 	}
-	
 	public String pointIsOnByScreen(Point p) {
 		
 		double x = p.getX()-this.getLocationOnScreen().getX();
@@ -52,5 +57,11 @@ public abstract class Screen extends JPanel{
 		}
 		
 		return "";
+	}
+	
+	public void refresh() {
+		this.removeAll();
+		if(panels != null)this.addPanels();
+		super.repaint();
 	}
 }
