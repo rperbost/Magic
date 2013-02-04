@@ -48,6 +48,9 @@ public abstract class Player {
 		}
 		callback.notifyReady(this);
 	}
+	public void setSelectedCard(Card card) {
+		 setSelectedCard(currentBooster.indexOf(card));
+	}
 	
 	public int getTimer(){
 		if(callback != null)return callback.getTimer();
@@ -84,4 +87,6 @@ public abstract class Player {
 	public String[] getPseudos(){
 		return callback.getPseudos();
 	}
+
+	
 }

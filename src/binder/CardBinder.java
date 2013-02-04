@@ -11,7 +11,7 @@ public class CardBinder implements Binder{
 	public CardBinder(){
 		cards = new HashMap < Character, ArrayList<Card> >();
 	}
-	
+
 	public void addCard(Card card){
 		String cardName = card.getName();
 		
@@ -29,37 +29,18 @@ public class CardBinder implements Binder{
 			binderPart.add(card.clone());
 		}
 	}
-	private Card getCard(Card card){
-		try{
-			ArrayList<Card> binderPart = this.cards.get(card.getName().charAt(0));
-			for(int i = 0;i < binderPart.size();i++){
-				if(binderPart.get(i).equals(card)){
-					return binderPart.get(i);
-				}
-			}
-		}catch(Exception e){
-			return null;
-		}
-		return null;
-		
-	}
+
 	public boolean contains(Card card) {
 		if(getCard(card) == null) return false;
 		else return true;
 	}
 	
-	public int size(){
-		Iterator<Character> it = cards.keySet().iterator();
-		
-		int size = 0;
-		
-		while(it.hasNext()){
-			size += cards.get(it.next()).size();
-		}
-		
-		return size;
+	@Override
+	public boolean contains(String name) {
+		if(get(name)==null)return false;
+		else return true;
 	}
-	
+
 	public Card get(int i){
 		Iterator<Character> it = cards.keySet().iterator();
 				
@@ -72,14 +53,8 @@ public class CardBinder implements Binder{
 				return cards.get(c).get(i);
 			}
 		}
-
+	
 		return null;	
-	}
-
-	@Override
-	public boolean contains(String name) {
-		if(get(name)==null)return false;
-		else return true;
 	}
 
 	@Override
@@ -93,6 +68,44 @@ public class CardBinder implements Binder{
 			}
 		}
 		
+		return null;
+	}
+
+	public Card get(String ref, String id) {
+		return getByRef(ref+id);
+	}
+
+	public Card getByRef(String ref) {
+		for(int i = 0; i < this.size();i++){
+			Card c = this.get(i);
+			if(c.getReference().equals(ref)){
+				return c;
+			}
+		}
+		return null;
+	}
+
+	public int size(){
+		Iterator<Character> it = cards.keySet().iterator();
+		
+		int size = 0;
+		
+		while(it.hasNext()){
+			size += cards.get(it.next()).size();
+		}
+		
+		return size;
+	}
+	
+	private Card getCard(Card card){
+		try{
+			ArrayList<Card> binderPart = this.cards.get(card.getName().charAt(0));
+			for(int i = 0;i < binderPart.size();i++){
+				if(binderPart.get(i).equals(card)){
+					return binderPart.get(i);
+				}
+			}
+		}catch(Exception e){}
 		return null;
 	}
 

@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class SingletonBinder extends SetBinder{
+public class SingletonBinder extends SetBinder implements Binder{
 	static SingletonBinder theInstance = null;
 	
 	static public SingletonBinder getInstance(){

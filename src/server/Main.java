@@ -1,14 +1,15 @@
 package server;
 
 import ihm.MainFrame;
-import ihm.screen.DeckScreen;
-import ihm.screen.DraftScreen;
-import ihm.screen.IaImprovementScreen;
+import ihm.card.CardDrawable;
+import ihm.screen.*;
 
 import java.util.ArrayList;
 
 import binder.Booster;
+import binder.Card;
 import binder.Deck;
+import binder.SingletonBinder;
 
 import player.IA;
 import player.Human;
@@ -30,18 +31,20 @@ public class Main {
 		playersTest.set(0, p0);
 		
 		MainFrame mainFrame = MainFrame.getInstance();
+		//mainFrame.addScreen("test", new TestScreen() ).activeScreen("test");
 		
 		DraftScreen draftScreen = new DraftScreen(p0);
 		mainFrame.addScreen("DRAFT", draftScreen ).activeScreen("DRAFT");
 		
 		String [] setsTest = {"13m","13m","13m"};
 		ServerThread st = new ServerThread(playersTest,setsTest);
-		//st.start();
+		st.start();
 		
-		DeckScreen deckScreen = new DeckScreen("13m",new Deck());
-		mainFrame.addScreen("DECK", deckScreen).activeScreen("DECK");
+		//DeckScreen deckScreen = new DeckScreen("13m",new Deck());
+		//mainFrame.addScreen("DECK", deckScreen).activeScreen("DECK");
 		
-		IaImprovementScreen iaScreen = new IaImprovementScreen();
+		//IaImprovementScreen iaScreen = new IaImprovementScreen();
 		//mainFrame.addScreen("IA",iaScreen).activeScreen("IA");
+		
 	}	
 }

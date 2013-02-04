@@ -63,5 +63,10 @@ public class MainFrame extends JFrame{
 		}catch(Exception e){
 		}
 	}
-	
+	public Screen getScreen(){
+		if(!actualScreen.equals("")){
+			return screens.get(actualScreen);
+		}
+		return null;
+	}
 }

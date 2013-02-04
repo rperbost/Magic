@@ -32,9 +32,10 @@ public abstract class Screen extends JPanel{
 		return this.panels.get(name);
 	}
 	
-	public void repaint(){
-		super.repaint();
+	public void refresh(){
+		this.repaint();
 	}
+	
 	public String pointIsOnByScreen(Point p) {
 		
 		double x = p.getX()-this.getLocationOnScreen().getX();
@@ -50,6 +51,6 @@ public abstract class Screen extends JPanel{
 			}
 		}
 		
-		return null;
+		return "";
 	}
 }

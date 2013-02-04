@@ -1,12 +1,20 @@
 package ihm.screen;
 
-import ihm.card.ClickableCardFactory;
-import ihm.card.OverviewCard;
+import ihm.card.CardDrawable;
+import ihm.card.CardHandOnHover;
+import ihm.card.CardPositionned;
+import ihm.card.CardSelectDraftCard;
+import ihm.card.CardSelected;
+import ihm.card.CardZoomUnderMouse;
 
 import java.awt.Color;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
+import binder.Booster;
 
 import player.Player;
 
@@ -82,48 +90,72 @@ public class DraftScreen extends Screen{
 		return this;
 	}
 	
+	private int nbCardsInBooster = -1;
+	private int currentSelected = -1;
 	public void repaint(){
 		if(player != null){
-			//System.out.println(player.getTimer());
+			Booster booster = this.player.getBooster();
+			if(booster != null 
+					&& (nbCardsInBooster != booster.size()
+					|| player.getSelectedCardId() != currentSelected)
+			){
 			this.refreshRight();
+			};
 		}
 		super.repaint();
 	}
 
-	private boolean refreshRight() {
-		if(this.player.getBooster() == null)return false;
-		this.panel("RIGHT").removeAll();
-		for(int i = 0;i < this.player.getBooster().size() ;i++){
-			this.panel("RIGHT").add(ClickableCardFactory.getClickableCard(this.player,i,this.panel("RIGHT")));
-		}
-		this.panel("RIGHT").add(timer);
+	
+	private void refreshRight() {
+		Booster booster = this.player.getBooster();
 		
-		this.panel("LEFT").removeAll();
-		for(int i = this.player.getDeck().size()-1;i >= 0 ;i--){
-			this.panel("LEFT").add(new OverviewCard(this.player.getDeck(), i, this.panel("LEFT")));
-		}
-		
-		this.panel("TOP").removeAll();
-		this.panel("TOP").add(readyContainer);
-		
-		boolean[] readyStates = this.player.getReadyStates();
-		for(int i = 0; i < 8; i++){
-			if(readyStates[i]){
-				ready[i].setBackground(new Color(0,255,0));
-			}else{
-				ready[i].setBackground(new Color(255,0,0));
+			nbCardsInBooster = booster.size();
+			currentSelected = player.getSelectedCardId();
+			this.panel("RIGHT").removeAll();
+			for(int i = 0;i < booster.size() ;i++){
+				CardDrawable c = new CardDrawable(booster.get(i),CardDrawable.OVERVIEW_WIDTH,CardDrawable.OVERVIEW_HEIGHT);
+				c = new CardHandOnHover(c);
+				c = new CardPositionned((i%5)*(c.getWidth()+15), (i/5)*(c.getHeight()+45), c);
+				if(this.player.getSelectedCardId() == i)c = new CardSelected(c);
+				c = new CardZoomUnderMouse(c);
+				c = new CardSelectDraftCard(c);
+				
+				this.panel("RIGHT").add(c,0);
 			}
-		}
-		
-		if(!pseudoLoaded ){
-			pseudoLoaded = true;
-			String[] pseudos = player.getPseudos();
+			this.panel("RIGHT").add(timer);
+			
+			this.panel("LEFT").removeAll();
+			Booster deck = this.player.getDeck();
+			for(int i = 0;i < deck.size() ;i--){
+				CardDrawable c = new CardDrawable(deck.get(i),CardDrawable.OVERVIEW_WIDTH,CardDrawable.OVERVIEW_HEIGHT);
+				c = new CardPositionned((c.getWidth()+2)*(i%2)+1, 15+7*i, c);
+				c = new CardZoomUnderMouse(c);
+				this.panel("LEFT").add(c,0);
+			}
+			
+			this.panel("TOP").removeAll();
+			this.panel("TOP").add(readyContainer);
+			
+			boolean[] readyStates = this.player.getReadyStates();
 			for(int i = 0; i < 8; i++){
-				JLabel jl = new JLabel(pseudos[i]);
-				ready[i].add(jl);
+				if(readyStates[i]){
+					ready[i].setBackground(new Color(0,255,0));
+				}else{
+					ready[i].setBackground(new Color(255,0,0));
+				}
 			}
-		}
-		return true;
+			
+			if(!pseudoLoaded ){
+				pseudoLoaded = true;
+				String[] pseudos = player.getPseudos();
+				for(int i = 0; i < 8; i++){
+					JLabel jl = new JLabel(pseudos[i]);
+					ready[i].add(jl);
+				}
+			}
 	}
 	
+	public Player getPlayer(){
+		return player;
+	}
 }

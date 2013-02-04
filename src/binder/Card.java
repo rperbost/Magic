@@ -3,8 +3,6 @@ package binder;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import leecher.Extractor;
-
 public class Card {
 	public enum Rarity {
 	    common, uncommon, rare, timeshifted, mythic, unknow 
@@ -89,14 +87,8 @@ public class Card {
 		return new Card(this.name,this.set,this.index,this.type,this.rarity);
 	}
 
-	public String getLilImageLink(){
-		return getImageLink("lil");
-	}
-	public String getBigImageLink(){
-		return getImageLink("big");
-	}
-	private String getImageLink(String size){
-		return "pics/"+size+"/"+this.set+"/"+this.index+".jpg";
+	public String getImageLink(){
+		return "pics/big/"+this.set+"/"+this.index+".jpg";
 	}
 
 

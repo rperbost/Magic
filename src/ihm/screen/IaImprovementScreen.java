@@ -1,7 +1,7 @@
 package ihm.screen;
 
 import ia.Datawork;
-import ihm.card.IaImprovementCard;
+import ihm.card.*;
 
 import java.awt.Color;
 
@@ -25,25 +25,26 @@ public class IaImprovementScreen extends Screen{
 		//this.panel("GAUCHE").setBackground(new Color(255,255,0));
 		
 		this.panel("DROITE").setBounds(400, 0, 400, 600);
-		this.panel("DROITE").setBackground(new Color(255,0,255,0));
+		//this.panel("DROITE").setBackground(new Color(255,0,255,0));
 		
 		newChoice();
 	}
 
-	private Card card1 = null;
-	private Card card2 = null;
+	
 	
 	public void newChoice() {
 		try{
 			String refs[] = ia.getRefsWSameSet();
-			this.card1 = SingletonBinder.getInstance().getByRef(refs[0]);
-			this.card2 = SingletonBinder.getInstance().getByRef(refs[1]);
+			Card card1 = SingletonBinder.getInstance().getByRef(refs[0]);
+			Card card2 = SingletonBinder.getInstance().getByRef(refs[1]);
 			this.panel("GAUCHE").removeAll();
-			this.panel("GAUCHE").add(new IaImprovementCard(this.card1,this.card2, ia, this));
+			this.panel("GAUCHE").add(new CardIaImprovement(card2, new CardHandOnHover(new CardPositionned(45, 65, new CardDrawable(card1)))));
 			this.panel("DROITE").removeAll();
-			this.panel("DROITE").add(new IaImprovementCard(this.card2,this.card1, ia, this));
+			this.panel("DROITE").add(new CardIaImprovement(card1, new CardHandOnHover(new CardPositionned(45, 65, new CardDrawable(card2)))));
+			
 			this.repaint();
 		}catch(Exception e){
+			//e.printStackTrace();
 			newChoice();
 		}
 	}

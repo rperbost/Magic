@@ -1,9 +1,11 @@
 package ihm.screen;
 
-import ihm.card.DragableCard;
-import ihm.card.DrawableCard;
-import ihm.card.LandCard;
-import ihm.card.ZoomedCard;
+import ihm.card.CardBumpOnHover;
+import ihm.card.CardDraggableDeck;
+import ihm.card.CardDrawable;
+import ihm.card.CardHandOnHover;
+import ihm.card.CardPositionned;
+import ihm.card.CardZoomUnderMouse;
 
 import java.awt.Color;
 import java.awt.Panel;
@@ -41,18 +43,15 @@ public class DeckScreen extends Screen{
 		.addPanel("ZOOM",new JPanel())
 		.addPanel("SIDEBOARD",new JPanel());
 	
-		this.panel("DECK").setBounds(0, 0, 420, 500);
+		this.panel("DECK").setBounds(0, 0, 576, 500);
 		this.panel("DECK").setBackground(new Color(0,0,255,100));
 		this.panel("DECK").setOpaque(true);
 		
-		this.panel("ZOOM").setBounds(418, 0, 156, 222);
-		this.panel("ZOOM").setBackground(new Color(255,0,255));
-		
-		this.panel("TRASH").setBounds(300, 500, 500, 100);
+		this.panel("TRASH").setBounds(500, 500, 300, 100);
 		this.panel("TRASH").setBackground(new Color(255,0,0,100));
 		this.panel("TRASH").setOpaque(true);
 	
-		this.panel("LAND-STACK").setBounds(0, 500, 300, 100);
+		this.panel("LAND-STACK").setBounds(0, 500, 500, 100);
 		this.panel("LAND-STACK").setBackground(new Color(0,0,255));
 	
 		this.panel("SIDEBOARD").setBounds(574, 0, 218, 500);
@@ -73,8 +72,11 @@ public class DeckScreen extends Screen{
 		
 		Booster b = deck.getMainDeck();
 		for(int i = b.size()-1; i >= 0 ;i--){
-			DragableCard c = new DragableCard(b.get(i), this);
-			c.setLocation((i%4)*(DrawableCard.CARD_WIDTH+5)+2,i/4*15);
+			CardDrawable c = new CardDrawable(b.get(i),CardDrawable.OVERVIEW_WIDTH,CardDrawable.OVERVIEW_HEIGHT);
+			c = new CardPositionned((i%5)*(c.getWidth()+5)+2,i/5*15,c);
+			c = new CardHandOnHover(c);
+			c = new CardZoomUnderMouse(c);
+			c = new CardDraggableDeck(this.deck,c);
 			p.add(c);
 		}
 		
@@ -83,8 +85,11 @@ public class DeckScreen extends Screen{
 		
 		b = deck.getSideboard();
 		for(int i = b.size()-1; i >= 0 ;i--){
-			DragableCard c = new DragableCard(b.get(i), this);
-			c.setLocation((i%2)*(DrawableCard.CARD_WIDTH+6)+7,i/2*15);
+			CardDrawable c = new CardDrawable(b.get(i),CardDrawable.OVERVIEW_WIDTH,CardDrawable.OVERVIEW_HEIGHT);
+			c = new CardPositionned((i%2)*(c.getWidth()+6)+7,i/2*15,c);
+			c = new CardHandOnHover(c);
+			c = new CardZoomUnderMouse(c);
+			c = new CardDraggableDeck(this.deck,c);
 			p.add(c);
 		}
 		this.repaint();
@@ -93,19 +98,24 @@ public class DeckScreen extends Screen{
 		JPanel p = this.panel("LAND-STACK");
 		p.removeAll();
 		
-		List<LandCard> landCards = new ArrayList<LandCard>();
+		List<Card.Land> landCards = new ArrayList<Card.Land>();
 		
-		landCards.add(new LandCard(lands.get(Land.plains),this));
-		landCards.add(new LandCard(lands.get(Land.island),this));
-		landCards.add(new LandCard(lands.get(Land.swamp),this));
-		landCards.add(new LandCard(lands.get(Land.mountain),this));
-		landCards.add(new LandCard(lands.get(Land.forest),this));
+		landCards.add(Land.plains);
+		landCards.add(Land.island);
+		landCards.add(Land.swamp);
+		landCards.add(Land.mountain);
+		landCards.add(Land.forest);
 		
-		for(int i = 4; i >= 0; i--){
-			landCards.get(i).setLocation((i*DrawableCard.CARD_WIDTH/2),5);
-			p.add(landCards.get(i));
+		for(int i = 0; i < landCards.size() ;i++){
+			CardDrawable c = new CardDrawable(lands.get(landCards.get(i)),CardDrawable.OVERVIEW_WIDTH,CardDrawable.OVERVIEW_HEIGHT);
+			c = new CardPositionned(i*(c.getWidth()), 10, c);
+			c = new CardHandOnHover(c);
+			c = new CardBumpOnHover(c);
+			c = new CardZoomUnderMouse(c);
+			c = new CardDraggableDeck(this.deck,c);
+
+			p.add(c);
 		}
-		
 		this.repaint();
 	}
 
@@ -130,16 +140,11 @@ public class DeckScreen extends Screen{
 		}
 	}
 
-	public void repaint(){
-		super.repaint();		
-	}
-
-	public void setZoom(ZoomedCard zoomedCard) {
-		this.panel("ZOOM").removeAll();
-		this.panel("ZOOM").add(zoomedCard);
-		zoomedCard.setVisible(true);
-		zoomedCard.setLocation(0,0);
-		this.repaint();
+	@Override
+	public void refresh() {
+		this.refreshBottom();
+		this.refreshDeck();
+		super.refresh();
 	}
 	
 }
