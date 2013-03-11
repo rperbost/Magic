@@ -1,5 +1,4 @@
-server : singleton
-interface : command
-booster factory : singleton
-SingletonBinder : singleton
-... à suivre
+singleton
+command
+factory
+decorator
