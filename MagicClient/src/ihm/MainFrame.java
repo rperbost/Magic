@@ -1,6 +1,6 @@
 package ihm;
 
-import ihm.screen.Screen;
+import ihm.screen.IScreen;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +20,7 @@ public class MainFrame extends JFrame{
 	}
 	
 	private String actualScreen;
-	private Map<String,Screen> screens;
+	private Map<String,IScreen> screens;
 	private MainFrame(){
 		this.setSize(800, 600);
 		this.setVisible(true);
@@ -30,7 +30,7 @@ public class MainFrame extends JFrame{
 		backgroundImage.setIcon(new ImageIcon("pics/background.jpg"));
 		this.add(backgroundImage);
 		
-		this.screens = new HashMap<String,Screen>();
+		this.screens = new HashMap<String,IScreen>();
 		this.actualScreen = "";
 		
 		this.setResizable(false);
@@ -60,14 +60,14 @@ public class MainFrame extends JFrame{
 		return this;
 	}
 	
-	public MainFrame addScreen(String name,Screen screen){
+	public MainFrame addScreen(String name,IScreen screen){
 		this.screens.put(name,screen);
 		this.add(screen,0);
 		screen.setVisible(false);
 		return this;
 	}
 	
-	public Screen getScreen(){
+	public IScreen getScreen(){
 		if(!actualScreen.equals("")){
 			return screens.get(actualScreen);
 		}

@@ -9,7 +9,7 @@ import rmi.MagicRemoteManager;
 
 
 @SuppressWarnings("serial")
-public class CommandButton extends JButton implements Command{
+public class CommandButton extends JButton implements ICommand{
 
 	MagicRemoteManager server;
 	public CommandButton(String label) throws RemoteException{

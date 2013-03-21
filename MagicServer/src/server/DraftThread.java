@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 import binder.BoosterFactory;
-import binder.ImplementedDeck;
-import binder.interfaces.Booster;
-import binder.interfaces.Card;
+import binder.Deck;
+import binder.IBooster;
+import binder.ICard;
 
 import player.*;
 
@@ -18,27 +18,27 @@ public class DraftThread extends Thread{
 			45000,45000,40000,40000,35000,
 			30000,25000,20000,10000,10000,
 	};
-	private LinkedList< Booster > boosterStock; 
+	private LinkedList< IBooster > boosterStock; 
 	
 	int idCreateur;
-	private ArrayList< Player > players;
+	private ArrayList< IPlayer > players;
 	
 	int timer;
-	public DraftThread (int idCreateur,ArrayList<Player> players, String[] sets) throws RemoteException{
+	public DraftThread (int idCreateur,ArrayList<IPlayer> players, String[] sets) throws RemoteException{
 		this.players = players;
 		this.idCreateur = idCreateur;
 		
 		for(int i = players.size();i < 8;i++){
-			players.add(new IA("BOT"+i));
+			players.add(new IAPlayer("BOT"+i));
 		}
 		
 		for(int i = 0;i < 8;i++){
-			Player p = this.players.get(i);
+			IPlayer p = this.players.get(i);
 			p.setChair(i);
-			p.setPick(new ImplementedDeck());
+			p.setPick(new Deck());
 		}
 		
-		this.boosterStock = new LinkedList<Booster>();
+		this.boosterStock = new LinkedList<IBooster>();
 		for(int i = 0;i < 3;i++){
 			for(int j = 0;j < 8;j++){
 				this.boosterStock.push(BoosterFactory.getBooster(Server.getInstance().getBinder().getSet(sets[i])));
@@ -47,7 +47,7 @@ public class DraftThread extends Thread{
 	}
 	
 	private boolean areTheyAllReady() {
-		for(Player p : players){
+		for(IPlayer p : players){
 			if(!p.isReady())return false;
 		}
 		return true;
@@ -67,8 +67,8 @@ public class DraftThread extends Thread{
 		}
 		r+="\t";
 		
-		Player target = null;
-		for(Player p:players){
+		IPlayer target = null;
+		for(IPlayer p:players){
 			if(p.getId() == id)target = p;
 		}
 		
@@ -100,11 +100,11 @@ public class DraftThread extends Thread{
 	}
 
 	private void rotate(int nbBooster) throws RemoteException{
-		Booster firstBooster = players.get(0).getCurrentBooster();
+		IBooster firstBooster = players.get(0).getCurrentBooster();
 		if(firstBooster.size()>0){
 			for(int i = 0;i < 7; i++){
-				Player p = players.get(i);
-				Player pNext = players.get(i+1);
+				IPlayer p = players.get(i);
+				IPlayer pNext = players.get(i+1);
 				p.setCurrentBooster(pNext.getCurrentBooster());
 			}
 			players.get(7).setCurrentBooster(firstBooster);
@@ -118,14 +118,14 @@ public class DraftThread extends Thread{
 			} catch (RemoteException e) {
 				Server.clients.remove(players.get(i));
 				try {
-					players.add(i,new IA(players.get(i)));
+					players.add(i,new IAPlayer(players.get(i)));
 				} catch (RemoteException e1) {
 					e1.printStackTrace();
 				}
 			}
 		}
 		for(int nbBooster = 0;nbBooster < 3;nbBooster++){
-			for(Player p : players){
+			for(IPlayer p : players){
 				try {
 					p.setCurrentBooster(boosterStock.pollLast());
 				} catch (RemoteException e) {
@@ -146,10 +146,10 @@ public class DraftThread extends Thread{
 						e.printStackTrace();
 					}
 				}
-				for(Player p : players){
+				for(IPlayer p : players){
 					try {
 						String selectedRef = p.getSelectedCard().getReference();
-						Card selectedCard = Server.getInstance().getBinder().getByRef(selectedRef);
+						ICard selectedCard = Server.getInstance().getBinder().getByRef(selectedRef);
 						p.getCurrentBooster().remove(selectedCard);
 						p.getPick().addToDeck(selectedCard);
 					} catch (RemoteException e) {
@@ -173,8 +173,8 @@ public class DraftThread extends Thread{
 		}
 	}
 	
-	public void selectCard(int id, Card card) throws RemoteException {
-		for(Player p : players){
+	public void selectCard(int id, ICard card) throws RemoteException {
+		for(IPlayer p : players){
 			if(p.getId() == id)p.setSelectedCard(card);
 		}
 		refreshPlayers();

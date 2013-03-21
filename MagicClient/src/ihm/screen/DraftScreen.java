@@ -6,14 +6,14 @@ import java.rmi.RemoteException;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import binder.interfaces.Booster;
-import binder.interfaces.Card;
-import binder.interfaces.Deck;
+import binder.IBooster;
+import binder.ICard;
+import binder.IDeck;
 
 import ihm.card.*;
 
 @SuppressWarnings("serial")
-public class DraftScreen extends Screen{
+public class DraftScreen extends IScreen{
 	private int boosterSize = -1;
 	private int deckSize = -1;
 	private int nbReady = -1;
@@ -88,7 +88,7 @@ public class DraftScreen extends Screen{
 	}
 	
 	private void refreshBooster() throws RemoteException {
-		Booster booster = server.getDraftState().getBooster();
+		IBooster booster = server.getDraftState().getBooster();
 		if (booster!=null && booster.size()!=boosterSize){
 			boosterSize = booster.size();			
 			JPanel p = this.panel("RIGHT");
@@ -97,7 +97,10 @@ public class DraftScreen extends Screen{
 				CardDrawable c = new CardDrawable(booster.get(i),CardDrawable.OVERVIEW_WIDTH,CardDrawable.OVERVIEW_HEIGHT);
 				c = new CardHandOnHover(c);
 				c = new CardPositionned((i%5)*(c.getWidth()+15), (i/5)*(c.getHeight()+45), c);
-				if(server.getDraftState().getSelectedCardId() == i)c = new CardSelected(c);
+				if(server.getDraftState().getSelectedCardId() == i){
+					System.out.println(i);
+					c = new CardSelected(c);
+				}
 				c = new CardZoomUnderMouse(c);
 				c = new CardSelectDraftCard(c);
 				p.add(c,0);
@@ -105,9 +108,9 @@ public class DraftScreen extends Screen{
 		}
 	}
 	private void refreshDeck() throws RemoteException {
-		Deck deck = server.getDraftState().getDeck();
+		IDeck deck = server.getDraftState().getDeck();
 		if (deck!=null){
-			Booster mainDeck = deck.getMainDeck();
+			IBooster mainDeck = deck.getMainDeck();
 			if(mainDeck.size() != deckSize){
 				deckSize = mainDeck.size();	
 				JPanel p = this.panel("LEFT");
@@ -155,7 +158,7 @@ public class DraftScreen extends Screen{
 	}
 
 
-	public void setSelectedCard(Card card) throws RemoteException {
+	public void setSelectedCard(ICard card) throws RemoteException {
 		server.selectCard(card);
 		
 	}

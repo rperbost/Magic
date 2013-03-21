@@ -9,12 +9,12 @@ import java.rmi.RemoteException;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import binder.interfaces.Deck;
+import binder.IDeck;
 
 @SuppressWarnings("serial")
 public class SaveDeckButton extends CommandButton{
-	Deck deck;
-	public SaveDeckButton(Deck deck) throws RemoteException{
+	IDeck deck;
+	public SaveDeckButton(IDeck deck) throws RemoteException{
 		super("Sauvegarder le deck");
 		this.deck = deck;
 	}

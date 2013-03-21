@@ -20,26 +20,26 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import binder.interfaces.Card;
+import binder.ICard;
 
 @SuppressWarnings("serial")
 public class CardDrawable extends JLabel implements MouseListener,MouseMotionListener{
 
-	private static Map<Card,ImageIcon>IMAGE_CACHE = new HashMap<Card,ImageIcon>();
+	private static Map<ICard,ImageIcon>IMAGE_CACHE = new HashMap<ICard,ImageIcon>();
 	public static final int OVERVIEW_HEIGHT = 142;
 	
 	public static final int OVERVIEW_WIDTH = 100;
-	public Card card;
+	public ICard card;
 	
 	public List<CardDrawable> decorators;
 	
 	public ImageIcon image;
 
-	public CardDrawable(Card card) throws RemoteException{
+	public CardDrawable(ICard card) throws RemoteException{
 		this(card, -1,-1);
 	}
 
-	public CardDrawable(Card card, int w, int h) throws RemoteException {
+	public CardDrawable(ICard card, int w, int h) throws RemoteException {
 		this.decorators = new ArrayList<CardDrawable>();
 		this.decorators.add(this);
 		this.card = card;
@@ -98,11 +98,13 @@ public class CardDrawable extends JLabel implements MouseListener,MouseMotionLis
 
 	@Override
 	public void mouseMoved(MouseEvent e) {}
-
+	
 	@Override
 	public void mousePressed(MouseEvent e) {}
 	
 	@Override
 	public void mouseReleased(MouseEvent e) {}
+	
+
 
 }

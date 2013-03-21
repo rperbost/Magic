@@ -8,11 +8,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import binder.interfaces.Binder;
-import binder.interfaces.Card;
 
 @SuppressWarnings("serial")
-public class SetBinder extends UnicastRemoteObject implements Binder{
+public class SetBinder extends UnicastRemoteObject implements IBinder{
 
 	Map<String,CardBinder> binder;
 	
@@ -22,7 +20,7 @@ public class SetBinder extends UnicastRemoteObject implements Binder{
 	}
 
 	@Override
-	public void addCard(Card card) throws RemoteException {
+	public void addCard(ICard card) throws RemoteException {
 		String set = card.getSet();
 		if(!binder.containsKey(set)){
 			binder.put(set, new CardBinder());
@@ -31,7 +29,7 @@ public class SetBinder extends UnicastRemoteObject implements Binder{
 	}
 
 	@Override
-	public boolean contains(Card card) throws RemoteException {
+	public boolean contains(ICard card) throws RemoteException {
 		String set = card.getSet();
 		if(!binder.containsKey(set))return false;
 		return binder.get(set).contains(card);
@@ -44,7 +42,7 @@ public class SetBinder extends UnicastRemoteObject implements Binder{
 	}
 
 	@Override
-	public Card get(int i) throws RemoteException {
+	public ICard get(int i) throws RemoteException {
 		Iterator<String> it = binder.keySet().iterator();
 		
 		while(it.hasNext()){
@@ -61,7 +59,7 @@ public class SetBinder extends UnicastRemoteObject implements Binder{
 	}
 
 	@Override
-	public Card get(String name) throws RemoteException {
+	public ICard get(String name) throws RemoteException {
 		Iterator<String> it = binder.keySet().iterator();
 		
 		while(it.hasNext()){
@@ -76,12 +74,12 @@ public class SetBinder extends UnicastRemoteObject implements Binder{
 	}
 
 	@Override
-	public Card get(String set, String id) throws RemoteException {
+	public ICard get(String set, String id) throws RemoteException {
 		return getByRef(ref+id);
 	}
 
 	@Override
-	public Card getByRef(String ref) throws RemoteException {
+	public ICard getByRef(String ref) throws RemoteException {
 		try{
 			return binder.get(ref.substring(0,3)).getByRef(ref);
 		}catch(Exception e){}
@@ -89,7 +87,7 @@ public class SetBinder extends UnicastRemoteObject implements Binder{
 	}
 
 	@Override
-	public Binder getSet(String set) throws RemoteException {
+	public IBinder getSet(String set) throws RemoteException {
 		if(binder.containsKey(set))return binder.get(set);
 		else return new CardBinder();
 	}

@@ -1,7 +1,7 @@
 package ihm.card;
 
 import ihm.MainFrame;
-import ihm.screen.Screen;
+import ihm.screen.IScreen;
 
 import java.awt.event.MouseEvent;
 import java.rmi.RemoteException;
@@ -28,7 +28,7 @@ public abstract class CardZoom extends CardDecorator{
 	
 	public void mouseEntered(MouseEvent e) {
 		super.mouseEntered(e);
-		Screen s = m .getScreen();
+		IScreen s = m .getScreen();
 		s.add(zoom);
 		s.setComponentZOrder(zoom, 0);
 		s.repaint();
@@ -40,7 +40,7 @@ public abstract class CardZoom extends CardDecorator{
 	}
 	
 	private void removeZoom() {
-		Screen s = m .getScreen();
+		IScreen s = m .getScreen();
 		s.remove(zoom);
 		s.repaint();
 	}

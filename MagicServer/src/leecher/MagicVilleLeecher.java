@@ -6,17 +6,33 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
 
-import binder.ImplementedCard;
-import binder.interfaces.Card;
+import datamanager.IDatabaseManager;
 
-public class MagicVilleLeecher {
+import binder.Card;
+import binder.IBinder;
+import binder.ICard;
 
-	private static ImplementedCard extractCardInformation(String cardReference,
+public class MagicVilleLeecher implements ILeecher{
+
+	@Override
+	public void execute(IBinder binder, IDatabaseManager databaseManager) throws RemoteException{
+		long debutTraitement = System.currentTimeMillis();
+		Vector<String> editionsIds = this.getEditions();
+		int i = 0;
+		for(String editionId:editionsIds){
+			System.out.println("["+(System.currentTimeMillis() - debutTraitement)+"]traitement de "+(i++)+" : "+editionId);
+			int nombreDeCartesAjoutees = this.extractCards(binder,editionId);
+			if(nombreDeCartesAjoutees>0)databaseManager.save(binder);
+		}
+		System.out.println("fin");
+	}
+
+	private Card extractCardInformation(String cardReference,
 			String cardName) throws RemoteException {
-		PageLeecher pl = new PageLeecher("http://www.magic-ville.com/fr/carte.php?"+cardReference);
+		PageRetriever pl = new PageRetriever("http://www.magic-ville.com/fr/carte.php?"+cardReference);
 		
 		//getRarity
-		Card.Rarity cardRarity = ImplementedCard.GetRarity(pl.getPageContent());
+		ICard.Rarity cardRarity = Card.GetRarity(pl.getPageContent());
 		
 		//getType
 		
@@ -28,17 +44,20 @@ public class MagicVilleLeecher {
 		
 		String cardType = tableau[2].substring(positionChevron1+1,positionChevron2);
 
-		return new ImplementedCard(cardName,cardReference,cardType,cardRarity);
+		return new Card(cardName,cardReference,cardType,cardRarity);
 		
 	}
-	
-	public static Vector<ImplementedCard> getCardsList(String setCode) throws RemoteException {
-		PageLeecher pl = new PageLeecher("http://www.magic-ville.com/fr/set_visual.php?lang=eng&setcode="+setCode);
-		
-		Vector<ImplementedCard> cartes = new Vector<ImplementedCard>();
+
+	private int extractCards(IBinder binder, String editionId) throws RemoteException {
+		PageRetriever pl = new PageRetriever("http://www.magic-ville.com/fr/set_visual.php?lang=eng&setcode="+editionId);
 		
 		String[] tableau = pl.getPageContent().split("href=carte\\?");
 		
+		int nombreDeCartesAjoutees = 0;
+		if(tableau.length/2 < 100){
+			System.out.println("Pas assez de cartes dans l'edition pour être utilisable dans un draft (<100).");
+			return 0;
+		}
 		for(int i = 1;i< tableau.length;i++){
 			if(i%2 == 1)continue;
 			int positionEspace = -1;
@@ -49,19 +68,20 @@ public class MagicVilleLeecher {
 			positionChevron2 = tableau[i].indexOf('<');
 			String cardReference = tableau[i].substring(0, positionEspace);
 			String cardName = tableau[i].substring(positionChevron1+1, positionChevron2);
-			
-			System.out.println("Extraction de :"+cardReference+" "+cardName);
-			ImplementedCard card = extractCardInformation(cardReference,cardName);
-			
-			cartes.add(card);
+			if(binder.getByRef(cardReference) == null){
+				System.out.println("Extraction de :"+cardReference+" "+cardName);
+				Card card = extractCardInformation(cardReference,cardName);
+				binder.addCard(card);
+				nombreDeCartesAjoutees++;
+			}
 		}
-		return cartes;
+		return nombreDeCartesAjoutees;
 	}
-
-	public static Vector<String> getEditions() {
-		PageLeecher pl = new PageLeecher("http://www.magic-ville.com/fr/rech_set.php");
+	
+	public Vector<String> getEditions() {
+		PageRetriever pl = new PageRetriever("http://www.magic-ville.com/fr/rech_set.php");
 		
-		Vector<String> liens = new Vector<String>();
+		Vector<String> editionsIds = new Vector<String>();
 		
 		String[] tableau_ = pl.getPageContent().split("href=set_cards.php\\?");
 		String[] tableau2_ = pl.getPageContent().split("href=set_visual.php\\?setcode=");
@@ -81,8 +101,9 @@ public class MagicVilleLeecher {
 				tableau.set(i,tableau.get(i).substring(0, positionCommercialAnd));
 			}
 			if(!tableau.get(i).matches("[0-9]*"))continue;
-			liens.add(tableau.get(i));
+			
+			editionsIds.add(tableau.get(i));
 		}
-		return liens;
+		return editionsIds;
 	}
 }

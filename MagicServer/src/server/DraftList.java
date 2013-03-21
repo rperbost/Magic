@@ -4,7 +4,7 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
-import player.Player;
+import player.IPlayer;
 
 public class DraftList {
 	private class CheckClients extends Thread{
@@ -37,15 +37,15 @@ public class DraftList {
 				
 				//remove unconnected players
 				for(DraftRoom dr:draftList.getRooms()){
-					List<Player> unreachableOtherPlayers = new ArrayList<Player>();
-					for(Player p:dr.otherPlayers){
+					List<IPlayer> unreachableOtherPlayers = new ArrayList<IPlayer>();
+					for(IPlayer p:dr.otherPlayers){
 						try{
 							p.ping();
 						}catch(Exception e){
 							unreachableOtherPlayers.add(p);
 						}
 					}
-					for(Player p: unreachableOtherPlayers){
+					for(IPlayer p: unreachableOtherPlayers){
 						dr.otherPlayers.remove(p);
 						flag = true;
 					}

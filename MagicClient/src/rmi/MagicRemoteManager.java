@@ -9,15 +9,15 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-import rmi.ClientCallBack;
-import rmi.Repartiteur;
+import rmi.IClient;
+import rmi.IServer;
 
-import binder.interfaces.Binder;
-import binder.interfaces.Card;
-import binder.interfaces.Deck;
+import binder.IBinder;
+import binder.ICard;
+import binder.IDeck;
 
 @SuppressWarnings("serial")
-public class MagicRemoteManager extends UnicastRemoteObject implements ClientCallBack{
+public class MagicRemoteManager extends UnicastRemoteObject implements IClient{
 	static MagicRemoteManager theInstance = null;
 	
 	static public MagicRemoteManager getInstance() throws RemoteException{
@@ -29,7 +29,7 @@ public class MagicRemoteManager extends UnicastRemoteObject implements ClientCal
 	
 	private int id = -1;
 	
-	private Repartiteur server = null;
+	private IServer server = null;
 	private MagicRemoteManager() throws RemoteException{
 		super();
 		getId();
@@ -43,7 +43,7 @@ public class MagicRemoteManager extends UnicastRemoteObject implements ClientCal
 		 getServer().deleteDraftRoom(roomId);
 		
 	}
-	public Binder getBinder(){
+	public IBinder getBinder(){
 		
 		try {
 			return getServer().getBinder();
@@ -76,10 +76,10 @@ public class MagicRemoteManager extends UnicastRemoteObject implements ClientCal
 	}
 	
 	
-	public Repartiteur getServer(){
+	public IServer getServer(){
 		if (server == null){
 			try {
-				server = (Repartiteur)Naming.lookup("//localhost:2020/MagicServer");
+				server = (IServer)Naming.lookup("//localhost:2020/MagicServer");
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			} catch (RemoteException e) {
@@ -117,12 +117,12 @@ public class MagicRemoteManager extends UnicastRemoteObject implements ClientCal
 		}
 	}
 
-	public void selectCard(Card card) throws RemoteException{
+	public void selectCard(ICard card) throws RemoteException{
 		getServer().selectCard(getId(),card);
 	}
 
 	@Override
-	public void startDeckListScreen(Deck deck) throws RemoteException {
+	public void startDeckListScreen(IDeck deck) throws RemoteException {
 		MainFrame.getInstance().addScreen( "DECK" , new DeckScreen(deck) ).activeScreen("DECK");
 	}
 

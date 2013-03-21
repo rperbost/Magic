@@ -16,7 +16,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
-public class ServerSelectionScreen extends Screen{
+public class ServerSelectionScreen extends IScreen{
 	public ServerSelectionScreen() throws RemoteException {
 		this.init();
 		this.refresh();

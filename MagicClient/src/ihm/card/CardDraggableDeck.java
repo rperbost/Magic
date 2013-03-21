@@ -1,20 +1,20 @@
 package ihm.card;
 
 import ihm.MainFrame;
-import ihm.screen.Screen;
+import ihm.screen.IScreen;
 
 import java.awt.event.MouseEvent;
 import java.rmi.RemoteException;
 
-import binder.interfaces.Deck;
+import binder.IDeck;
 
 @SuppressWarnings("serial")
 public class CardDraggableDeck extends CardDecorator{
 
-	Deck deck;
+	IDeck deck;
 	String sourcePanel;
 	
-	public CardDraggableDeck(Deck deck,CardDrawable parent) throws RemoteException {
+	public CardDraggableDeck(IDeck deck,CardDrawable parent) throws RemoteException {
 		super(parent);
 		this.deck = deck;
 	}
@@ -27,7 +27,7 @@ public class CardDraggableDeck extends CardDecorator{
 	@Override
 	public void mousePressed(MouseEvent e) {
 		super.mousePressed(e);
-		Screen screen = MainFrame.getInstance().getScreen();
+		IScreen screen = MainFrame.getInstance().getScreen();
 		sourcePanel = screen.pointIsOnByScreen(e.getLocationOnScreen());
 		putMeUnderMouse(e);
 		screen.add(this,0);
@@ -36,7 +36,7 @@ public class CardDraggableDeck extends CardDecorator{
 	@Override
 	public void mouseReleased(MouseEvent e) {
 		super.mouseReleased(e);
-		Screen screen = MainFrame.getInstance().getScreen();
+		IScreen screen = MainFrame.getInstance().getScreen();
 		String targetPanel = screen.pointIsOnByScreen(e.getLocationOnScreen());
 		try {
 			deck.transferCard(this.card, sourcePanel, targetPanel);

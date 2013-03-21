@@ -3,18 +3,18 @@ package server;
 import java.util.ArrayList;
 import java.util.List;
 
-import player.Player;
+import player.IPlayer;
 
 public class DraftRoom {
 
-	List<Player> otherPlayers;
-	Player owner;
+	List<IPlayer> otherPlayers;
+	IPlayer owner;
 	String sets[];
 	int timer;
 	
-	public DraftRoom(Player owner,String set1,String set2,String set3){
+	public DraftRoom(IPlayer owner,String set1,String set2,String set3){
 		this.owner = owner;
-		this.otherPlayers = new ArrayList<Player>();
+		this.otherPlayers = new ArrayList<IPlayer>();
 		this.timer = 5000;
 		sets = new String[3];
 		sets[0]=set1;
@@ -22,13 +22,13 @@ public class DraftRoom {
 		sets[2]=set3;
 	}
 	
-	public boolean canJoin(Player p) {
+	public boolean canJoin(IPlayer p) {
 		if(!otherPlayers.contains(p) && otherPlayers.size() < 7)return true;
 		else
 			return false;
 	}
 	
-	public Player getOwner(){
+	public IPlayer getOwner(){
 		return owner;
 	}
 	
@@ -36,10 +36,10 @@ public class DraftRoom {
 		return owner.getId();
 	}
 	
-	public ArrayList<Player> getPlayers() {
-		ArrayList<Player> p = new ArrayList<Player>();
+	public ArrayList<IPlayer> getPlayers() {
+		ArrayList<IPlayer> p = new ArrayList<IPlayer>();
 		p.add(owner);
-		for(Player op : otherPlayers){
+		for(IPlayer op : otherPlayers){
 			p.add(op);
 		}
 		return p;
@@ -57,7 +57,7 @@ public class DraftRoom {
 		return false;
 	}
 
-	public boolean join(Player p){
+	public boolean join(IPlayer p){
 		if(!otherPlayers.contains(p) && otherPlayers.size() < 7){
 			otherPlayers.add(p);
 			return true;
@@ -65,7 +65,7 @@ public class DraftRoom {
 		return false;
 	}
 
-	public boolean leave(Player p){
+	public boolean leave(IPlayer p){
 		if(!owner.equals(p)){
 			return otherPlayers.remove(p);
 		}
@@ -74,7 +74,7 @@ public class DraftRoom {
 
 	public String serialize() {
 		String players = "";
-		for(Player p : otherPlayers){
+		for(IPlayer p : otherPlayers){
 			players+="&"+p.getId();
 		}
 		return owner.getId()+"&"+(otherPlayers.size()+1)+"&"+sets[0]+"&"+sets[1]+"&"+sets[2]+players;

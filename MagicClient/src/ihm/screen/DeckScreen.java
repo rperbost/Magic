@@ -18,25 +18,25 @@ import java.util.Map;
 
 import javax.swing.JPanel;
 
-import binder.interfaces.Booster;
-import binder.interfaces.Card;
-import binder.interfaces.Deck;
-import binder.interfaces.Card.Land;
+import binder.IBooster;
+import binder.ICard;
+import binder.IDeck;
+import binder.ICard.Land;
 
 @SuppressWarnings("serial")
-public class DeckScreen extends Screen{
-	private Deck deck;
-	Map <Card.Land, Card> lands = new HashMap<Card.Land,Card>();
+public class DeckScreen extends IScreen{
+	private IDeck deck;
+	Map <ICard.Land, ICard> lands = new HashMap<ICard.Land,ICard>();
 	String landSet = null;
 	
-	public DeckScreen(Deck deck) throws RemoteException{
+	public DeckScreen(IDeck deck) throws RemoteException{
 		this.landSet = "13m";
 		this.deck = deck;
 		this.init();
 		this.refresh();
 	}
 
-	public Deck getDeck() {
+	public IDeck getDeck() {
 		return deck;
 	}
 	
@@ -96,7 +96,7 @@ public class DeckScreen extends Screen{
 		JPanel p = this.panel("DECK");
 		p.removeAll();
 		
-		Booster b = deck.getMainDeck();
+		IBooster b = deck.getMainDeck();
 		for(int i = b.size()-1; i >= 0 ;i--){
 			CardDrawable c = new CardDrawable(b.get(i),CardDrawable.OVERVIEW_WIDTH,CardDrawable.OVERVIEW_HEIGHT);
 			c = new CardPositionned((i%5)*(c.getWidth()+5)+2,i/5*15,c);
@@ -111,7 +111,7 @@ public class DeckScreen extends Screen{
 		JPanel p = this.panel("LAND-STACK");
 		p.removeAll();
 		
-		List<Card.Land> landCards = new ArrayList<Card.Land>();
+		List<ICard.Land> landCards = new ArrayList<ICard.Land>();
 		
 		landCards.add(Land.plains);
 		landCards.add(Land.island);
@@ -134,7 +134,7 @@ public class DeckScreen extends Screen{
 		JPanel p = this.panel("SIDEBOARD");
 		p.removeAll();
 		
-		Booster b = deck.getSideboard();
+		IBooster b = deck.getSideboard();
 		for(int i = b.size()-1; i >= 0 ;i--){
 			CardDrawable c = new CardDrawable(b.get(i),CardDrawable.OVERVIEW_WIDTH,CardDrawable.OVERVIEW_HEIGHT);
 			c = new CardPositionned((i%2)*(c.getWidth()+6)+7,i/2*15,c);

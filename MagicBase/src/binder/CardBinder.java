@@ -5,26 +5,24 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import binder.interfaces.Binder;
-import binder.interfaces.Card;
 
 @SuppressWarnings("serial")
-public class CardBinder extends UnicastRemoteObject implements Binder {
+public class CardBinder extends UnicastRemoteObject implements IBinder {
 
-	ArrayList<Card> cards;
+	ArrayList<ICard> cards;
 	
-	protected CardBinder() throws RemoteException {
+	public CardBinder() throws RemoteException {
 		super();
-		this.cards = new ArrayList<Card>();
+		this.cards = new ArrayList<ICard>();
 	}
 
 	@Override
-	public void addCard(Card card) throws RemoteException {
+	public void addCard(ICard card) throws RemoteException {
 		if(!cards.contains(card))cards.add(card);
 	}
 
 	@Override
-	public boolean contains(Card card) throws RemoteException {
+	public boolean contains(ICard card) throws RemoteException {
 		return cards.contains(card);
 	}
 
@@ -37,12 +35,12 @@ public class CardBinder extends UnicastRemoteObject implements Binder {
 	}
 
 	@Override
-	public Card get(int i) throws RemoteException {
+	public ICard get(int i) throws RemoteException {
 		return cards.get(i);
 	}
 
 	@Override
-	public Card get(String name) throws RemoteException {
+	public ICard get(String name) throws RemoteException {
 		for(int i = 0;i < cards.size(); i++){
 			if(cards.get(i).getName().equals(name))return cards.get(i);
 		}
@@ -50,12 +48,12 @@ public class CardBinder extends UnicastRemoteObject implements Binder {
 	}
 
 	@Override
-	public Card get(String set, String id) throws RemoteException {
+	public ICard get(String set, String id) throws RemoteException {
 		return getByRef(set+id);
 	}
 
 	@Override
-	public Card getByRef(String ref) throws RemoteException {
+	public ICard getByRef(String ref) throws RemoteException {
 		for(int i = 0;i < cards.size(); i++){
 			if(cards.get(i).getReference().equals(ref))return cards.get(i);
 		}
@@ -63,7 +61,7 @@ public class CardBinder extends UnicastRemoteObject implements Binder {
 	}
 
 	@Override
-	public Binder getSet(String set) throws RemoteException {
+	public IBinder getSet(String set) throws RemoteException {
 		CardBinder binder = new CardBinder();
 		for(int i = 0;i < cards.size(); i++){
 			if(cards.get(i).getSet().equals(set))binder.addCard(cards.get(i));
@@ -74,7 +72,7 @@ public class CardBinder extends UnicastRemoteObject implements Binder {
 	@Override
 	public List<String> getSetList() throws RemoteException {
 		List<String> sets = new ArrayList<String>();
-		for(Card c:cards){
+		for(ICard c:cards){
 			if(!sets.contains(c.getSet()))sets.add(c.getSet());
 		}
 		return sets;

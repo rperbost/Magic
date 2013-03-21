@@ -3,11 +3,11 @@ package rmi;
 import java.rmi.RemoteException;
 
 
-import binder.ImplementedBooster;
-import binder.ImplementedDeck;
-import binder.interfaces.Binder;
-import binder.interfaces.Booster;
-import binder.interfaces.Deck;
+import binder.Booster;
+import binder.Deck;
+import binder.IBinder;
+import binder.IBooster;
+import binder.IDeck;
 
 public class DraftState {
 	String splitedState[];
@@ -23,10 +23,10 @@ public class DraftState {
 		return this.state.equals(state);
 	}
 	
-	public Booster getBooster() throws RemoteException{
+	public IBooster getBooster() throws RemoteException{
 		String[] cards = splitedState[4].split("&");
-		Booster b = new ImplementedBooster();
-		Binder binder = MagicRemoteManager.getInstance().getBinder();
+		IBooster b = new Booster();
+		IBinder binder = MagicRemoteManager.getInstance().getBinder();
 		for(String ref:cards){
 			if(binder.getByRef(ref)!=null)
 				b.add(binder.getByRef(ref));
@@ -34,10 +34,10 @@ public class DraftState {
 		return b;
 	}
 	
-	public Deck getDeck() throws RemoteException{
+	public IDeck getDeck() throws RemoteException{
 		String[] cards = splitedState[3].split("&");
-		Deck d = new ImplementedDeck();
-		Binder binder = MagicRemoteManager.getInstance().getBinder();
+		IDeck d = new Deck();
+		IBinder binder = MagicRemoteManager.getInstance().getBinder();
 		for(String ref:cards){
 			if(binder.getByRef(ref)!=null)
 				d.addToDeck(binder.getByRef(ref));

@@ -3,16 +3,13 @@ package binder;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-import binder.ImplementedBooster;
-import binder.interfaces.Binder;
-import binder.interfaces.Booster;
-import binder.interfaces.Card;
-import binder.interfaces.Card.Rarity;
+import binder.Booster;
+import binder.ICard.Rarity;
 
 public class BoosterFactory {
 		
-	public static Booster getBooster(Binder binder) throws RemoteException{
-		ArrayList<Card> booster = new ArrayList<Card>(15);
+	public static IBooster getBooster(IBinder binder) throws RemoteException{
+		ArrayList<ICard> booster = new ArrayList<ICard>(15);
 		ArrayList<Rarity> rarities = new ArrayList<Rarity>();
 		
 		for(int i = 0; i < binder.size() ; i++){
@@ -53,7 +50,7 @@ public class BoosterFactory {
 			
 			while(nbTry<10000){
 				nbTry++;
-				Card card = binder.get((int)(binder.size()*Math.random()));
+				ICard card = binder.get((int)(binder.size()*Math.random()));
 				
 				if(!booster.contains(card) && card.getRarity() == rarityExpected[i]){
 					booster.add(i, card);
@@ -64,7 +61,7 @@ public class BoosterFactory {
 			if(nbTry>=1000)return null;
 		}
 		
-		return new ImplementedBooster(booster);
+		return new Booster(booster);
 	}
 	
 	public BoosterFactory(){
